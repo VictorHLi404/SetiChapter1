@@ -3,12 +3,11 @@
 
 struct = script_JSONReader("introStatus.json")
 show_debug_message(struct.playedIntro)
-struct.playedIntro = "boohoo"
-show_debug_message(struct.playedIntro)
+struct.playedIntro = "this has been edited"
 
 var temp = json_stringify(struct, true)
 show_debug_message(temp)
-script_JSONSaver(temp, "introStatus.json")
+script_JSONSaver(temp, working_directory + "introStatus.json")
 
 
 
