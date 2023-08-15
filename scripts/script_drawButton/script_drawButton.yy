@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "script_JSONSaver",
+  "name": "script_drawButton",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "JSON Handling",
-    "path": "folders/Scripts/JSON Handling.yy",
+    "name": "Draw Functions",
+    "path": "folders/Scripts/Draw Functions.yy",
   },
 }

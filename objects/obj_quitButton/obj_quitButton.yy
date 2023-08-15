@@ -1,9 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_dataHandler",
+  "name": "obj_quitButton",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -28,12 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_smileyGuy",
-    "path": "sprites/spr_smileyGuy/spr_smileyGuy.yy",
+    "name": "spr_blank",
+    "path": "sprites/spr_blank/spr_blank.yy",
   },
   "spriteMaskId": null,
-  "tags": [
-    "room_titleScreen",
-  ],
   "visible": true,
 }

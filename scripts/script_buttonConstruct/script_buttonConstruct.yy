@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "script_JSONSaver",
+  "name": "script_buttonConstruct",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "JSON Handling",
-    "path": "folders/Scripts/JSON Handling.yy",
+    "name": "Object Constructs",
+    "path": "folders/Scripts/Object Constructs.yy",
   },
 }

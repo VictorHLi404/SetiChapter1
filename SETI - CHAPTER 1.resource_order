@@ -1,8 +1,16 @@
 {
   "FolderOrderSettings": [
     {"name":"room_titleScreen","order":1,"path":"folders/Objects/room_titleScreen.yy",},
+    {"name":"Draw Functions","order":4,"path":"folders/Scripts/Draw Functions.yy",},
+    {"name":"JSON Handling","order":2,"path":"folders/Scripts/JSON Handling.yy",},
+    {"name":"Object Constructs","order":3,"path":"folders/Scripts/Object Constructs.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spr_blank","order":1,"path":"sprites/spr_blank/spr_blank.yy",},
+    {"name":"obj_quitButton","order":3,"path":"objects/obj_quitButton/obj_quitButton.yy",},
+    {"name":"obj_playButton","order":1,"path":"objects/obj_playButton/obj_playButton.yy",},
     {"name":"script_JSONSaver","order":1,"path":"scripts/script_JSONSaver/script_JSONSaver.yy",},
+    {"name":"obj_optionsButton","order":2,"path":"objects/obj_optionsButton/obj_optionsButton.yy",},
+    {"name":"spr_smileyGuy","order":1,"path":"sprites/spr_smileyGuy/spr_smileyGuy.yy",},
   ],
 }

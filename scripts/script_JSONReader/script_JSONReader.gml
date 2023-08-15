@@ -19,7 +19,7 @@ function script_JSONReader(targetFile){
 		while(file_text_eof(file) == false) {
 			JSONdata  += file_text_readln(file)
 		}
-		
+
 		file_text_close(file)
 		
 		var parsedData = json_parse(JSONdata)
