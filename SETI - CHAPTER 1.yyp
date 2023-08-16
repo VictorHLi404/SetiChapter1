@@ -34,6 +34,7 @@
       ],},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"General Sprites","folderPath":"folders/Sprites/General Sprites.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"introStatus.json","CopyToMask":3035426170322551022,"filePath":"datafiles",},
@@ -45,6 +46,7 @@
     "IDEVersion": "2023.6.0.92",
   },
   "resources": [
+    {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"script_buttonConstruct","path":"scripts/script_buttonConstruct/script_buttonConstruct.yy",},},
     {"id":{"name":"spr_blank","path":"sprites/spr_blank/spr_blank.yy",},},
     {"id":{"name":"obj_quitButton","path":"objects/obj_quitButton/obj_quitButton.yy",},},
@@ -52,11 +54,14 @@
     {"id":{"name":"obj_playButton","path":"objects/obj_playButton/obj_playButton.yy",},},
     {"id":{"name":"spr_mockTitleScreen","path":"sprites/spr_mockTitleScreen/spr_mockTitleScreen.yy",},},
     {"id":{"name":"obj_dataHandler","path":"objects/obj_dataHandler/obj_dataHandler.yy",},},
+    {"id":{"name":"obj_inputHandler","path":"objects/obj_inputHandler/obj_inputHandler.yy",},},
     {"id":{"name":"script_JSONSaver","path":"scripts/script_JSONSaver/script_JSONSaver.yy",},},
+    {"id":{"name":"spr_noCollision","path":"sprites/spr_noCollision/spr_noCollision.yy",},},
     {"id":{"name":"obj_optionsButton","path":"objects/obj_optionsButton/obj_optionsButton.yy",},},
     {"id":{"name":"font_vcr_90","path":"fonts/font_vcr_90/font_vcr_90.yy",},},
     {"id":{"name":"spr_smileyGuy","path":"sprites/spr_smileyGuy/spr_smileyGuy.yy",},},
     {"id":{"name":"script_JSONReader","path":"scripts/script_JSONReader/script_JSONReader.yy",},},
+    {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},},
     {"id":{"name":"room_titleScreen","path":"rooms/room_titleScreen/room_titleScreen.yy",},},
   ],
   "RoomOrderNodes": [
