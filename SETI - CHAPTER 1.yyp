@@ -29,7 +29,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Shaders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds","folderPath":"folders/Sounds.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"room_titleScreen","folderPath":"folders/Sprites/room_titleScreen.yy","tags":[
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Title Screen","folderPath":"folders/Sprites/Title Screen.yy","tags":[
         "room_titleScreen",
       ],},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
@@ -37,6 +37,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"General Sprites","folderPath":"folders/Sprites/General Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Room Generation","folderPath":"folders/Scripts/Room Generation.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boot Conversation Screen","folderPath":"folders/Objects/Boot Conversation Screen.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boot Conversation Screen","folderPath":"folders/Sprites/Boot Conversation Screen.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"introStatus.json","CopyToMask":3035426170322551022,"filePath":"datafiles",},
@@ -61,6 +62,7 @@
     {"id":{"name":"obj_titleScreenInputHandler","path":"objects/obj_titleScreenInputHandler/obj_titleScreenInputHandler.yy",},},
     {"id":{"name":"script_JSONSaver","path":"scripts/script_JSONSaver/script_JSONSaver.yy",},},
     {"id":{"name":"room_bootConversationScreen","path":"rooms/room_bootConversationScreen/room_bootConversationScreen.yy",},},
+    {"id":{"name":"mockBootConversationScreen","path":"sprites/mockBootConversationScreen/mockBootConversationScreen.yy",},},
     {"id":{"name":"spr_noCollision","path":"sprites/spr_noCollision/spr_noCollision.yy",},},
     {"id":{"name":"obj_titleScreenOptionsButton","path":"objects/obj_titleScreenOptionsButton/obj_titleScreenOptionsButton.yy",},},
     {"id":{"name":"font_vcr_90","path":"fonts/font_vcr_90/font_vcr_90.yy",},},

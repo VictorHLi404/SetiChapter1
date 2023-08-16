@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_mockTitleScreen",
+  "name": "mockBootConversationScreen",
   "bbox_bottom": 1079,
   "bbox_left": 0,
   "bbox_right": 1919,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bdaa1854-3214-4872-9bb3-ad10bfb886ee",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"307b88d4-cc7d-4d0d-805e-a486f24bc69d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 1080,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"57b93810-5cf5-48a7-bf78-2773cc52c57d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6e41c482-1246-4cee-8d29-f9a54e7b2567","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Title Screen",
-    "path": "folders/Sprites/Title Screen.yy",
+    "name": "Boot Conversation Screen",
+    "path": "folders/Sprites/Boot Conversation Screen.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_mockTitleScreen",
+    "name": "mockBootConversationScreen",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bdaa1854-3214-4872-9bb3-ad10bfb886ee","path":"sprites/spr_mockTitleScreen/spr_mockTitleScreen.yy",},},},"Disabled":false,"id":"b9598967-903a-4671-9107-75d9fcf9f3d9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"307b88d4-cc7d-4d0d-805e-a486f24bc69d","path":"sprites/mockBootConversationScreen/mockBootConversationScreen.yy",},},},"Disabled":false,"id":"e9fba365-e58d-4b3e-a0f9-7093abe51c36","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -64,9 +64,6 @@
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
-  "tags": [
-    "room_titleScreen",
-  ],
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",

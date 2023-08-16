@@ -19,10 +19,19 @@ function createButton(_inputX, _inputY, _width, _height, _lineThickness, _color,
 	static leaveFocus = function() {
 		global.currentFocus = noone;
 	}
+	
 	static enterFocusCheck = function() {
 		if (position_meeting(mouse_x, mouse_y, buttonID) and (roomCursor.sprite_index == spr_cursor) and global.currentFocus == noone) {
 		global.currentFocus = buttonID;
 		}
 	}
+	
+	static buttonPressed = function() {
+		if (global.action and global.currentFocus = buttonID) { 
+			return true;
+		}
+		else { return false; }
+	}
+	
 }
 

@@ -7,6 +7,7 @@
     {"name":"General Sprites","order":2,"path":"folders/Sprites/General Sprites.yy",},
     {"name":"Room Generation","order":5,"path":"folders/Scripts/Room Generation.yy",},
     {"name":"Boot Conversation Screen","order":2,"path":"folders/Objects/Boot Conversation Screen.yy",},
+    {"name":"Boot Conversation Screen","order":4,"path":"folders/Sprites/Boot Conversation Screen.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"script_inputHandlerConstructor","order":1,"path":"scripts/script_inputHandlerConstructor/script_inputHandlerConstructor.yy",},
@@ -18,7 +19,7 @@
     {"name":"room_bootConversationScreen","order":1,"path":"rooms/room_bootConversationScreen/room_bootConversationScreen.yy",},
     {"name":"spr_noCollision","order":2,"path":"sprites/spr_noCollision/spr_noCollision.yy",},
     {"name":"obj_titleScreenOptionsButton","order":2,"path":"objects/obj_titleScreenOptionsButton/obj_titleScreenOptionsButton.yy",},
-    {"name":"spr_smileyGuy","order":1,"path":"sprites/spr_smileyGuy/spr_smileyGuy.yy",},
+    {"name":"spr_smileyGuy","order":3,"path":"sprites/spr_smileyGuy/spr_smileyGuy.yy",},
     {"name":"obj_titleScreenCursor","order":5,"path":"objects/obj_titleScreenCursor/obj_titleScreenCursor.yy",},
   ],
 }

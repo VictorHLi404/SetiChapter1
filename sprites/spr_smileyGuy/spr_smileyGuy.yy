@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "room_titleScreen",
-    "path": "folders/Sprites/room_titleScreen.yy",
+    "name": "General Sprites",
+    "path": "folders/Sprites/General Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
