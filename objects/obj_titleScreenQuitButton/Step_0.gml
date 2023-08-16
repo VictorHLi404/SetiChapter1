@@ -1,0 +1,2 @@
+quitButton.enterFocusCheck()
+
