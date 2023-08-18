@@ -1,3 +1,11 @@
 {
-    "playedIntro": false
-}
+    "test1":{
+      "test2":{
+        "test3":{
+          "yessir":1.0
+        }
+      }
+    },
+    "playedIntro": false,
+    "boohoo":1.0
+  }

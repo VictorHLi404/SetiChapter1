@@ -8,10 +8,10 @@ takes JSON file as a parameter and then searches for if it exists, returns error
 returns JSON file as a struct / nested array to work through
 
 */
-function script_JSONReader(targetFile){
+function JSONRead(targetFile){
 	
 	if file_exists(targetFile) {
-		show_debug_message(targetFile + "file does exist");
+		show_debug_message(targetFile + " file does exist");
 		
 		var file = file_text_open_read(targetFile);
 		
@@ -28,7 +28,7 @@ function script_JSONReader(targetFile){
 	}
 	
 	else {
-		show_debug_message(targetFile + "does not exist");
+		show_debug_message(targetFile + " does not exist");
 		return;
 	}
 

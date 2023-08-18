@@ -1,0 +1,7 @@
+{
+    "lineThickness": 3,
+    "defaultColor": "c_grey",
+    "font": "font_vcr_90",
+    "roomCursor": "obj_titleScreenCursor",
+    "dataHandler": "obj_titleScreenDataHandler"
+}

@@ -91,8 +91,10 @@ function createInputHandler(_buttonList) constructor
 	static checkAction = function() {
 		if (mouse_check_button_pressed(mb_left) or keyboard_check_pressed(vk_enter) or keyboard_check_pressed(vk_space)) {
 			global.action = true;
-			show_debug_message("action")
 		}
+		else {
+			global.action = false;
+		}	
 	}
 	
 
