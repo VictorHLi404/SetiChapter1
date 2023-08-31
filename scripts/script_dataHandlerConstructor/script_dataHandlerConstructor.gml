@@ -25,20 +25,22 @@ function createDataHandler(fileList) constructor {
 		return;
 	}
 	
-	static internalGetValue = function(valueID, currentStruct) {
+	static internalGetValue = function(valueID, _currentStruct) {
 		
+		var currentStruct = _currentStruct;
 		var structLength = struct_names_count(currentStruct);
 		var structNames = struct_get_names(currentStruct);
 		
 		for (var i = 0; i < structLength; i++) {
 			if typeof(currentStruct[$ structNames[i]]) == "struct" {
-				currentStruct = currentStruct[$ structNames[i]];
-				if (internalGetValue(valueID, currentStruct) != noone) {
-					return internalGetValue(valueID, currentStruct);
+				var searchStruct = currentStruct[$ structNames[i]];
+				//currentStruct = currentStruct[$ structNames[i]];
+				if (internalGetValue(valueID, searchStruct) != noone) {
+					return internalGetValue(valueID, searchStruct);
 				}
 			}
 			else if (structNames[i] == valueID) {
-				return structNames[i] == valueID;
+				return currentStruct[$ structNames[i]];
 			}
 		}
 		return noone;
@@ -52,18 +54,20 @@ function createDataHandler(fileList) constructor {
 		return internalGetValue(valueID, getFile(fileName));
 	}
 		
-	static internalUpdateValue = function(newValue, valueID, currentStruct) {
+	static internalUpdateValue = function(newValue, valueID, _currentStruct) {
 		
+		var currentStruct = _currentStruct;
 		var structLength = struct_names_count(currentStruct);
 		var structNames = struct_get_names(currentStruct);
 		
 		for (var i = 0; i < structLength; i++) {
 			if typeof(currentStruct[$ structNames[i]]) == "struct" {
-				currentStruct = currentStruct[$ structNames[i]];
-				internalUpdateValue(newValue, valueID, currentStruct);
+				var searchStruct = currentStruct[$ structNames[i]];
+				//currentStruct = currentStruct[$ structNames[i]];
+				internalUpdateValue(newValue, valueID, searchStruct);
 			}
 			else if (structNames[i] == valueID) {
-				structNames[i] = newValue;
+				currentStruct[$ structNames[i]] = newValue;
 			}
 		}
 		return;
