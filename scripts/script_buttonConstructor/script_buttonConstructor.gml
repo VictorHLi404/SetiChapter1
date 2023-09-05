@@ -23,7 +23,6 @@ function createButton(_inputX, _inputY, _width, _height, _text, _buttonID, _data
 	font = asset_get_index(getTemplate("font"));
 	roomCursor = asset_get_index(getTemplate("roomCursor"));
 	
-	show_debug_message(asset_get_index(getTemplate("roomCursor")));
 	
 	
 	static leaveFocus = function() {

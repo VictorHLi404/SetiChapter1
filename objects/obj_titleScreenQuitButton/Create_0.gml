@@ -3,7 +3,7 @@
 
 text = "QUIT";
 buttonID = obj_titleScreenQuitButton;
-dataHandler = obj_titleScreenDataHandler.titleScreenDataHandler;
+dataHandler = obj_titleScreenDataHandler.dataHandler;
 template = "titleScreenButtonTemplate.json";
 quitButton = new createButton(x, y, sprite_width, sprite_height, text, buttonID, dataHandler, template);
 

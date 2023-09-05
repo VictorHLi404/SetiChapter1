@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function createDataHandler(fileList) constructor {
-	
+function createDataHandler(_fileList) constructor {
+	fileList = _fileList
 	fileData = {};
 	fileNames = [0];
 	
@@ -16,7 +16,6 @@ function createDataHandler(fileList) constructor {
 	
 	addFiles(fileList);
 	
-	show_debug_message(fileData);
 	
 	static saveFiles = function() {
 		for (var i = 0; i < array_length(fileNames); i++) {
@@ -75,7 +74,6 @@ function createDataHandler(fileList) constructor {
 	
 	static updateValue = function(newValue, valueID, fileName) {
 		internalUpdateValue(newValue, valueID, getFile(fileName));
-		show_debug_message(fileData);
-		return;
+		
 	}
 }

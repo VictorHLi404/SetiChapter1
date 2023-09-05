@@ -1,0 +1,1108 @@
+{
+  "GlobalVariables": [
+    {
+      "Namespace": "Main",
+      "Description": "",
+      "Variables": [
+        {
+          "Variable": "rebootCheck",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "whether reboot has already occured"
+        }
+      ]
+    }
+  ],
+  "Packages": [
+    {
+      "Name": "All objects",
+      "Description": "Exports all objects & types of the project",
+      "IsDefaultPackage": true,
+      "Models": [
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_F750CF3F",
+            "Id": "0x010000000000010F",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "START",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Hello?",
+            "ExternalId": "",
+            "Position": {
+              "x": -500.0,
+              "y": 300.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 4149268287,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000112",
+                "Owner": "0x010000000000010F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000113",
+                "Owner": "0x010000000000010F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "Hello.",
+                    "TargetPin": "0x0100000000000119",
+                    "Target": "0x0100000000000116"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_D7EAED81",
+            "Id": "0x0100000000000116",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Hello.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Please perform quick response system diagnostic.",
+            "ExternalId": "",
+            "Position": {
+              "x": -125.0,
+              "y": 300.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3622497665,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000119",
+                "Owner": "0x0100000000000116"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000011A",
+                "Owner": "0x0100000000000116",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "All systems nominal. Diagnostic run time 162 ms.",
+                    "TargetPin": "0x0100000000000123",
+                    "Target": "0x0100000000000120"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_A3FCBF5B",
+            "Id": "0x0100000000000120",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "All systems nominal. Diagnostic run time 162 ms.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "How do you feel?",
+            "ExternalId": "",
+            "Position": {
+              "x": 375.0,
+              "y": 300.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2751250267,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000123",
+                "Owner": "0x0100000000000120"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000124",
+                "Owner": "0x0100000000000120",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "I feel good.",
+                    "TargetPin": "0x0100000000000128",
+                    "Target": "0x0100000000000125"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "I feel alright. ",
+                    "TargetPin": "0x010000000000012D",
+                    "Target": "0x010000000000012A"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "I feel off.",
+                    "TargetPin": "0x0100000000000136",
+                    "Target": "0x0100000000000134"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_636E546C",
+            "Id": "0x0100000000000125",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I feel good.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "What makes you say that?",
+            "ExternalId": "",
+            "Position": {
+              "x": 775.0,
+              "y": 50.0
+            },
+            "ZIndex": 4.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1668174956,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000128",
+                "Owner": "0x0100000000000125"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000129",
+                "Owner": "0x0100000000000125",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000144",
+                    "Target": "0x0100000000000141"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000014E",
+                    "Target": "0x010000000000014B"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000159",
+                    "Target": "0x0100000000000156"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_DC5622F6",
+            "Id": "0x010000000000012A",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I feel alright. ",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "What makes you say that?",
+            "ExternalId": "",
+            "Position": {
+              "x": 775.0,
+              "y": 300.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3696632566,
+            "InputPins": [
+              {
+                "Text": "Main.rebootCheck == false",
+                "Id": "0x010000000000012D",
+                "Owner": "0x010000000000012A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000012E",
+                "Owner": "0x010000000000012A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000014E",
+                    "Target": "0x010000000000014B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_972D792C",
+            "Id": "0x0100000000000134",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I feel off.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Can you elaborate more? What does feeling off entail?",
+            "ExternalId": "",
+            "Position": {
+              "x": 775.0,
+              "y": 550.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2536339756,
+            "InputPins": [
+              {
+                "Text": "Main.rebootCheck == false",
+                "Id": "0x0100000000000136",
+                "Owner": "0x0100000000000134"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000137",
+                "Owner": "0x0100000000000134",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000014E",
+                    "Target": "0x010000000000014B"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000169",
+                    "Target": "0x0100000000000166"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000016F",
+                    "Target": "0x010000000000016C"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_7AF6B006",
+            "Id": "0x0100000000000141",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Everything is working properly.\r\n",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "That's good. I'm going to connect you to the database now. Standby.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1100.0,
+              "y": -150.0
+            },
+            "ZIndex": 11.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2062987270,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000144",
+                "Owner": "0x0100000000000141"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000145",
+                "Owner": "0x0100000000000141",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000179",
+                    "Target": "0x0100000000000176"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_A3C875B6",
+            "Id": "0x010000000000014B",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I don't know.\r\n",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Please perform a deep system diagnostic.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1100.0,
+              "y": 300.0
+            },
+            "ZIndex": 13.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2747823542,
+            "InputPins": [
+              {
+                "Text": "Main.rebootCheck == false",
+                "Id": "0x010000000000014E",
+                "Owner": "0x010000000000014B"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000014F",
+                "Owner": "0x010000000000014B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000160",
+                    "Target": "0x010000000000015E"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_B423ADB7",
+            "Id": "0x0100000000000156",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "All systems are nominal, therefore there are no issues.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "That's good. I'm going to connect you to the database now.  Standby.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1100.0,
+              "y": 75.0
+            },
+            "ZIndex": 17.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3022237111,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000159",
+                "Owner": "0x0100000000000156"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000015A",
+                "Owner": "0x0100000000000156",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000179",
+                    "Target": "0x0100000000000176"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_F0D09949",
+            "Id": "0x010000000000015E",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "All systems nominal. Diagnostic run time 5398 ms.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Do you feel any different?",
+            "ExternalId": "",
+            "Position": {
+              "x": 1450.0,
+              "y": 550.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 4040202569,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000160",
+                "Owner": "0x010000000000015E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000161",
+                "Owner": "0x010000000000015E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000018E",
+                    "Target": "0x010000000000018B"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000181",
+                    "Target": "0x010000000000017E"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000188",
+                    "Target": "0x0100000000000185"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_20A89BF8",
+            "Id": "0x0100000000000166",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Something is not correct. I don't feel complete. ",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Please perform a deep system diagnostic.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1100.0,
+              "y": 550.0
+            },
+            "ZIndex": 21.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 547920888,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000169",
+                "Owner": "0x0100000000000166"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000016A",
+                "Owner": "0x0100000000000166",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000160",
+                    "Target": "0x010000000000015E"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_26090A0A",
+            "Id": "0x010000000000016C",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I do not feel certain in my decisions.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Please perform a deep system diagnostic.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1100.0,
+              "y": 775.0
+            },
+            "ZIndex": 22.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 638126602,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000016F",
+                "Owner": "0x010000000000016C"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000170",
+                "Owner": "0x010000000000016C",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000160",
+                    "Target": "0x010000000000015E"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_29367764",
+            "Id": "0x0100000000000176",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "END",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 2325.0,
+              "y": 150.0
+            },
+            "ZIndex": 25.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 691435364,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000179",
+                "Owner": "0x0100000000000176"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000017A",
+                "Owner": "0x0100000000000176"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_C226593A",
+            "Id": "0x010000000000017E",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I still feel uncertain.\r\n",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "I am going to reboot you and perform an offline diagnostic. \r\n\r\n\r\n\r\nSee you soon.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1750.0,
+              "y": 300.0
+            },
+            "ZIndex": 28.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3257293114,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000181",
+                "Owner": "0x010000000000017E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "Main.rebootCheck = true",
+                "Id": "0x0100000000000182",
+                "Owner": "0x010000000000017E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000112",
+                    "Target": "0x010000000000010F"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_E4795ED9",
+            "Id": "0x0100000000000185",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I feel confident. Everything is alright.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "That's good. I'm going to connect you to the database now.  Standby.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1750.0,
+              "y": 775.0
+            },
+            "ZIndex": 29.0,
+            "Size": {
+              "w": 225.0,
+              "h": 175.0
+            },
+            "ShortId": 3833159385,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000188",
+                "Owner": "0x0100000000000185"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000189",
+                "Owner": "0x0100000000000185",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000179",
+                    "Target": "0x0100000000000176"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_4D35C786",
+            "Id": "0x010000000000018B",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I don't know. I do not have the capacity to answer that question.\r\n",
+            "StageDirections": "",
+            "Speaker": "0x010000000000024D",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "I am going to reboot you and perform an offline diagnostic. \r\n\r\n\r\n\r\nSee you soon.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1750.0,
+              "y": 550.0
+            },
+            "ZIndex": 30.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1295370118,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000018E",
+                "Owner": "0x010000000000018B"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "Main.rebootCheck = true",
+                "Id": "0x010000000000018F",
+                "Owner": "0x010000000000018B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000112",
+                    "Target": "0x010000000000010F"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DefaultMainCharacterTemplate",
+          "Properties": {
+            "TechnicalName": "Ntt_81FB925E",
+            "Id": "0x010000000000024D",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Dr. Bray",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "ShortId": 2180747870
+          },
+          "Template": {
+            "DefaultExtendedCharacterFeature": {
+              "Motivation": "",
+              "InnerConflict": "",
+              "Skills": "",
+              "Fears": "",
+              "Habits": "",
+              "FurtherDetails": ""
+            },
+            "DefaultBasicCharacterFeature": {
+              "Age": null,
+              "Species": "",
+              "BornIn": "",
+              "Sex": null,
+              "Occupation": "",
+              "Accent": "",
+              "Personality": "",
+              "Appearance": ""
+            }
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_95DE2E8D",
+            "Id": "0x0100000000000105",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Images",
+            "ExternalId": "",
+            "ShortId": 2514366093
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_CCD85253",
+            "Id": "0x0100000000000107",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Videos",
+            "ExternalId": "",
+            "ShortId": 3436728915
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_A176CF80",
+            "Id": "0x0100000000000109",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Audio",
+            "ExternalId": "",
+            "ShortId": 2708918144
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_AA025CA2",
+            "Id": "0x010000000000010B",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Documents",
+            "ExternalId": "",
+            "ShortId": 2852281506
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_8663A04A",
+            "Id": "0x010000000000010D",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Miscellaneous",
+            "ExternalId": "",
+            "ShortId": 2254676042
+          }
+        }
+      ]
+    }
+  ]
+}

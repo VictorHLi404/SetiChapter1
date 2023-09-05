@@ -4,7 +4,7 @@ function createInputHandler(_buttonList) constructor
 
 {
 	window_set_cursor(cr_none);
-	buttonList = _buttonList
+	buttonList = _buttonList;
 	global.currentFocus = noone;
 	global.left = false;
 	global.right = false;

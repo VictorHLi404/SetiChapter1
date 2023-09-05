@@ -1,0 +1,203 @@
+{
+  "GlobalVariables": [],
+  "Packages": [
+    {
+      "Name": "All objects",
+      "Description": "Exports all objects & types of the project",
+      "IsDefaultPackage": true,
+      "Models": [
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_5392A4A6",
+            "Id": "0x010000000000010F",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "START",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Everything seems to be in order. A Division Epsilon researcher will make a direct research request soon through the command interface. While it is up to your discretion regarding the handling of the data gathering and analysis, remember that there is a limited window of time for you to optimally collect data before it falls out of the satellite's range. Begin when you see fit.",
+            "ExternalId": "",
+            "Position": {
+              "x": 225.0,
+              "y": 300.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 375.0,
+              "h": 300.0
+            },
+            "ShortId": 1402119334,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000112",
+                "Owner": "0x010000000000010F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000113",
+                "Owner": "0x010000000000010F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000011C",
+                    "Target": "0x010000000000011A"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_764290EA",
+            "Id": "0x010000000000011A",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "END",
+            "StageDirections": "END",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "END",
+            "ExternalId": "",
+            "Position": {
+              "x": 675.0,
+              "y": 300.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 375.0,
+              "h": 300.0
+            },
+            "ShortId": 1984073962,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000011C",
+                "Owner": "0x010000000000011A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000011D",
+                "Owner": "0x010000000000011A"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_C969A247",
+            "Id": "0x0100000000000114",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Dr. Bray",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "ShortId": 3379143239
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_D4DBB9AB",
+            "Id": "0x0100000000000105",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Images",
+            "ExternalId": "",
+            "ShortId": 3571169707
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_3041737F",
+            "Id": "0x0100000000000107",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Videos",
+            "ExternalId": "",
+            "ShortId": 809595775
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_40284609",
+            "Id": "0x0100000000000109",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Audio",
+            "ExternalId": "",
+            "ShortId": 1076381193
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_E34E76EC",
+            "Id": "0x010000000000010B",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Documents",
+            "ExternalId": "",
+            "ShortId": 3813570284
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_725E44A3",
+            "Id": "0x010000000000010D",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Miscellaneous",
+            "ExternalId": "",
+            "ShortId": 1918780579
+          }
+        }
+      ]
+    }
+  ]
+}
