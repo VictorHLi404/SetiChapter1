@@ -13,6 +13,7 @@
   "ResourceOrderSettings": [
     {"name":"script_inputHandlerConstructor","order":1,"path":"scripts/script_inputHandlerConstructor/script_inputHandlerConstructor.yy",},
     {"name":"obj_bootScreenMidChoice","order":1,"path":"objects/obj_bootScreenMidChoice/obj_bootScreenMidChoice.yy",},
+    {"name":"script_conversationButtonConstructor","order":4,"path":"scripts/script_conversationButtonConstructor/script_conversationButtonConstructor.yy",},
     {"name":"spr_cursor","order":1,"path":"sprites/spr_cursor/spr_cursor.yy",},
     {"name":"obj_bootScreenDataHandler","order":4,"path":"objects/obj_bootScreenDataHandler/obj_bootScreenDataHandler.yy",},
     {"name":"font_vcr_15","order":1,"path":"fonts/font_vcr_15/font_vcr_15.yy",},
@@ -26,7 +27,7 @@
     {"name":"obj_bootScreenCursor","order":5,"path":"objects/obj_bootScreenCursor/obj_bootScreenCursor.yy",},
     {"name":"obj_titleScreenOptionsButton","order":2,"path":"objects/obj_titleScreenOptionsButton/obj_titleScreenOptionsButton.yy",},
     {"name":"script_conversationHandlerConstructor","order":3,"path":"scripts/script_conversationHandlerConstructor/script_conversationHandlerConstructor.yy",},
-    {"name":"obj_bootScreencConversationHandler","order":6,"path":"objects/obj_bootScreencConversationHandler/obj_bootScreencConversationHandler.yy",},
+    {"name":"obj_bootScreenConversationHandler","order":6,"path":"objects/obj_bootScreenConversationHandler/obj_bootScreenConversationHandler.yy",},
     {"name":"spr_smileyGuy","order":3,"path":"sprites/spr_smileyGuy/spr_smileyGuy.yy",},
     {"name":"obj_bootScreenInputHandler","order":3,"path":"objects/obj_bootScreenInputHandler/obj_bootScreenInputHandler.yy",},
     {"name":"obj_titleScreenCursor","order":5,"path":"objects/obj_titleScreenCursor/obj_titleScreenCursor.yy",},

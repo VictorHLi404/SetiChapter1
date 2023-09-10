@@ -1,9 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function createButton(_inputX, _inputY, _width, _height, _text, _buttonID, _dataHandler, _templateFile) constructor 
-
-{
+function createButton(_inputX, _inputY, _width, _height, _text, _buttonID, _dataHandler, _templateFile) constructor {
 	buttonX = _inputX;
 	buttonY = _inputY;
 	width = _width;

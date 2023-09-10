@@ -31,6 +31,14 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 	rightResponse = noone;
 	rightSecondResponse = noone;
 	
+	nodeList = [leftNode, midNode, rightNode];
+	responseList = [leftResponse, midResponse, rightResponse];
+	secondResponseList = [leftSecondResponse, midSecondResponse, rightSecondResponse];
+	
+	static getType = function(currentNode) {
+		return nodeTypeStruct[$ currentNode];
+	}
+
 	static loadConversation = function(_fileName) { // load a given file into a graph stored inside the object
 		
 		var fileName = _fileName;
@@ -41,6 +49,7 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 			
 			var currentStruct = rawData[i];
 			var currentStructType = currentStruct.Type;
+
 			
 			currentStruct = currentStruct[$ "Properties"]; // search inside another node
 			
@@ -86,46 +95,79 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 
 	static initializeConversation = function() { // initialize conversation by given start node
 		
-		// TO DO - CREATE LOAD FUNCTIONS FOR EACH THING
 		var IDList = struct_get_names(currentGraph);
 		
-		for (var i = 0; i < array_length(IDList); i++) {
+		for (var i = 0; i < array_length(IDList); i++) { // find the starting point of the conversation
 			if (responseStruct[$ IDList[i]] == "START") {
 				currentNode = IDList[i];
 				break;
 			}
 		}
-		
-		var responseNodeList = currentGraph[$ currentNode];
-		
+		// load data for the first node
+		loadCurrentNodeData(currentNode);
+
+		show_debug_message(currentMessage);
+		show_debug_message(responseList);
+		show_debug_message(nodeList);
+		show_debug_message(secondResponseList);
+	
+	}
+	
+	static loadCurrentNodeData = function (currentNode) {
 		currentMessage = messageStruct[$ currentNode];
 		currentResponse = responseStruct[$ currentNode];
 		currentSecondResponse = responseStruct[$ currentNode];
+		loadResponses(currentNode);
+	}
+	
+	static loadResponses = function (currentNode) {
 		
-		leftNode = responseNodeList[0];
-		leftResponse = responseStruct[$ leftNode];
-		leftSecondResponse = secondResponseStruct[$ leftNode];
+		var responseNodeList = currentGraph[$ currentNode];
 		
-		midNode = responseNodeList[1];
-		midResponse = responseStruct[$ midNode];
-		midSecondResponse = secondResponseStruct[$ midNode];
+		for (var i = 0; i < array_length(responseNodeList); i++) {
+			var tempNode = responseNodeList[i];
+			
+			if (getType(tempNode) == "DialogueFragment") {
+				nodeList[i] = tempNode;
+				responseList[i] = responseStruct[$ tempNode];
+				secondResponseList[i] = secondResponseStruct[$ tempNode];
+			}
+			//else if (getType(node) == "Jump"
+		}
 		
-		rightNode = responseNodeList[2];
-		rightResponse = responseStruct[$ rightNode];
-		rightSecondResponse = secondResponseStruct[$ rightNode];
+		unpackResponseData(nodeList, responseList, secondResponseList);
 		
-		show_debug_message(currentMessage);
-		show_debug_message(leftResponse);
-		show_debug_message(midResponse);
-		show_debug_message(rightResponse);
+	return;
+	}
+	
+	static unpackResponseData = function (nodeList, responseList, secondResponseList) {
+		unpackNodeList(nodeList);
+		unpackResponseList(responseList);
+		unpackSecondResponseList(secondResponseList);
+		
+	}
+	
+	static unpackNodeList = function (nodeList) {
+		leftNode = nodeList[0];
+		midNode = nodeList[1];
+		rightNode = nodeList[2];
+	}
+	
+	static unpackResponseList = function (responseList) {
+		leftResponse = responseList[0];
+		midResponse = responseList[1];
+		rightResponse = responseList[2];
+	}
+	
+	static unpackSecondResponseList = function(secondResponseList) {
+		leftSecondResponse = secondResponseList[0];
+		midSecondResponse = secondResponseList[1];
+		rightSecondResponse = secondResponseList[2];
 	
 	}
+		
 	static advanceGraph = function (currentNode, nextNode) {
 		
-	
-	}
-	
-	static loadResponses = function (responseNodeList) {
 	
 	}
 

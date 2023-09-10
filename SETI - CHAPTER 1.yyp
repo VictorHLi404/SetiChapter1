@@ -56,11 +56,12 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.8.0.98",
   },
   "resources": [
     {"id":{"name":"script_inputHandlerConstructor","path":"scripts/script_inputHandlerConstructor/script_inputHandlerConstructor.yy",},},
     {"id":{"name":"obj_bootScreenMidChoice","path":"objects/obj_bootScreenMidChoice/obj_bootScreenMidChoice.yy",},},
+    {"id":{"name":"script_conversationButtonConstructor","path":"scripts/script_conversationButtonConstructor/script_conversationButtonConstructor.yy",},},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"script_buttonConstructor","path":"scripts/script_buttonConstructor/script_buttonConstructor.yy",},},
     {"id":{"name":"spr_blank","path":"sprites/spr_blank/spr_blank.yy",},},
@@ -81,7 +82,7 @@
     {"id":{"name":"obj_bootScreenCursor","path":"objects/obj_bootScreenCursor/obj_bootScreenCursor.yy",},},
     {"id":{"name":"obj_titleScreenOptionsButton","path":"objects/obj_titleScreenOptionsButton/obj_titleScreenOptionsButton.yy",},},
     {"id":{"name":"script_conversationHandlerConstructor","path":"scripts/script_conversationHandlerConstructor/script_conversationHandlerConstructor.yy",},},
-    {"id":{"name":"obj_bootScreencConversationHandler","path":"objects/obj_bootScreencConversationHandler/obj_bootScreencConversationHandler.yy",},},
+    {"id":{"name":"obj_bootScreenConversationHandler","path":"objects/obj_bootScreenConversationHandler/obj_bootScreenConversationHandler.yy",},},
     {"id":{"name":"font_vcr_90","path":"fonts/font_vcr_90/font_vcr_90.yy",},},
     {"id":{"name":"spr_smileyGuy","path":"sprites/spr_smileyGuy/spr_smileyGuy.yy",},},
     {"id":{"name":"obj_bootScreenInputHandler","path":"objects/obj_bootScreenInputHandler/obj_bootScreenInputHandler.yy",},},
@@ -95,6 +96,7 @@
     {"roomId":{"name":"room_titleScreen","path":"rooms/room_titleScreen/room_titleScreen.yy",},},
     {"roomId":{"name":"room_bootConversationScreen","path":"rooms/room_bootConversationScreen/room_bootConversationScreen.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
