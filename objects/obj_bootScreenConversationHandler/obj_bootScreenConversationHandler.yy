@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Boot Conversation Screen",
-    "path": "folders/Objects/Boot Conversation Screen.yy",
+    "name": "Data Handling",
+    "path": "folders/Objects/Boot Conversation Screen/Data Handling.yy",
   },
   "parentObjectId": null,
   "persistent": false,

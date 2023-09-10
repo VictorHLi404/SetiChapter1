@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "script_conversationButtonConstructor",
+  "name": "script_textDisplayConstructor",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

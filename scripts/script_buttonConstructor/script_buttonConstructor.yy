@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Object Constructs",
-    "path": "folders/Scripts/Object Constructs.yy",
+    "name": "Interactable Objects",
+    "path": "folders/Scripts/Object Constructs/Interactable Objects.yy",
   },
 }

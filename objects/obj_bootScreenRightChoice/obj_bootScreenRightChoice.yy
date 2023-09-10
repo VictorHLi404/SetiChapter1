@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Boot Conversation Screen",
-    "path": "folders/Objects/Boot Conversation Screen.yy",
+    "name": "Response Objects",
+    "path": "folders/Objects/Boot Conversation Screen/Response Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

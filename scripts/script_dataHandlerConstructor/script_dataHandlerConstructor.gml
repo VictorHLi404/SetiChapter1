@@ -24,7 +24,7 @@ function createDataHandler(_fileList) constructor {
 		return;
 	}
 	
-	static internalGetValue = function(valueID, _currentStruct) {
+	static getStructValue = function(valueID, _currentStruct) {
 		
 		var currentStruct = _currentStruct;
 		var structLength = struct_names_count(currentStruct);
@@ -33,9 +33,8 @@ function createDataHandler(_fileList) constructor {
 		for (var i = 0; i < structLength; i++) {
 			if typeof(currentStruct[$ structNames[i]]) == "struct" {
 				var searchStruct = currentStruct[$ structNames[i]];
-				//currentStruct = currentStruct[$ structNames[i]];
-				if (internalGetValue(valueID, searchStruct) != noone) {
-					return internalGetValue(valueID, searchStruct);
+				if (getStructValue(valueID, searchStruct) != noone) {
+					return getStructValue(valueID, searchStruct);
 				}
 			}
 			else if (structNames[i] == valueID) {
@@ -50,10 +49,10 @@ function createDataHandler(_fileList) constructor {
 	}
 	
 	static getValue =  function(valueID, fileName) {
-		return internalGetValue(valueID, getFile(fileName));
+		return getStructValue(valueID, getFile(fileName));
 	}
 		
-	static internalUpdateValue = function(newValue, valueID, _currentStruct) {
+	static updateStructValue = function(newValue, valueID, _currentStruct) {
 		
 		var currentStruct = _currentStruct;
 		var structLength = struct_names_count(currentStruct);
@@ -63,7 +62,7 @@ function createDataHandler(_fileList) constructor {
 			if typeof(currentStruct[$ structNames[i]]) == "struct" {
 				var searchStruct = currentStruct[$ structNames[i]];
 				//currentStruct = currentStruct[$ structNames[i]];
-				internalUpdateValue(newValue, valueID, searchStruct);
+				updateStructValue(newValue, valueID, searchStruct);
 			}
 			else if (structNames[i] == valueID) {
 				currentStruct[$ structNames[i]] = newValue;
@@ -73,7 +72,7 @@ function createDataHandler(_fileList) constructor {
 	}
 	
 	static updateValue = function(newValue, valueID, fileName) {
-		internalUpdateValue(newValue, valueID, getFile(fileName));
+		updateStructValue(newValue, valueID, getFile(fileName));
 		
 	}
 }

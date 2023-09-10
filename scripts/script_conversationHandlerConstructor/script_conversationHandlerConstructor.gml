@@ -35,8 +35,21 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 	responseList = [leftResponse, midResponse, rightResponse];
 	secondResponseList = [leftSecondResponse, midSecondResponse, rightSecondResponse];
 	
-	static getType = function(currentNode) {
+	static getType = function(currentNode) { // works
 		return nodeTypeStruct[$ currentNode];
+	}
+	
+	static getNodeID = function(index) { // works
+		//show_debug_message(nodeList);
+		return nodeList[index];
+	}
+	
+	static getResponse = function(nodeID) { // works
+		return getStructValue(nodeID, responseStruct);	
+	}
+	
+	static getMessage = function(nodeID) { // works
+		return getStructValue(nodeID, messageStruct);
 	}
 
 	static loadConversation = function(_fileName) { // load a given file into a graph stored inside the object
@@ -106,10 +119,10 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 		// load data for the first node
 		loadCurrentNodeData(currentNode);
 
-		show_debug_message(currentMessage);
-		show_debug_message(responseList);
-		show_debug_message(nodeList);
-		show_debug_message(secondResponseList);
+		//show_debug_message(currentMessage);
+		//show_debug_message(responseList);
+		//show_debug_message(nodeList);
+		//show_debug_message(secondResponseList);
 	
 	}
 	

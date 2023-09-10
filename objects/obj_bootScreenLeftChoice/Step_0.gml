@@ -1,4 +1,7 @@
 //@description check if button has entered focus
 
-button.enterFocusCheck()
+button.enterFocusCheck();
+if (button.text == noone) {
+	button.leaveFocus();
+}
 
