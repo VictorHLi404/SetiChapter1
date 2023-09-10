@@ -3,6 +3,8 @@
 
 
 conversationHandler = new createConversationHandler(["AB_postBootSequence.json"]);
+conversationHandler.loadConversation(conversationHandler.fileList[0]);
+conversationHandler.initializeConversation();
 
 
 
