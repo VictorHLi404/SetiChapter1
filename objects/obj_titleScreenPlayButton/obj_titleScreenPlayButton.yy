@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "titleScreen",
-    "path": "folders/Objects/titleScreen.yy",
+    "name": "Menu Buttons",
+    "path": "folders/Objects/titleScreen/Menu Buttons.yy",
   },
   "parentObjectId": null,
   "persistent": false,

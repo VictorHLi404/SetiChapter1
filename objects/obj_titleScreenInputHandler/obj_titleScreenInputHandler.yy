@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "titleScreen",
-    "path": "folders/Objects/titleScreen.yy",
+    "name": "Data Handling",
+    "path": "folders/Objects/titleScreen/Data Handling.yy",
   },
   "parentObjectId": null,
   "persistent": false,

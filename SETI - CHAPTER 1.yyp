@@ -17,6 +17,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boot Conversation Screen","folderPath":"folders/Objects/Boot Conversation Screen.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Data Handling","folderPath":"folders/Objects/Boot Conversation Screen/Data Handling.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Message Objects","folderPath":"folders/Objects/Boot Conversation Screen/Message Objects.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Response Objects","folderPath":"folders/Objects/Boot Conversation Screen/Response Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"titleScreen","folderPath":"folders/Objects/titleScreen.yy","tags":[
         "room_titleScreen",
       ],},
@@ -26,6 +29,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Draw Functions","folderPath":"folders/Scripts/Draw Functions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"JSON Handling","folderPath":"folders/Scripts/JSON Handling.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Object Constructs","folderPath":"folders/Scripts/Object Constructs.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Data Handling Objects","folderPath":"folders/Scripts/Object Constructs/Data Handling Objects.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Interactable Objects","folderPath":"folders/Scripts/Object Constructs/Interactable Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Room Generation","folderPath":"folders/Scripts/Room Generation.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Room Specific Data","folderPath":"folders/Scripts/Room Specific Data.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sequences","folderPath":"folders/Sequences.yy",},
@@ -39,11 +44,8 @@
       ],},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Data Handling","folderPath":"folders/Objects/Boot Conversation Screen/Data Handling.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Response Objects","folderPath":"folders/Objects/Boot Conversation Screen/Response Objects.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Message Objects","folderPath":"folders/Objects/Boot Conversation Screen/Message Objects.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Data Handling Objects","folderPath":"folders/Scripts/Object Constructs/Data Handling Objects.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Interactable Objects","folderPath":"folders/Scripts/Object Constructs/Interactable Objects.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Data Handling","folderPath":"folders/Objects/titleScreen/Data Handling.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Menu Buttons","folderPath":"folders/Objects/titleScreen/Menu Buttons.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"AB_bootSequence.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -61,7 +63,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.0.98",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"script_inputHandlerConstructor","path":"scripts/script_inputHandlerConstructor/script_inputHandlerConstructor.yy",},},
@@ -106,7 +108,6 @@
     {"roomId":{"name":"room_titleScreen","path":"rooms/room_titleScreen/room_titleScreen.yy",},},
     {"roomId":{"name":"room_bootConversationScreen","path":"rooms/room_bootConversationScreen/room_bootConversationScreen.yy",},},
   ],
-  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
