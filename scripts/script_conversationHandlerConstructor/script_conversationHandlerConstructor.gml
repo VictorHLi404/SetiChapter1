@@ -5,6 +5,8 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 	//conversationData = {}; struct to store all raw data
 	//fileNames = []; list of all file names
 	
+	// store each node as an object and then assign types accordingly
+	
 	fileList = _fileList
 	addFiles(fileList);
 	
@@ -13,6 +15,7 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 	messageStruct = {};
 	responseStruct = {};
 	secondResponseStruct = {};
+	nodeDataStruct = {};
 	
 	currentNode = noone;
 	currentMessage = noone;
@@ -83,6 +86,8 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 				for (var j = 0; j < array_length(outputPins[$ "Connections"]); j++) {
 					array_push(currentIDOptions, outputPins[$ "Connections"][j][$ "Target"]);
 				}
+				
+				struct_set(nodeDataStruct, currentID, new createConversationNode(currentID, currentIDOptions));
 				struct_set(currentGraph, currentID, currentIDOptions);
 				
 				// load current id messsage, response, and secondary response
@@ -134,8 +139,8 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 	}
 	
 	static loadResponses = function (currentNode) {
-		
-		var responseNodeList = currentGraph[$ currentNode];
+		var responseNodeList = nodeDataStruct[$ currentNode][$ "childList"];
+		//var responseNodeList = currentGraph[$ currentNode];
 		
 		for (var i = 0; i < array_length(responseNodeList); i++) {
 			var tempNode = responseNodeList[i];
