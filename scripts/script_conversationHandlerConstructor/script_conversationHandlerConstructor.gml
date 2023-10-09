@@ -5,6 +5,8 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 	//conversationData = {}; struct to store all raw data
 	//fileNames = []; list of all file names
 	
+	// store each node as an object and then assign types accordingly
+	
 	fileList = _fileList
 	addFiles(fileList);
 	
@@ -13,6 +15,8 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 	messageStruct = {};
 	responseStruct = {};
 	secondResponseStruct = {};
+	
+	nodeDataStruct = {};
 	
 	currentNode = noone;
 	currentMessage = noone;
@@ -39,17 +43,22 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 		return nodeTypeStruct[$ currentNode];
 	}
 	
-	static getNodeID = function(index) { // works
+	static getNode = function(index) { // works
 		//show_debug_message(nodeList);
 		return nodeList[index];
 	}
 	
 	static getResponse = function(nodeID) { // works
-		return getStructValue(nodeID, responseStruct);	
+		if (nodeID != noone) {
+			return nodeID.getResponse()
+		}
+		else {
+			return noone;	
+		}
 	}
 	
-	static getMessage = function(nodeID) { // works
-		return getStructValue(nodeID, messageStruct);
+	static getMessage = function(node) { // works
+		return currentNode.getMessage();
 	}
 
 	static loadConversation = function(_fileName) { // load a given file into a graph stored inside the object
@@ -83,6 +92,10 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 				for (var j = 0; j < array_length(outputPins[$ "Connections"]); j++) {
 					array_push(currentIDOptions, outputPins[$ "Connections"][j][$ "Target"]);
 				}
+				
+				struct_set(nodeDataStruct, currentID, new createDialogueNode(currentID, currentIDOptions, currentStructType, currentMessage, currentResponse, currentSecondResponse));
+				//show_debug_message(nodeDataStruct);
+				
 				struct_set(currentGraph, currentID, currentIDOptions);
 				
 				// load current id messsage, response, and secondary response
@@ -108,43 +121,46 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 
 	static initializeConversation = function() { // initialize conversation by given start node
 		
-		var IDList = struct_get_names(currentGraph);
+		var IDList = struct_get_names(nodeDataStruct);
 		
-		for (var i = 0; i < array_length(IDList); i++) { // find the starting point of the conversation
-			if (responseStruct[$ IDList[i]] == "START") {
-				currentNode = IDList[i];
+		for (var i = 0; i < array_length(IDList); i++) { // find the starting point of the conversation\
+			var currentSearchID = IDList[i];
+			if (nodeDataStruct[$ currentSearchID].getResponse() == "START") {
+				currentNode = nodeDataStruct[$ currentSearchID];
 				break;
 			}
 		}
 		// load data for the first node
 		loadCurrentNodeData(currentNode);
 
-		//show_debug_message(currentMessage);
-		//show_debug_message(responseList);
-		//show_debug_message(nodeList);
-		//show_debug_message(secondResponseList);
 	
 	}
 	
 	static loadCurrentNodeData = function (currentNode) {
-		currentMessage = messageStruct[$ currentNode];
-		currentResponse = responseStruct[$ currentNode];
-		currentSecondResponse = responseStruct[$ currentNode];
+		currentMessage = currentNode.getMessage()
+		currentResponse = currentNode.getResponse()
+		currentSecondResponse = currentNode.getSecondResponse()
 		loadResponses(currentNode);
 	}
 	
 	static loadResponses = function (currentNode) {
+		var responseNodeList = currentNode.getChildList()
+		//var responseNodeList = currentGraph[$ currentNode];
 		
-		var responseNodeList = currentGraph[$ currentNode];
+		for (var i = 0; i < 3; i++) {
+			nodeList[i] = noone;
+		}
+			
 		
 		for (var i = 0; i < array_length(responseNodeList); i++) {
-			var tempNode = responseNodeList[i];
-			
-			if (getType(tempNode) == "DialogueFragment") {
+			var tempNode = nodeDataStruct[$ responseNodeList[i]];
+			show_debug_message(tempNode);
+			if (tempNode.getType() == "DialogueFragment") {
 				nodeList[i] = tempNode;
-				responseList[i] = responseStruct[$ tempNode];
-				secondResponseList[i] = secondResponseStruct[$ tempNode];
+				responseList[i] = tempNode.getResponse();
+				secondResponseList[i] = tempNode.getSecondResponse();
 			}
+
 			//else if (getType(node) == "Jump"
 		}
 		
@@ -179,9 +195,12 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 	
 	}
 		
-	static advanceGraph = function (currentNode, nextNode) {
-		
-	
+	static advanceGraph = function (newNode) {
+		currentNode = newNode;
+		loadCurrentNodeData(currentNode);
+		show_debug_message(currentNode.getMessage())
+		show_debug_message(responseList)
+		show_debug_message(secondResponseList);
 	}
 
 }

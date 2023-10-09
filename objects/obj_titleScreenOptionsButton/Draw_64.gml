@@ -2,16 +2,7 @@
 // You can write your code in this editor
 
 
-drawButton(optionsButton);
 
-
-
-
-
-
-
-
-
-
-
+// Inherit the parent event
+event_inherited();
 

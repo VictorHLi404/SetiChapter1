@@ -1,19 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-playButton.enterFocusCheck()
+event_inherited();
 
-
-
-if (playButton.buttonPressed()) {
-	var playedIntro = playButton.getData("playedIntro", "introStatus.json");
-	//show_debug_message(playButton.getData("playedIntro", "introStatus.json"));
+if (button.buttonPressed()) {
+	var playedIntro = button.getData("playedIntro", "introStatus.json");
 	
 	if (playedIntro == true) {
 		room_goto(room_bootConversationScreen);
 	}
 	else {
-		playButton.updateData(true, "playedIntro", "introStatus.json");
+		button.updateData(true, "playedIntro", "introStatus.json");
 	}
 }
 

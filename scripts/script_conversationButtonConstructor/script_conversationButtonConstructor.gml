@@ -5,9 +5,10 @@ function createConversationButton (_inputX, _inputY, _width, _height, _text, _da
 	conversationHandler = _conversationHandler;
 	nodeID = noone;
 	
-	static setNodeID = function() {
-		return getNodeID(buttonPosition);
+	static updateNodeID = function() {
+		nodeID = getNodeID(buttonPosition);
 	}
+	
 	static getNodeID = function(buttonPosition) {
 		
 		var index = noone;
@@ -21,13 +22,22 @@ function createConversationButton (_inputX, _inputY, _width, _height, _text, _da
 		else if (buttonPosition == "RIGHT") {
 			index = 2;
 		}
-		return conversationHandler.getNodeID(index);
+		return conversationHandler.getNode(index);
 	}
 	
-	nodeID = setNodeID();
+	nodeID = updateNodeID();
 	
 	static getTextResponse = function() {
-		text = conversationHandler.getResponse(nodeID);
+		if (nodeID != noone) {
+		text = nodeID.getResponse();
+		}
+		else {
+			text = noone;
+		}
+	}
+	
+	static advanceConversation = function() {
+		conversationHandler.advanceGraph(nodeID);
 	}
 	return;
 }

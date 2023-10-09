@@ -26,7 +26,7 @@ function drawButton(buttonData){
 		draw_line_width_color(x2-spacer, y1+spacer, x2-spacer, y2-spacer, lineThickness, color, color); // top right to bottom right
 		
 		}
-		if (text != noone) {
+		if (text != noone and text != "") {
 			draw_text(x1+width/2, y1+height/2, text)
 		}
 		else {
