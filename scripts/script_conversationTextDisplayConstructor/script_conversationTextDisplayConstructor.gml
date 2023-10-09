@@ -6,7 +6,7 @@ function createConversationTextDisplay(_inputX, _inputY, _width, _height, _text,
 	
 	static setNodeID = function() {
 		nodeID = conversationHandler.currentNode;
-		show_debug_message(nodeID);
+		//show_debug_message(nodeID);
 	}
 	
 	setNodeID();

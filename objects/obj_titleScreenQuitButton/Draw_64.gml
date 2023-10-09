@@ -1,14 +1,8 @@
-/// @description creating mouse of border
+/// @description Insert description here
 // You can write your code in this editor
 
 
-drawButton(quitButton)
 
-
-
-
-
-
-
-
+// Inherit the parent event
+event_inherited();
 

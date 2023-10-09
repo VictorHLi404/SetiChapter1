@@ -1,14 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-titleScreenInputHandler.keyboardPressed();
 
 
-
-
-
-
-
-
-
+// Inherit the parent event
+event_inherited();
 

@@ -1,17 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-button.leaveFocus();
 
 
-
-
-
-
-
-
-
-
-
-
+// Inherit the parent event
+event_inherited();
 

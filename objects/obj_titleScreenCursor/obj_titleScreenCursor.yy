@@ -9,10 +9,13 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "titleScreen",
-    "path": "folders/Objects/titleScreen.yy",
+    "name": "Data Handling",
+    "path": "folders/Objects/Title Screen/Data Handling.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_UserCursor",
+    "path": "objects/obj_UserCursor/obj_UserCursor.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

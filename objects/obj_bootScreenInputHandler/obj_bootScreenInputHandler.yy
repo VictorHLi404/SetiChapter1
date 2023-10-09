@@ -13,7 +13,10 @@
     "name": "Data Handling",
     "path": "folders/Objects/Boot Conversation Screen/Data Handling.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_InputHandler",
+    "path": "objects/obj_InputHandler/obj_InputHandler.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

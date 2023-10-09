@@ -1,19 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-bootScreenInputHandler.checkKeyboardPress();
-bootScreenInputHandler.checkAction();
 
 
-
-
-
-
-
-
-
-
-
-
-
+// Inherit the parent event
+event_inherited();
 
