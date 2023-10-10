@@ -4,14 +4,14 @@ function createConversationTextDisplay(_inputX, _inputY, _width, _height, _text,
 	conversationHandler = _conversationHandler;
 	nodeID = noone;
 	
-	static setNodeID = function() {
+	static updateNodeID = function() {
 		nodeID = conversationHandler.currentNode;
 		//show_debug_message(nodeID);
 	}
 	
-	setNodeID();
+	updateNodeID();
 	static getTextMessage = function() {
-		text = conversationHandler.getMessage(nodeID);
+		text = nodeID.getMessage();
 	}
 	
 }
