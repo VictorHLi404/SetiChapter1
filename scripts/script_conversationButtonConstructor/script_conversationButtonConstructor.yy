@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Interactable Objects",
-    "path": "folders/Scripts/Object Constructs/Interactable Objects.yy",
+    "name": "Menu Functionality",
+    "path": "folders/Scripts/Object Constructs/Menu Functionality.yy",
   },
 }

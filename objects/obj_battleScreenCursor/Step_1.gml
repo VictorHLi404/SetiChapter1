@@ -6,6 +6,3 @@
 // Inherit the parent event
 event_inherited();
 
-if (button.buttonPressed()) {
-		room_goto(room_battleScreen);
-}
