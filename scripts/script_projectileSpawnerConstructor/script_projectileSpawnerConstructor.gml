@@ -6,9 +6,6 @@ function createprojectileSpawner(_inputX, _inputY, _projectileCount) constructor
 	YCoord = _inputY;
 	projectileCount = _projectileCount;
 	inFocus = true;
-	
-	show_debug_message("THIS IS THE X COORD");
-	show_debug_message(XCoord);
 
 static pointToMouse = function() { // returns angle for projectile spanwer to point IF in focus
 	if (inFocus) {

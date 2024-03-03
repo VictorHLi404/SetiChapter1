@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "script_projectileBehaviour",
+  "name": "script_roomBuilderConstructor",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

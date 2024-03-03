@@ -14,4 +14,15 @@ function createRoomObject(_type, _x, _y, _imageAngle, _active){
 
 function createRoomWall(_type, _x, _y, _imageAngle, _active) : createRoomObject(_type, _x, _y, _imageAngle, _active) constructor { 
 	
+	
+	static toString = function() {
+		var array = [5];
+		array[0] = type;
+		array[1] = xPosition;
+		array[2] = yPosition;
+		array[3] = imageAngle;
+		array[4] = active;
+		return array;
+		
+	}
 }

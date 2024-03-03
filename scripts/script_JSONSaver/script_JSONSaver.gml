@@ -11,7 +11,7 @@ returns nothing
 
 */
 function JSONSave(targetFile, JSONStruct) {
-	var JSONString = json_stringify(JSONStruct, true)
+	var JSONString = json_stringify(JSONStruct, true);
 	var writeBuffer = buffer_create(string_byte_length(JSONString)+1, buffer_fixed, 1);
 	buffer_write(writeBuffer, buffer_string, JSONString)
 	buffer_save(writeBuffer, targetFile)

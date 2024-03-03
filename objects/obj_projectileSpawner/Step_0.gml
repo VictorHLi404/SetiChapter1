@@ -13,7 +13,6 @@ if (keyboard_check_pressed(vk_space) && projectileSpawner.isInFocus()) {
 			speed = 10;
 			direction = trajectory;
 		}
-		show_debug_message(trajectory);
 	}
 }
 //image_angle = point_direction(x, y, mouse_x, mouse_y);

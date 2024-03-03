@@ -21,7 +21,7 @@ function createDataHandler(_fileList) constructor {
 		for (var i = 0; i < array_length(fileNames); i++) {
 			JSONSave(fileNames[i], fileData[$ fileNames[i]]);
 		}
-		return;
+		return; 
 	}
 	
 	static getStructValue = function(valueID, _currentStruct) {
