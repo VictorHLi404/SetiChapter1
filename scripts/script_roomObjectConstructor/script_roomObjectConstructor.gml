@@ -6,7 +6,31 @@ function createRoomObject(_type, _x, _y, _imageAngle, _active){
 	yPosition = _y;
 	imageAngle = _imageAngle; // rotation of object going COUNTER CLOCKWISE 
 	active = _active; // WHETHER OBJECT IS CONSIDERED ACTIVE OR NOT
+	followingMouse = false; // WHETHER OBJECT IS CURRENTLY BEING DRAGGED / PLACED BY MOUSE
 	
+	
+	static isFollowingMouse = function() {
+		return followingMouse;
+	}
+	
+	static setFollowingMouse = function(state) {
+		followingMouse = state;
+		if (state == true) {
+			active = false;
+		}
+		else {
+			active = true;
+		}
+	}
+	
+	static updateXY = function(_x, _y) {
+		xPosition = _x;
+		yPosition = _y;
+	}
+	
+	static updateImageAngle = function (_imageAngle) {
+		imageAngle = _imageAngle;
+	}
 	
 
 }

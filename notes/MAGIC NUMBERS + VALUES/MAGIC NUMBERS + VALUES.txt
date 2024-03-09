@@ -1,0 +1,7 @@
+32 px is horizontal and vertical grid size for rooms
+10 is default speed for projectiles (change later)
+
+
+global.placingInProgress: global variable within the "battle" room in order to keep track of only one item being placed at a time
+global.currentFocus: global variable with all UI stuff to keep track of what is currently in focus / willb e pressed if the user is using keyboard commands
+global.direction (left, right, etc): global variable with room input handlers to keep track of the absolute values being pressed
