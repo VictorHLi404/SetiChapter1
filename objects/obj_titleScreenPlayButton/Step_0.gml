@@ -7,7 +7,7 @@ if (button.buttonPressed()) {
 	var playedIntro = button.getData("playedIntro", "introStatus.json");
 	
 	if (playedIntro == true) {
-		room_goto(room_bootConversationScreen);
+		room_goto(room_centralHubScreen);
 	}
 	else {
 		button.updateData(true, "playedIntro", "introStatus.json");

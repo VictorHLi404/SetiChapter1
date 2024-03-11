@@ -1,1 +1,2 @@
 button = noone;
+buttonID = self;

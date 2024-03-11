@@ -1,0 +1,1433 @@
+{
+  "GlobalVariables": [],
+  "Packages": [
+    {
+      "Name": "All objects",
+      "Description": "Exports all objects & types of the project",
+      "IsDefaultPackage": true,
+      "Models": [
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_1FC9FC58",
+            "Id": "0x010000000000010F",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "START",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Hello. The project has gone...",
+            "ExternalId": "",
+            "Position": {
+              "x": 225.0,
+              "y": 225.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 533331032,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000112",
+                "Owner": "0x010000000000010F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000113",
+                "Owner": "0x010000000000010F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000121",
+                    "Target": "0x010000000000011F"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000126",
+                    "Target": "0x0100000000000124"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_CB35E6B3",
+            "Id": "0x0100000000000139",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "SKIP",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Perfectly. We're studying the data now. To be honest, it doesn't appear to be as impressive as we initially thought. But we can be certain that it's accurate, at the very least. Thank you.",
+            "ExternalId": "",
+            "Position": {
+              "x": 900.0,
+              "y": -50.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 3409307315,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000013B",
+                "Owner": "0x0100000000000139"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000013C",
+                "Owner": "0x0100000000000139",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000156",
+                    "Target": "0x0100000000000154"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000164",
+                    "Target": "0x0100000000000162"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000015D",
+                    "Target": "0x010000000000015B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_05BE766C",
+            "Id": "0x0100000000000143",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "SKIP",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "As expected. We're studying the data now. To be honest, it doesn't appear to be as impressive as we initially thought. But the variance in the data makes it difficult to be certain. It was a difficult task. Thank you for your efforts.",
+            "ExternalId": "",
+            "Position": {
+              "x": 900.0,
+              "y": 225.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 96368236,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000145",
+                "Owner": "0x0100000000000143"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000146",
+                "Owner": "0x0100000000000143",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000015D",
+                    "Target": "0x010000000000015B"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000164",
+                    "Target": "0x0100000000000162"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000156",
+                    "Target": "0x0100000000000154"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_F3D75C61",
+            "Id": "0x010000000000014C",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "SKIP",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Poorly. We're studying the data now. We can't draw any meaningful conclusions from it so far, and it's looking like a wash.",
+            "ExternalId": "",
+            "Position": {
+              "x": 900.0,
+              "y": 825.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 4090977377,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000014E",
+                "Owner": "0x010000000000014C"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000014F",
+                "Owner": "0x010000000000014C",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000016B",
+                    "Target": "0x0100000000000169"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000172",
+                    "Target": "0x0100000000000170"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000018B",
+                    "Target": "0x0100000000000189"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_B3F919B4",
+            "Id": "0x0100000000000154",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "You're welcome.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Would you like to hear a theory that somebody on our team proposed?",
+            "ExternalId": "",
+            "Position": {
+              "x": 1450.0,
+              "y": -275.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 3019446708,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000156",
+                "Owner": "0x0100000000000154"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000157",
+                "Owner": "0x0100000000000154",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000199",
+                    "Target": "0x0100000000000197"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001A7",
+                    "Target": "0x01000000000001A5"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001A0",
+                    "Target": "0x010000000000019E"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_61501281",
+            "Id": "0x010000000000015B",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Please let me know if there is anything else I can do.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "If we find any discrepancies in the data, I'll make a review request.\r\n\r\nWould you like to hear a theory that somebody on our team proposed?",
+            "ExternalId": "",
+            "Position": {
+              "x": 1450.0,
+              "y": 175.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 1632637569,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000015D",
+                "Owner": "0x010000000000015B"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000015E",
+                "Owner": "0x010000000000015B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000199",
+                    "Target": "0x0100000000000197"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001A7",
+                    "Target": "0x01000000000001A5"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001A0",
+                    "Target": "0x010000000000019E"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_260641A9",
+            "Id": "0x0100000000000162",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "No problem. ",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Would you like to hear a theory that somebody on our team proposed?",
+            "ExternalId": "",
+            "Position": {
+              "x": 1450.0,
+              "y": -50.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 637944233,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000164",
+                "Owner": "0x0100000000000162"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000165",
+                "Owner": "0x0100000000000162",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000199",
+                    "Target": "0x0100000000000197"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001A7",
+                    "Target": "0x01000000000001A5"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001A0",
+                    "Target": "0x010000000000019E"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_C7251EB4",
+            "Id": "0x0100000000000169",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I am sorry to hear that.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "I'm sure that there were some complications we weren't expecting that arose. Things like that happen sometimes.\r\n\r\nI suppose that this is the end of our collaboration then. Until next time.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1450.0,
+              "y": 600.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 3341098676,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000016B",
+                "Owner": "0x0100000000000169"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000016C",
+                "Owner": "0x0100000000000169",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000180",
+                    "Target": "0x010000000000017D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_7D6BC650",
+            "Id": "0x0100000000000170",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Is there anything else I can do?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "If we find any discrepancies in the data, I'll make a review request.\r\n\r\nI suppose that this is the end of our collaboration then. Until next time.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1450.0,
+              "y": 825.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 2104215120,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000172",
+                "Owner": "0x0100000000000170"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000173",
+                "Owner": "0x0100000000000170",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000180",
+                    "Target": "0x010000000000017D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_39B233E6",
+            "Id": "0x010000000000017D",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "END",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "END",
+            "ExternalId": "",
+            "Position": {
+              "x": 4350.0,
+              "y": 375.0
+            },
+            "ZIndex": 24.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 967980006,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000180",
+                "Owner": "0x010000000000017D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000181",
+                "Owner": "0x010000000000017D"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_F2C68363",
+            "Id": "0x0100000000000189",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Was there anything wrong with my process?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "I don't know yet. I'm sure that there were some complications we weren't expecting that arose. Things like that happen sometimes.\r\n\r\nI suppose that this is the end of our collaboration then. Until next time.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1450.0,
+              "y": 1050.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 4073096035,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000018B",
+                "Owner": "0x0100000000000189"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000018C",
+                "Owner": "0x0100000000000189",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000180",
+                    "Target": "0x010000000000017D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_F9182F1D",
+            "Id": "0x0100000000000197",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "What is the theory about?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "It's about the source of the irregularities. The conclusion we all agreed on, at least so far, is that the aberrations identified in that region of space can best be attributed to a combination of large planetary bodies that influenced the transmission. We can't confirm or deny their existence, of course, but that's the result that will get past peer review. \r\n\r\nWhat we were initially hoping to find, though, was evidence pointing towards the existence of a potential super structure that may have altered the data. But with the data we got, it doesn't look particularly likely. We were expecting a much shorter distance that would have provided stronger results. This candidate was one of the candidates that ANN-45 determined to present the best odds of success.\r\n\r\nWell, what do you think? What percentage likelihood would you give to our initial hypothesis?",
+            "ExternalId": "",
+            "Position": {
+              "x": 2000.0,
+              "y": -275.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 925.0,
+              "h": 275.0
+            },
+            "ShortId": 4179111709,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000199",
+                "Owner": "0x0100000000000197"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000019A",
+                "Owner": "0x0100000000000197",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001B7",
+                    "Target": "0x01000000000001B6"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001C5",
+                    "Target": "0x01000000000001C4"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001BE",
+                    "Target": "0x01000000000001BD"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_9B41E8C3",
+            "Id": "0x010000000000019E",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I do not currently have the time for that.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "That's unfortunate. Until next time then. I'll be sure to bring it up whenever I have the time.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2125.0,
+              "y": 375.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 2604787907,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001A0",
+                "Owner": "0x010000000000019E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001A1",
+                "Owner": "0x010000000000019E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000180",
+                    "Target": "0x010000000000017D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_826EECA5",
+            "Id": "0x01000000000001A5",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Sure.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "The conclusion we all agreed on, at least so far, is that the aberrations identified in that region of space can best be attributed to a combination of large planetary bodies that influenced the transmission. We can't confirm or deny their existence, of course, but that's the result that will get past peer review. \r\n\r\nWhat we were initially hoping to find, though, was evidence pointing towards the existence of a potential super structure that may have altered the data. But with the data we got, it doesn't look particularly likely. We were expecting a much shorter distance that would have provided stronger results. This candidate was one of the candidates that ANN-45 determined to present the best odds of success. I guess we hoped that thing they strapped to the Bedford Telescope might have actually worked as well.\r\n\r\nWell, what do you think? What percentage likelihood would you give to our initial hypothesis?",
+            "ExternalId": "",
+            "Position": {
+              "x": 2000.0,
+              "y": 25.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 925.0,
+              "h": 275.0
+            },
+            "ShortId": 2188307621,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001A7",
+                "Owner": "0x01000000000001A5"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001A8",
+                "Owner": "0x01000000000001A5",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001B7",
+                    "Target": "0x01000000000001B6"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001C5",
+                    "Target": "0x01000000000001C4"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001BE",
+                    "Target": "0x01000000000001BD"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_224C002F",
+            "Id": "0x01000000000001B6",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Zero percent.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "I thought as much. \r\n\r\nThank you for all your help, ANN-47. Until next time, then.",
+            "ExternalId": "",
+            "Position": {
+              "x": 3100.0,
+              "y": -300.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 575406127,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001B7",
+                "Owner": "0x01000000000001B6"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001B8",
+                "Owner": "0x01000000000001B6",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000180",
+                    "Target": "0x010000000000017D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_33CE68EC",
+            "Id": "0x01000000000001BD",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "One times ten to the fourth.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Really? That's quite a generous estimate, don't you think? Perhaps we should still mark it as a site of interest. \r\n\r\nThank you for all your help, ANN-47. Until next time, then.",
+            "ExternalId": "",
+            "Position": {
+              "x": 3100.0,
+              "y": 150.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 869165292,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001BE",
+                "Owner": "0x01000000000001BD"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001BF",
+                "Owner": "0x01000000000001BD",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000180",
+                    "Target": "0x010000000000017D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_6B44E43E",
+            "Id": "0x01000000000001C4",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I could not provide an accurate result at this moment.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Maybe I'll submit a research review request later, then. \r\n\r\nThank you for all your help, ANN-47. Until next time.",
+            "ExternalId": "",
+            "Position": {
+              "x": 3100.0,
+              "y": -75.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 350.0,
+              "h": 200.0
+            },
+            "ShortId": 1799676990,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001C5",
+                "Owner": "0x01000000000001C4"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001C6",
+                "Owner": "0x01000000000001C4",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000180",
+                    "Target": "0x010000000000017D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Condition",
+          "Properties": {
+            "TechnicalName": "Cnd_7D4F00D9",
+            "Id": "0x010000000000011F",
+            "Parent": "0x0300000043CE43F7",
+            "DisplayName": "If JobWellDone == true",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 25.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 2102329561,
+            "Expression": "If JobWellDone == true\n",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000121",
+                "Owner": "0x010000000000011F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000122",
+                "Owner": "0x010000000000011F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000013B",
+                    "Target": "0x0100000000000139"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x0100000000000123",
+                "Owner": "0x010000000000011F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000126",
+                    "Target": "0x0100000000000124"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Condition",
+          "Properties": {
+            "TechnicalName": "Cnd_10B618F3",
+            "Id": "0x0100000000000124",
+            "Parent": "0x0300000043CE43F7",
+            "DisplayName": "If JobDoneOk == true",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 575.0,
+              "y": 275.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 280369395,
+            "Expression": "If JobDoneOk == true",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000126",
+                "Owner": "0x0100000000000124"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000127",
+                "Owner": "0x0100000000000124",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000145",
+                    "Target": "0x0100000000000143"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x0100000000000128",
+                "Owner": "0x0100000000000124",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000135",
+                    "Target": "0x0100000000000133"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Condition",
+          "Properties": {
+            "TechnicalName": "Cnd_F7E4293D",
+            "Id": "0x0100000000000133",
+            "Parent": "0x0300000043CE43F7",
+            "DisplayName": "If JobDonePoorly == true",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 600.0,
+              "y": 875.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 4158925117,
+            "Expression": "If JobDonePoorly == true",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000135",
+                "Owner": "0x0100000000000133"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000136",
+                "Owner": "0x0100000000000133",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000014E",
+                    "Target": "0x010000000000014C"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x0100000000000137",
+                "Owner": "0x0100000000000133"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_9796A3B7",
+            "Id": "0x0100000000000114",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Edmund Walley",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "ShortId": 2543231927
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_BD1B41CA",
+            "Id": "0x0100000000000105",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Images",
+            "ExternalId": "",
+            "ShortId": 3172680138
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_1708FE5B",
+            "Id": "0x0100000000000107",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Videos",
+            "ExternalId": "",
+            "ShortId": 386465371
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_6237E69C",
+            "Id": "0x0100000000000109",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Audio",
+            "ExternalId": "",
+            "ShortId": 1647830684
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_331A147B",
+            "Id": "0x010000000000010B",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Documents",
+            "ExternalId": "",
+            "ShortId": 857347195
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_BAA6ABF8",
+            "Id": "0x010000000000010D",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Miscellaneous",
+            "ExternalId": "",
+            "ShortId": 3131485176
+          }
+        }
+      ]
+    }
+  ]
+}

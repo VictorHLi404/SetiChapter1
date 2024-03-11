@@ -8,5 +8,7 @@ function setGlobals(){
 	
 	global.action = false;
 	global.currentFocus = noone;
+	
+	global.placingInProgress = false;
 
 }

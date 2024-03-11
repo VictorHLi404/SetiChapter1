@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Battle Screen",
-    "path": "folders/Objects/Battle Screen.yy",
+    "name": "Data Handling Objects",
+    "path": "folders/Objects/Battle Screen/Data Handling Objects.yy",
   },
   "parentObjectId": {
     "name": "obj_UserCursor",

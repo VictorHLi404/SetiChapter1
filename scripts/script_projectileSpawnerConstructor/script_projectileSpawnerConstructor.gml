@@ -1,15 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function createprojectileSpawner(_inputX, _inputY, _projectileCount) constructor {
+function createprojectileSpawner(_type, _x, _y, _imageAngle, _active, _projectileCount) :  createRoomObject(_type, _x, _y, _imageAngle, _active) constructor {
 	
-	XCoord = _inputX;
-	YCoord = _inputY;
 	projectileCount = _projectileCount;
-	inFocus = true;
 
 static pointToMouse = function() { // returns angle for projectile spanwer to point IF in focus
-	if (inFocus) {
-		return point_direction(XCoord, YCoord, mouse_x, mouse_y);
+	if (active) {
+		return point_direction(xPosition, yPosition, mouse_x, mouse_y);
 	}
 	else {
 		return noone;
@@ -17,15 +14,19 @@ static pointToMouse = function() { // returns angle for projectile spanwer to po
 }
 
 static enterFocus = function() { 
-	inFocus = true;
+	active = true;
 }
 
 static exitFocus = function() {
-	inFocus = false;
+	active = false;
 }
 
 static isInFocus = function() {
-	return inFocus;
+	return active;
+}
+
+static setProjectileCount = function (newCount) {
+	projectileCount = newCount;
 }
 
 static fireProjectile = function() {
@@ -37,4 +38,8 @@ static fireProjectile = function() {
 		return false;
 	}
 }
+
+static toString = function() {
+	return [type, xPosition, yPosition, imageAngle, active, projectileCount];
+	}
 }

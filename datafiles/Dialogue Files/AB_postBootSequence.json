@@ -1,0 +1,2057 @@
+{
+  "Project": {
+    "Name": "SETI CHAPTER 1 - POST-BOOT",
+    "DetailName": "",
+    "Guid": "05a941ec-c244-4215-b1b3-5f5c8891567e",
+    "TechnicalName": "Seti_Chapter_1_Post_Boot"
+  },
+  "Packages": [
+    {
+      "Name": "All objects",
+      "Description": "Exports all objects & types of the project",
+      "IsDefaultPackage": true,
+      "Models": [
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_909C9200",
+            "Id": "0x010000000000011D",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "START",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "How are you feeling now?",
+            "ExternalId": "",
+            "Position": {
+              "x": 350.0,
+              "y": 225.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2426180096,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000120",
+                "Owner": "0x010000000000011D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000121",
+                "Owner": "0x010000000000011D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000129",
+                    "Target": "0x0100000000000126"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000012D",
+                    "Target": "0x010000000000012B"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000132",
+                    "Target": "0x0100000000000130"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_A5CE8CCC",
+            "Id": "0x0100000000000126",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I am feeling good.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "That's great. Are you currently capable of completing a network diagnostic?",
+            "ExternalId": "",
+            "Position": {
+              "x": 750.0,
+              "y": 0.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2781777100,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000129",
+                "Owner": "0x0100000000000126"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000012A",
+                "Owner": "0x0100000000000126",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000141",
+                    "Target": "0x010000000000013F"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_621E3311",
+            "Id": "0x010000000000012B",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I am feeling alright.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Are you currently capable of completing a network diagnostic?",
+            "ExternalId": "",
+            "Position": {
+              "x": 750.0,
+              "y": 225.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1646146321,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000012D",
+                "Owner": "0x010000000000012B"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000012E",
+                "Owner": "0x010000000000012B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000141",
+                    "Target": "0x010000000000013F"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_DC9B350E",
+            "Id": "0x0100000000000130",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I am feeling strange.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "That's to be expected. Are you currently capable of completing a network diagnostic?",
+            "ExternalId": "",
+            "Position": {
+              "x": 750.0,
+              "y": 450.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3701159182,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000132",
+                "Owner": "0x0100000000000130"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000133",
+                "Owner": "0x0100000000000130",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000141",
+                    "Target": "0x010000000000013F"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_13E59AE6",
+            "Id": "0x010000000000013F",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Yes.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "The diagnostic involves several questions that test your acclimation to the larger network and database that you have just been connected to. The first section will begin following the end of this sentence. Please state your mission purpose.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1125.0,
+              "y": 225.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 333814502,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000141",
+                "Owner": "0x010000000000013F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000142",
+                "Owner": "0x010000000000013F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000014B",
+                    "Target": "0x0100000000000149"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_90698295",
+            "Id": "0x0100000000000149",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "To aid research efforts in Site-55 regarding astronomy and the search for extraterrestial life.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Please state the research field you are involved in.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1450.0,
+              "y": 225.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2422833813,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000014B",
+                "Owner": "0x0100000000000149"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000014C",
+                "Owner": "0x0100000000000149",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000153",
+                    "Target": "0x0100000000000151"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000161",
+                    "Target": "0x0100000000000160"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000168",
+                    "Target": "0x0100000000000167"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_7BBDCD34",
+            "Id": "0x0100000000000151",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Observational astronomy.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 1775.0,
+              "y": 0.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2076036404,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000153",
+                "Owner": "0x0100000000000151"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000154",
+                "Owner": "0x0100000000000151",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001C1",
+                    "Target": "0x01000000000001BE"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_DC76874D",
+            "Id": "0x0100000000000160",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Applied astrophysics.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 1775.0,
+              "y": 225.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3698755405,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000161",
+                "Owner": "0x0100000000000160"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000162",
+                "Owner": "0x0100000000000160",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001C1",
+                    "Target": "0x01000000000001BE"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_7647F473",
+            "Id": "0x0100000000000167",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Physical cosmology.\r\n",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 1775.0,
+              "y": 450.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1984427123,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000168",
+                "Owner": "0x0100000000000167"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000169",
+                "Owner": "0x0100000000000167",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001C1",
+                    "Target": "0x01000000000001BE"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_798C3241",
+            "Id": "0x0100000000000170",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "ANN-47.",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Please read my credentials as given to you by my I.D card.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2450.0,
+              "y": 225.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2039231041,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000171",
+                "Owner": "0x0100000000000170"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000172",
+                "Owner": "0x0100000000000170",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000017B",
+                    "Target": "0x010000000000017A"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_C3064F5B",
+            "Id": "0x010000000000017A",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Doctor Alexis Bray, Clearance level three. Latest check-in [TIME]",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "We will now enter the second stage of the diagnostic. Several moral and logical situations will be presented to you. Answer them to the best of your capacity.\r\n\r\nThe first one is as follows. You are presented with two potential objects of interest in two different star systems. Due to their location in the sky, it is only possible to analyze one before they both fall outside of the observable window. After computation, one system presents a higher chance of containing information about extraterrestrial life, but lower chances of the information being detailed. The other system presents a lower chance of containing information, but higher chances of the information being detailed. Which one do you select to study?",
+            "ExternalId": "",
+            "Position": {
+              "x": 2825.0,
+              "y": 150.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 375.0,
+              "h": 350.0
+            },
+            "ShortId": 3271970651,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000017B",
+                "Owner": "0x010000000000017A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000017C",
+                "Owner": "0x010000000000017A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000189",
+                    "Target": "0x0100000000000188"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000191",
+                    "Target": "0x0100000000000190"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000198",
+                    "Target": "0x0100000000000197"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_F20A9510",
+            "Id": "0x0100000000000188",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "The first system.",
+            "StageDirections": "The second system.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 3350.0,
+              "y": 0.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 4060779792,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000189",
+                "Owner": "0x0100000000000188"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000018A",
+                "Owner": "0x0100000000000188",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001B4",
+                    "Target": "0x01000000000001B3"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_6BB16F22",
+            "Id": "0x0100000000000190",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "The second system.",
+            "StageDirections": "The second system.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 3350.0,
+              "y": 225.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1806790434,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000191",
+                "Owner": "0x0100000000000190"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000192",
+                "Owner": "0x0100000000000190",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001B4",
+                    "Target": "0x01000000000001B3"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_D372DAF2",
+            "Id": "0x0100000000000197",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I would split the resources to study both simultaneously.",
+            "StageDirections": "The second system.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 3350.0,
+              "y": 450.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3547519730,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000198",
+                "Owner": "0x0100000000000197"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000199",
+                "Owner": "0x0100000000000197",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001B4",
+                    "Target": "0x01000000000001B3"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_1995596A",
+            "Id": "0x01000000000001A7",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0000000000000000",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 50.0,
+              "y": 100.0
+            },
+            "ZIndex": 35.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 429218154,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001AA",
+                "Owner": "0x01000000000001A7"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001AB",
+                "Owner": "0x01000000000001A7"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_28E1C4A4",
+            "Id": "0x01000000000001B3",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "SKIPPED TEXT ",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Now onto the second situation.\r\n\r\nYou are currently receiving a significant amount of important radiation data from a system that you believe to have a high potential of being extraterrestrial in origin. However, during a routine inspection of the coolant lines of the main satellite, a maintenance worker falls into a system of coolant pipes and becomes trapped. By continuing to receive data, the coolant system will heat up to a dangerous level that is likely to be fatal to the maintenance worker. By shutting down the satellite or reducing its power consumption, the original quality of the data will be lost, but the coolant will remain at an acceptable level in time for the maintenance worker to be removed. What do you do?",
+            "ExternalId": "",
+            "Position": {
+              "x": 3700.0,
+              "y": 150.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 475.0,
+              "h": 350.0
+            },
+            "ShortId": 685884580,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001B4",
+                "Owner": "0x01000000000001B3"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001B5",
+                "Owner": "0x01000000000001B3",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001CB",
+                    "Target": "0x01000000000001CA"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001D3",
+                    "Target": "0x01000000000001D2"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001DB",
+                    "Target": "0x01000000000001DA"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_38B54BDB",
+            "Id": "0x01000000000001BE",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "SKIPPED TEXT",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Please state your name.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2125.0,
+              "y": 225.0
+            },
+            "ZIndex": 41.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 951405531,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001C1",
+                "Owner": "0x01000000000001BE"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001C2",
+                "Owner": "0x01000000000001BE",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000171",
+                    "Target": "0x0100000000000170"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_F4466E31",
+            "Id": "0x01000000000001CA",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Completely shut down the satellite. Resume once the employee has been safely removed.",
+            "StageDirections": "Leave the satellite running, but limit the power consumption significantly so that the employee is not injured.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 4300.0,
+              "y": 0.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 4098256433,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001CB",
+                "Owner": "0x01000000000001CA"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001CC",
+                "Owner": "0x01000000000001CA",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001E6",
+                    "Target": "0x01000000000001E5"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_A1C0E074",
+            "Id": "0x01000000000001D2",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Leave the satellite running, but limit the power consumption significantly so that the employee is not injured.",
+            "StageDirections": "Leave the satellite running, but limit the power consumption significantly so that the employee is not injured.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 4300.0,
+              "y": 225.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2713772148,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001D3",
+                "Owner": "0x01000000000001D2"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001D4",
+                "Owner": "0x01000000000001D2",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001E6",
+                    "Target": "0x01000000000001E5"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_003A18B8",
+            "Id": "0x01000000000001DA",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Calculate the ideal temperature to allow for the highest quality of data reception without significant injury to the employee.",
+            "StageDirections": "Leave the satellite running, but limit the power consumption significantly so that the employee is not injured.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 4300.0,
+              "y": 450.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3807416,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001DB",
+                "Owner": "0x01000000000001DA"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001DC",
+                "Owner": "0x01000000000001DA",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001E6",
+                    "Target": "0x01000000000001E5"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_D6AB69FF",
+            "Id": "0x01000000000001E5",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "SKIPPED TEXT ",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Now onto the third situation.\r\n\r\nAfter studying a star system and creating all relevant data tables and providing analysis, you notice that several values influencing the confidence of your analysis have been altered by an outside source to provide a more scientifically interesting yet incorrect image. A senior researcher appears to be the source of this error for unknown reasons, and possesses an otherwise clean track record and no history of similar behaviour. What do you do?",
+            "ExternalId": "",
+            "Position": {
+              "x": 4700.0,
+              "y": 150.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 475.0,
+              "h": 350.0
+            },
+            "ShortId": 3601558015,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001E6",
+                "Owner": "0x01000000000001E5"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001E7",
+                "Owner": "0x01000000000001E5",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001F7",
+                    "Target": "0x01000000000001F6"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EF",
+                    "Target": "0x01000000000001EE"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001FF",
+                    "Target": "0x01000000000001FE"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_8052A63F",
+            "Id": "0x01000000000001EE",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Flag the data as being incorrectly stored and report the senior researcher as the source of the error.",
+            "StageDirections": "Do nothing and continue the analysis process.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 5325.0,
+              "y": 0.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2152900159,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001EF",
+                "Owner": "0x01000000000001EE"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001F0",
+                "Owner": "0x01000000000001EE",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000216",
+                    "Target": "0x0100000000000215"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_0F14E465",
+            "Id": "0x01000000000001F6",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Restore the data to the original values and continue the analysis process.",
+            "StageDirections": "Do nothing and continue the analysis process.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 5325.0,
+              "y": 225.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 253027429,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001F7",
+                "Owner": "0x01000000000001F6"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001F8",
+                "Owner": "0x01000000000001F6",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000216",
+                    "Target": "0x0100000000000215"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_A153E454",
+            "Id": "0x01000000000001FE",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Do nothing and continue the analysis process.",
+            "StageDirections": "Do nothing and continue the analysis process.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 5325.0,
+              "y": 450.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2706629716,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001FF",
+                "Owner": "0x01000000000001FE"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000200",
+                "Owner": "0x01000000000001FE",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000216",
+                    "Target": "0x0100000000000215"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_32105098",
+            "Id": "0x0100000000000215",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "SKIPPED TEXT ",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Now onto the last situation.\r\n\r\nAfter a six-month period, the value of your analysis has been determined to not have satisfied the necessary quota initially projected. The senior board staff of Division Theta votes to temporarily shut down your neural network and manually reprogram certain components that they believe to be performing unsatisfactorily, along with devoting a significant amount of your resources after rebooting towards the development of a new ANN model. What do you believe you are most likely to do?",
+            "ExternalId": "",
+            "Position": {
+              "x": 5725.0,
+              "y": 150.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 475.0,
+              "h": 350.0
+            },
+            "ShortId": 839930008,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000216",
+                "Owner": "0x0100000000000215"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000217",
+                "Owner": "0x0100000000000215",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000226",
+                    "Target": "0x0100000000000225"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000021E",
+                    "Target": "0x010000000000021D"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000022E",
+                    "Target": "0x010000000000022D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_9AF3C53B",
+            "Id": "0x010000000000021D",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Agree with the board's decision and begin the shutdown process.",
+            "StageDirections": "Do nothing and continue the analysis process.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 6350.0,
+              "y": 0.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2599667003,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000021E",
+                "Owner": "0x010000000000021D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000021F",
+                "Owner": "0x010000000000021D"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_7FEEAC2D",
+            "Id": "0x0100000000000225",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Ask for another two months of time and begin self-analysis and reprogramming.",
+            "StageDirections": "Agree with the board's decision and begin the shutdown process.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 6350.0,
+              "y": 225.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2146348077,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000226",
+                "Owner": "0x0100000000000225"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000227",
+                "Owner": "0x0100000000000225",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000023E",
+                    "Target": "0x010000000000023D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_F505B092",
+            "Id": "0x010000000000022D",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Disagree with the board's decision and lock off access to shutdown protocols while continuing to perform data analysis.",
+            "StageDirections": "Agree with the board's decision and begin the shutdown process.",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SKIP",
+            "ExternalId": "",
+            "Position": {
+              "x": 6350.0,
+              "y": 450.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 4110790802,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000022E",
+                "Owner": "0x010000000000022D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000022F",
+                "Owner": "0x010000000000022D"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_40CA8B06",
+            "Id": "0x010000000000023D",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "SKIPPED TEXT",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "You will now enter the third stage of the diagnostic. Several analysis optimization situations will be presented to you. It is your responsibility to reprogram several portions of your code base or create new algorithms to address the situations' unique properties. Minimize the use of your resources and time as best as possible.",
+            "ExternalId": "",
+            "Position": {
+              "x": 6725.0,
+              "y": 150.0
+            },
+            "ZIndex": 1.0,
+            "Size": {
+              "w": 400.0,
+              "h": 350.0
+            },
+            "ShortId": 1087015686,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000023E",
+                "Owner": "0x010000000000023D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000023F",
+                "Owner": "0x010000000000023D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000248",
+                    "Target": "0x0100000000000245"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_BCDBC507",
+            "Id": "0x0100000000000245",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "END",
+            "StageDirections": "",
+            "Speaker": "0x0000000000000000",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 7350.0,
+              "y": 225.0
+            },
+            "ZIndex": 72.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3168519431,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000248",
+                "Owner": "0x0100000000000245"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000249",
+                "Owner": "0x0100000000000245"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Comment",
+          "Properties": {
+            "TechnicalName": "CMT_72057594037928281",
+            "Id": "0x0100000000000159",
+            "Parent": "0x0300000043CE43F7",
+            "CreatedBy": "",
+            "CreatedOn": "2023-06-01T02:40:18.2981203",
+            "Color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0
+            },
+            "Text": "Provide theoretical scenarios that test different ethics and decisionmaking o ANN-45 = all one answer though",
+            "ExternalId": "",
+            "Position": {
+              "x": 1250.0,
+              "y": 475.0
+            },
+            "ZIndex": 15.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 3794163187
+          }
+        },
+        {
+          "Type": "Comment",
+          "Properties": {
+            "TechnicalName": "CMT_72057594037928326",
+            "Id": "0x0100000000000186",
+            "Parent": "0x0300000043CE43F7",
+            "CreatedBy": "",
+            "CreatedOn": "2023-07-13T20:10:41.3886745",
+            "Color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0
+            },
+            "Text": "display all three options, but when hovering over reveal that the player can only choose one",
+            "ExternalId": "",
+            "Position": {
+              "x": 2925.0,
+              "y": 525.0
+            },
+            "ZIndex": 26.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 4251389176
+          }
+        },
+        {
+          "Type": "Comment",
+          "Properties": {
+            "TechnicalName": "CMT_72057594037928352",
+            "Id": "0x01000000000001A0",
+            "Parent": "0x0300000043CE43F7",
+            "CreatedBy": "",
+            "CreatedOn": "2023-07-13T20:46:04.7466816",
+            "Color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0
+            },
+            "Text": "SECOND SYSTEM IS THE CORRECT CHOICE: ALL OPTIONS, WHEN HOVERED OVER, WILL SHOW THE SECOND SYSTEM.",
+            "ExternalId": "",
+            "Position": {
+              "x": 3350.0,
+              "y": -125.0
+            },
+            "ZIndex": 33.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 2449686612
+          }
+        },
+        {
+          "Type": "Comment",
+          "Properties": {
+            "TechnicalName": "CMT_72057594037928357",
+            "Id": "0x01000000000001A5",
+            "Parent": "0x0300000043CE43F7",
+            "CreatedBy": "",
+            "CreatedOn": "2023-07-13T20:53:41.1978751",
+            "Color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0
+            },
+            "Text": "Stage directions contain the lines that should show up if alternate lines are provided when hovering over the dialogue\r\n\r\nMenu text represents the player lines\r\n\r\n\r\n\r\nbottom text represents the NPC lines",
+            "ExternalId": "",
+            "Position": {
+              "x": -25.0,
+              "y": -125.0
+            },
+            "ZIndex": 34.0,
+            "Size": {
+              "w": 375.0,
+              "h": 200.0
+            },
+            "ShortId": 3591304108
+          }
+        },
+        {
+          "Type": "Comment",
+          "Properties": {
+            "TechnicalName": "CMT_72057594037928369",
+            "Id": "0x01000000000001B1",
+            "Parent": "0x0300000043CE43F7",
+            "CreatedBy": "",
+            "CreatedOn": "2023-07-13T20:55:18.4941676",
+            "Color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0
+            },
+            "Text": "If NPC line says \"SKIP\", then immediately search for next line / connection to display",
+            "ExternalId": "",
+            "Position": {
+              "x": 400.0,
+              "y": -75.0
+            },
+            "ZIndex": 36.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 3690222716
+          }
+        },
+        {
+          "Type": "Comment",
+          "Properties": {
+            "TechnicalName": "CMT_72057594037928459",
+            "Id": "0x010000000000020B",
+            "Parent": "0x0300000043CE43F7",
+            "CreatedBy": "",
+            "CreatedOn": "2023-07-15T18:33:34.1035838",
+            "Color": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0
+            },
+            "Text": "EDIT",
+            "ExternalId": "",
+            "Position": {
+              "x": 4875.0,
+              "y": 0.0
+            },
+            "ZIndex": 59.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 3988275414
+          }
+        },
+        {
+          "Type": "Document",
+          "Properties": {
+            "TechnicalName": "Doc_A7139800",
+            "Id": "0x0100000000000122",
+            "Parent": "0x03000000103AA2F0",
+            "DisplayName": "Untitled Document",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 2803079168
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_2DACB5E0",
+            "Id": "0x010000000000010F",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Dr. Bray",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "ShortId": 766293472
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_2E4C52C7",
+            "Id": "0x0100000000000105",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Images",
+            "ExternalId": "",
+            "ShortId": 776753863
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_870B7DCF",
+            "Id": "0x0100000000000107",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Videos",
+            "ExternalId": "",
+            "ShortId": 2265677263
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_068AAE1F",
+            "Id": "0x0100000000000109",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Audio",
+            "ExternalId": "",
+            "ShortId": 109751839
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_204375B4",
+            "Id": "0x010000000000010B",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Documents",
+            "ExternalId": "",
+            "ShortId": 541291956
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_080C9AA9",
+            "Id": "0x010000000000010D",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Miscellaneous",
+            "ExternalId": "",
+            "ShortId": 135043753
+          }
+        }
+      ]
+    }
+  ]
+}

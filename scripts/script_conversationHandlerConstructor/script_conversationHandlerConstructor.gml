@@ -97,7 +97,7 @@ function createConversationHandler(_fileList) : createDataHandler(_fileList) con
 		
 		var IDList = struct_get_names(nodeDataStruct);
 		
-		for (var i = 0; i < array_length(IDList); i++) { // find the starting point of the conversation\
+		for (var i = 0; i < array_length(IDList); i++) { // find the starting point of the conversation
 			var currentSearchID = IDList[i];
 			if (nodeDataStruct[$ currentSearchID].getResponse() == "START") {
 				currentNode = nodeDataStruct[$ currentSearchID];

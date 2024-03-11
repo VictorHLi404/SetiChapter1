@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if (mouse_check_button_pressed(mb_left)) {
+/*if (mouse_check_button_pressed(mb_left)) {
 	if (position_meeting(mouse_x, mouse_y, self)) {
 		projectileSpawner.enterFocus();
 	}
@@ -10,9 +10,14 @@ if (mouse_check_button_pressed(mb_left)) {
 		projectileSpawner.exitFocus();
 	}
 	
+}*/
+
+if (global.placingInProgress == false) {
+	projectileSpawner.enterFocus();
 }
-
-
+else {
+	projectileSpawner.exitFocus();
+}
 
 if (projectileSpawner.isInFocus()) {
 	image_angle = projectileSpawner.pointToMouse();
@@ -22,7 +27,7 @@ if (projectileSpawner.isInFocus()) {
 			var trajectory = image_angle;
 			with (projectile) {
 				image_angle = trajectory;
-				speed = 10;
+				speed = 5;
 				direction = trajectory;
 			}
 		}

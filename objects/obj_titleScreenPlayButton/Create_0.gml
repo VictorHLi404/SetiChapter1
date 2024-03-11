@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 text = "PLAY";
-buttonID = obj_titleScreenPlayButton;
+buttonID = self;
 dataHandler = obj_titleScreenDataHandler.dataHandler;
 template = "titleScreenButtonTemplate.json";
 

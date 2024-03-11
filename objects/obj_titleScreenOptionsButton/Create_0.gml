@@ -1,5 +1,5 @@
 text = "OPTIONS";
-buttonID = obj_titleScreenOptionsButton;
+buttonID = self;
 dataHandler = obj_titleScreenDataHandler.dataHandler;
 template = "titleScreenButtonTemplate.json";
 

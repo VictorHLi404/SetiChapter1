@@ -3,12 +3,18 @@
 
 
 if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, self) && global.placingInProgress == false) {
+	if (wallSpawner.canObjectSpawn() == true) {
 	global.placingInProgress = true;
 	var wallInstance = instance_create_layer(mouse_x, mouse_y, "Instances", obj_wall);
 	with (wallInstance) {
+		wallData.setType("PM_WALL");
 		wallData.setFollowingMouse(true);
 		sprite_index = spr_playerCreatedWall;
 	}
+	wallSpawner.spawnObject();
+	}
+	
+
 }
 
 

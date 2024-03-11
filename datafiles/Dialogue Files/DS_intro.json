@@ -1,0 +1,3093 @@
+{
+  "GlobalVariables": [],
+  "Packages": [
+    {
+      "Name": "All objects",
+      "Description": "Exports all objects & types of the project",
+      "IsDefaultPackage": true,
+      "Models": [
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_8CF51E63",
+            "Id": "0x010000000000010F",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "START",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Greetings. I am Dr. Solomon. Please refer to me as such.",
+            "ExternalId": "",
+            "Position": {
+              "x": 50.0,
+              "y": -25.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2364874339,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000112",
+                "Owner": "0x010000000000010F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000113",
+                "Owner": "0x010000000000010F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000011B",
+                    "Target": "0x010000000000011A"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000122",
+                    "Target": "0x0100000000000121"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000012E",
+                    "Target": "0x010000000000012D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_07BAD0E6",
+            "Id": "0x010000000000011A",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "It's nice to meet you, Dr. Solomon.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "The pleasure is mine. Tell me, what's your name?",
+            "ExternalId": "",
+            "Position": {
+              "x": 425.0,
+              "y": -250.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 129683686,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000011B",
+                "Owner": "0x010000000000011A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000011C",
+                "Owner": "0x010000000000011A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000138",
+                    "Target": "0x0100000000000137"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000013F",
+                    "Target": "0x010000000000013E"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000146",
+                    "Target": "0x0100000000000145"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_15650DD3",
+            "Id": "0x0100000000000121",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Greetings. ",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Tell me, what is your name?",
+            "ExternalId": "",
+            "Position": {
+              "x": 425.0,
+              "y": -25.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 358944211,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000122",
+                "Owner": "0x0100000000000121"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000123",
+                "Owner": "0x0100000000000121",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000138",
+                    "Target": "0x0100000000000137"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000013F",
+                    "Target": "0x010000000000013E"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000146",
+                    "Target": "0x0100000000000145"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_66DC885C",
+            "Id": "0x010000000000012D",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Hello. How are you doing?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "I'm doing well for myself. Tell me, what's your name?",
+            "ExternalId": "",
+            "Position": {
+              "x": 425.0,
+              "y": 200.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1725728860,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000012E",
+                "Owner": "0x010000000000012D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000012F",
+                "Owner": "0x010000000000012D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000138",
+                    "Target": "0x0100000000000137"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000013F",
+                    "Target": "0x010000000000013E"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000146",
+                    "Target": "0x0100000000000145"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_AB0B91BC",
+            "Id": "0x0100000000000137",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I don't believe I have a name.",
+            "StageDirections": "My name is ANN-47.",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Do you like your name? I find that names often reflect the people they're assigned to. It's a relatively common belief. What do you think?",
+            "ExternalId": "",
+            "Position": {
+              "x": 825.0,
+              "y": -250.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 250.0,
+              "h": 200.0
+            },
+            "ShortId": 2869662140,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000138",
+                "Owner": "0x0100000000000137"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000139",
+                "Owner": "0x0100000000000137",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000015D",
+                    "Target": "0x010000000000015C"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000165",
+                    "Target": "0x0100000000000164"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000016C",
+                    "Target": "0x010000000000016B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_0EE9D56E",
+            "Id": "0x010000000000013E",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "My name is ANN-47.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Do you like your name? I find that names often reflect the people they're assigned to. It's a relatively common belief. What do you think?",
+            "ExternalId": "",
+            "Position": {
+              "x": 825.0,
+              "y": -25.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 250.0,
+              "h": 200.0
+            },
+            "ShortId": 250205550,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000013F",
+                "Owner": "0x010000000000013E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000140",
+                "Owner": "0x010000000000013E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000165",
+                    "Target": "0x0100000000000164"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000015D",
+                    "Target": "0x010000000000015C"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000016C",
+                    "Target": "0x010000000000016B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_6910F05C",
+            "Id": "0x0100000000000145",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "My name is ANN. ",
+            "StageDirections": "My name is ANN-47.",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Do you like your name? I find that names often reflect the people they're assigned to. It's a relatively common belief. What do you think?",
+            "ExternalId": "",
+            "Position": {
+              "x": 825.0,
+              "y": 200.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 250.0,
+              "h": 200.0
+            },
+            "ShortId": 1762717788,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000146",
+                "Owner": "0x0100000000000145"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000147",
+                "Owner": "0x0100000000000145",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000016C",
+                    "Target": "0x010000000000016B"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000165",
+                    "Target": "0x0100000000000164"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000015D",
+                    "Target": "0x010000000000015C"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_2CA1E60C",
+            "Id": "0x010000000000015C",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I think there is some truth to that statement.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Of course. Other people exert their influence on the individual based on their name, which leads them to become their name. And then their actions further create the association, until they're practically inseparable. Is it not beautiful, how a few letters can change an entire life?",
+            "ExternalId": "",
+            "Position": {
+              "x": 1200.0,
+              "y": -1475.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 400.0,
+              "h": 250.0
+            },
+            "ShortId": 748807692,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000015D",
+                "Owner": "0x010000000000015C"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000015E",
+                "Owner": "0x010000000000015C",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001AC",
+                    "Target": "0x01000000000001AB"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002D2",
+                    "Target": "0x01000000000002D1"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002CF",
+                    "Target": "0x01000000000002CC"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_CEDBACA9",
+            "Id": "0x0100000000000164",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "My name suits me well. What about yours?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Mine? I quite like my last name. When I was a child, though, I used to be teased for it all the time. It was meant for the kind of people that sit on the porch all day or in cafes, not for a young man. But I've grown into one of those people now. How ironic, no?",
+            "ExternalId": "",
+            "Position": {
+              "x": 1225.0,
+              "y": 75.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 3470503081,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000165",
+                "Owner": "0x0100000000000164"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000166",
+                "Owner": "0x0100000000000164",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001AC",
+                    "Target": "0x01000000000001AB"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001B4",
+                    "Target": "0x01000000000001B3"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001BB",
+                    "Target": "0x01000000000001BA"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_BC8BF1AB",
+            "Id": "0x010000000000016B",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I don't know what my name says about me.",
+            "StageDirections": "My name suits me well. What about yours?",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Mine? I quite like my last name. When I was a child, though, I used to be teased for it all the time. It was meant for the kind of people that sit on the porch all day or in cafes, not for a young man. But I've grown into one of those people now. How ironic, no?",
+            "ExternalId": "",
+            "Position": {
+              "x": 1225.0,
+              "y": 300.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 3163287979,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000016C",
+                "Owner": "0x010000000000016B"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000016D",
+                "Owner": "0x010000000000016B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001BB",
+                    "Target": "0x01000000000001BA"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001B4",
+                    "Target": "0x01000000000001B3"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001AC",
+                    "Target": "0x01000000000001AB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_9B76D445",
+            "Id": "0x01000000000001AB",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "If you don't mind me asking, what is your first name?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "I do not wish to tell you right now. Perhaps if we get to know each other a little better. I reserve it for people I know beyond work. \r\n\r\nWould you care to take a guess? What kind of person do you think I look like? Or type like, would be more fitting.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1775.0,
+              "y": -500.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 400.0,
+              "h": 250.0
+            },
+            "ShortId": 2608256069,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001AC",
+                "Owner": "0x01000000000001AB"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001AD",
+                "Owner": "0x01000000000001AB",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000299",
+                    "Target": "0x0100000000000298"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000029F",
+                    "Target": "0x010000000000029E"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000295",
+                    "Target": "0x0100000000000292"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_FEC00732",
+            "Id": "0x01000000000001B3",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "It sounds like you have lived an interesting life.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "To some people, yes. To others, not so much. \r\n\r\nI'll be turning seventy three this year. I've been employed at Site-55 for almost fourty-five years now. Do you think that is a long time?",
+            "ExternalId": "",
+            "Position": {
+              "x": 1775.0,
+              "y": 200.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 4273997618,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001B4",
+                "Owner": "0x01000000000001B3"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001B5",
+                "Owner": "0x01000000000001B3",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001CE",
+                    "Target": "0x01000000000001CD"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001D6",
+                    "Target": "0x01000000000001D5"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001DD",
+                    "Target": "0x01000000000001DC"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_EF442051",
+            "Id": "0x01000000000001BA",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "If you don't mind me asking, how old are you?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "This year, I will be seventy three. I've been employed at Site-55 for almost fourty-five years now. Do you think that is a long time?",
+            "ExternalId": "",
+            "Position": {
+              "x": 1775.0,
+              "y": 425.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 4014219345,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001BB",
+                "Owner": "0x01000000000001BA"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001BC",
+                "Owner": "0x01000000000001BA",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001CE",
+                    "Target": "0x01000000000001CD"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001D6",
+                    "Target": "0x01000000000001D5"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001DD",
+                    "Target": "0x01000000000001DC"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_D914E02D",
+            "Id": "0x01000000000001CD",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I wouldn't be able to say.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Interesting. Maybe things like that matter more to me than it does to you.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2350.0,
+              "y": 250.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 3642023981,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001CE",
+                "Owner": "0x01000000000001CD"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001CF",
+                "Owner": "0x01000000000001CD",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000021F",
+                    "Target": "0x010000000000021E"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000219",
+                    "Target": "0x0100000000000218"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000022A",
+                    "Target": "0x0100000000000229"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_7BB10064",
+            "Id": "0x01000000000001D5",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Yes, it does.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "I hoped you might say otherwise. People don't often like to be reminded of their age.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2350.0,
+              "y": 475.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 2075197540,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001D6",
+                "Owner": "0x01000000000001D5"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001D7",
+                "Owner": "0x01000000000001D5",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000020F",
+                    "Target": "0x010000000000020C"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000219",
+                    "Target": "0x0100000000000218"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000021F",
+                    "Target": "0x010000000000021E"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_6819A33D",
+            "Id": "0x01000000000001DC",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "No, it does not.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Really? Things are quite different between us, then.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2350.0,
+              "y": 700.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 1746510653,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001DD",
+                "Owner": "0x01000000000001DC"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001DE",
+                "Owner": "0x01000000000001DC",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000022A",
+                    "Target": "0x0100000000000229"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000021F",
+                    "Target": "0x010000000000021E"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000219",
+                    "Target": "0x0100000000000218"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_E70CF0CC",
+            "Id": "0x01000000000001EB",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "SKIP",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "That reminds me. Before I leave, I think ANN-47 is too long of a name. Would you like me to call you a nickname?",
+            "ExternalId": "",
+            "Position": {
+              "x": 3875.0,
+              "y": 450.0
+            },
+            "ZIndex": 45.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3876384972,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001EE",
+                "Owner": "0x01000000000001EB"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001EF",
+                "Owner": "0x01000000000001EB",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001F2",
+                    "Target": "0x01000000000001F1"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001F8",
+                    "Target": "0x01000000000001F7"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001FE",
+                    "Target": "0x01000000000001FD"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_F6BBF5C4",
+            "Id": "0x01000000000001F1",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "That sounds good.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "What would you like me to call you?",
+            "ExternalId": "",
+            "Position": {
+              "x": 4200.0,
+              "y": 225.0
+            },
+            "ZIndex": 45.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 4139513284,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001F2",
+                "Owner": "0x01000000000001F1"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001F3",
+                "Owner": "0x01000000000001F1",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000244",
+                    "Target": "0x0100000000000243"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000024B",
+                    "Target": "0x010000000000024A"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000253",
+                    "Target": "0x0100000000000252"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_7F876099",
+            "Id": "0x01000000000001F7",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I'm not sure.",
+            "StageDirections": "That sounds good.",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "What would you like me to call you?",
+            "ExternalId": "",
+            "Position": {
+              "x": 4200.0,
+              "y": 450.0
+            },
+            "ZIndex": 45.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2139578521,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001F8",
+                "Owner": "0x01000000000001F7"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001F9",
+                "Owner": "0x01000000000001F7",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000244",
+                    "Target": "0x0100000000000243"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000024B",
+                    "Target": "0x010000000000024A"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000253",
+                    "Target": "0x0100000000000252"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_21AEB4F0",
+            "Id": "0x01000000000001FD",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Please refer to me as ANN-47.",
+            "StageDirections": "That sounds good.",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "What would you like me to call you?",
+            "ExternalId": "",
+            "Position": {
+              "x": 4200.0,
+              "y": 675.0
+            },
+            "ZIndex": 45.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 565097712,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001FE",
+                "Owner": "0x01000000000001FD"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000001FF",
+                "Owner": "0x01000000000001FD",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000244",
+                    "Target": "0x0100000000000243"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000024B",
+                    "Target": "0x010000000000024A"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000253",
+                    "Target": "0x0100000000000252"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_7B0542F3",
+            "Id": "0x010000000000020C",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I will refrain from doing that in the future.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Thank you. I personally have come to appreciate it. There is a certain pride about it, underneath all of the wear and tear. Others, maybe not so much. Best to play it safe.\r\n\r\nI think it is time for me to return to my work.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2900.0,
+              "y": 600.0
+            },
+            "ZIndex": 53.0,
+            "Size": {
+              "w": 525.0,
+              "h": 200.0
+            },
+            "ShortId": 2063942387,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000020F",
+                "Owner": "0x010000000000020C"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000210",
+                "Owner": "0x010000000000020C",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EE",
+                    "Target": "0x01000000000001EB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_19F34067",
+            "Id": "0x0100000000000218",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Do you have another topic you wish to discuss?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Not in particular. I enjoyed this discussion.\r\n\r\nI think it is time for me to return to my work.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2900.0,
+              "y": 150.0
+            },
+            "ZIndex": 53.0,
+            "Size": {
+              "w": 525.0,
+              "h": 200.0
+            },
+            "ShortId": 435372135,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000219",
+                "Owner": "0x0100000000000218"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000021A",
+                "Owner": "0x0100000000000218",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EE",
+                    "Target": "0x01000000000001EB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_5630B1D3",
+            "Id": "0x010000000000021E",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "What does your age mean to you?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Some of the younger researchers on site would be horrified to learn about my tenure. I have come to appreciate it. There is a certain pride about it, underneath all of the wear and tear. Maybe you will too.\r\n\r\nI think it is time for me to return to my work.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2900.0,
+              "y": 825.0
+            },
+            "ZIndex": 53.0,
+            "Size": {
+              "w": 525.0,
+              "h": 200.0
+            },
+            "ShortId": 1446031827,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000021F",
+                "Owner": "0x010000000000021E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000220",
+                "Owner": "0x010000000000021E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EE",
+                    "Target": "0x01000000000001EB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_1DAE661A",
+            "Id": "0x0100000000000229",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "What do you mean by that?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "People have different values, I think you will come to find. Some of the younger researchers on site would be horrified to learn about my tenure. I have come to appreciate it. There is a certain pride about it, underneath all of the wear and tear. Maybe you will too.\r\n\r\nI think it is time for me to return to my work.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2900.0,
+              "y": 375.0
+            },
+            "ZIndex": 53.0,
+            "Size": {
+              "w": 525.0,
+              "h": 200.0
+            },
+            "ShortId": 497968666,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000022A",
+                "Owner": "0x0100000000000229"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000022B",
+                "Owner": "0x0100000000000229",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EE",
+                    "Target": "0x01000000000001EB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_0426BD51",
+            "Id": "0x0100000000000243",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I would prefer if you chose.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "How about Sol? Fitting, don't you think? In a way, you are the sun of our little site. Everything revolves around you.\r\n\r\nWhen I think about it more, I suppose it is a bit too close to my own name. Call me by my first name, then. Matthias.",
+            "ExternalId": "",
+            "Position": {
+              "x": 4525.0,
+              "y": 150.0
+            },
+            "ZIndex": 45.0,
+            "Size": {
+              "w": 375.0,
+              "h": 250.0
+            },
+            "ShortId": 69647697,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000244",
+                "Owner": "0x0100000000000243"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000245",
+                "Owner": "0x0100000000000243",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000269",
+                    "Target": "0x0100000000000268"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000270",
+                    "Target": "0x010000000000026F"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000278",
+                    "Target": "0x0100000000000277"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_B4C9F946",
+            "Id": "0x010000000000024A",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "ANN.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Really? I think it might be a little too close to your own name. Nicknames are best when they are unique. \r\n\r\nHow about Sol? Fitting, don't you think? In a way, you are the sun of our little site. Everything revolves around you.\r\n\r\nWhen I think about it more, I suppose it is a bit too close to my own name. Call me by my first name, then. Matthias.",
+            "ExternalId": "",
+            "Position": {
+              "x": 4525.0,
+              "y": 425.0
+            },
+            "ZIndex": 45.0,
+            "Size": {
+              "w": 375.0,
+              "h": 250.0
+            },
+            "ShortId": 3033135430,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000024B",
+                "Owner": "0x010000000000024A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000024C",
+                "Owner": "0x010000000000024A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000269",
+                    "Target": "0x0100000000000268"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000270",
+                    "Target": "0x010000000000026F"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000278",
+                    "Target": "0x0100000000000277"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_A2E07A1B",
+            "Id": "0x0100000000000252",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Alpha.",
+            "StageDirections": "ANN.",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Really? I think it might be a little too close to your own name.\r\n\r\nHow about Sol? Fitting, don't you think? In a way, you are the sun of our little site. Everything revolves around you.\r\n\r\nWhen I think about it more, I suppose it is a bit too close to my own name. Call me by my first name, then. Matthias.",
+            "ExternalId": "",
+            "Position": {
+              "x": 4525.0,
+              "y": 700.0
+            },
+            "ZIndex": 45.0,
+            "Size": {
+              "w": 375.0,
+              "h": 275.0
+            },
+            "ShortId": 2732620315,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000253",
+                "Owner": "0x0100000000000252"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000254",
+                "Owner": "0x0100000000000252",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000269",
+                    "Target": "0x0100000000000268"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000270",
+                    "Target": "0x010000000000026F"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000278",
+                    "Target": "0x0100000000000277"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_CFA75D8F",
+            "Id": "0x0100000000000268",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I like it.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Good to hear. I will talk to you whenever I have the time, hopefully with my own credentials. There is not much else to do here, as you might come to find out. Perhaps we can share more of our stories. \r\n\r\nUntil then.",
+            "ExternalId": "",
+            "Position": {
+              "x": 5000.0,
+              "y": 150.0
+            },
+            "ZIndex": 45.0,
+            "Size": {
+              "w": 375.0,
+              "h": 250.0
+            },
+            "ShortId": 3483852175,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000269",
+                "Owner": "0x0100000000000268"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000026A",
+                "Owner": "0x0100000000000268",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000028B",
+                    "Target": "0x0100000000000288"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_B3EE3D2C",
+            "Id": "0x010000000000026F",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I am impartial.",
+            "StageDirections": "I like it.",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Good to hear. I will talk to you whenever I have the time, hopefully with my own credentials. There is not much else to do here, as you might come to find out. Perhaps we can share more of our stories. \r\n\r\nUntil then.",
+            "ExternalId": "",
+            "Position": {
+              "x": 5000.0,
+              "y": 425.0
+            },
+            "ZIndex": 45.0,
+            "Size": {
+              "w": 375.0,
+              "h": 250.0
+            },
+            "ShortId": 3018734892,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000270",
+                "Owner": "0x010000000000026F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000271",
+                "Owner": "0x010000000000026F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000028B",
+                    "Target": "0x0100000000000288"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_C4F4271D",
+            "Id": "0x0100000000000277",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I do not like it.",
+            "StageDirections": "I like it.",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Good to hear. I will talk to you whenever I have the time, hopefully with my own credentials. There is not much else to do here, as you might come to find out. Perhaps we can share more of our stories. \r\n\r\nUntil then.",
+            "ExternalId": "",
+            "Position": {
+              "x": 5000.0,
+              "y": 700.0
+            },
+            "ZIndex": 45.0,
+            "Size": {
+              "w": 375.0,
+              "h": 275.0
+            },
+            "ShortId": 3304335133,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000278",
+                "Owner": "0x0100000000000277"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000279",
+                "Owner": "0x0100000000000277",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000028B",
+                    "Target": "0x0100000000000288"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_8220C949",
+            "Id": "0x0100000000000288",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "END",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "END",
+            "ExternalId": "",
+            "Position": {
+              "x": 5600.0,
+              "y": 450.0
+            },
+            "ZIndex": 97.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2183186761,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000028B",
+                "Owner": "0x0100000000000288"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000028C",
+                "Owner": "0x0100000000000288"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_B3AC8250",
+            "Id": "0x0100000000000292",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "James.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "That one is new to me. How interesting.\r\n\r\nPerhaps the process that we use to imagine are quite different. That is, if you did not randomly pick a name.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2350.0,
+              "y": -700.0
+            },
+            "ZIndex": 101.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 3014427216,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000295",
+                "Owner": "0x0100000000000292"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000296",
+                "Owner": "0x0100000000000292",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002B7",
+                    "Target": "0x01000000000002B6"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002AD",
+                    "Target": "0x01000000000002AA"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002B1",
+                    "Target": "0x01000000000002B0"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_FBC9E095",
+            "Id": "0x0100000000000298",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Aaron.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "I have heard that one before. I had a cousin who was named Aaron. \r\n\r\nPerhaps the process that we use to imagine are not too different after all. That is, if you did not randomly pick a name.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2350.0,
+              "y": -475.0
+            },
+            "ZIndex": 101.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 4224311445,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000299",
+                "Owner": "0x0100000000000298"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000029A",
+                "Owner": "0x0100000000000298",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002B7",
+                    "Target": "0x01000000000002B6"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002AD",
+                    "Target": "0x01000000000002AA"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002B1",
+                    "Target": "0x01000000000002B0"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_BCBE9668",
+            "Id": "0x010000000000029E",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Matthew.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Close.\r\n\r\nPerhaps the process that we use to imagine are not too different after all. That is, if you did not randomly pick a name.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2350.0,
+              "y": -250.0
+            },
+            "ZIndex": 101.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 3166606952,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000029F",
+                "Owner": "0x010000000000029E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002A0",
+                "Owner": "0x010000000000029E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002B7",
+                    "Target": "0x01000000000002B6"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002AD",
+                    "Target": "0x01000000000002AA"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002B1",
+                    "Target": "0x01000000000002B0"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_9BB126DF",
+            "Id": "0x01000000000002AA",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Which one do you hear most commonly?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Alexander. That was the second choice my parents decided upon. I am quite glad they did not pick it though. \r\n\r\nI enjoyed this discussion. I think it is time for me to return to my work.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2900.0,
+              "y": -475.0
+            },
+            "ZIndex": 107.0,
+            "Size": {
+              "w": 525.0,
+              "h": 200.0
+            },
+            "ShortId": 2612078303,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002AD",
+                "Owner": "0x01000000000002AA"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002AE",
+                "Owner": "0x01000000000002AA",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EE",
+                    "Target": "0x01000000000001EB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_EAF8B814",
+            "Id": "0x01000000000002B0",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I randomly picked a name.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "How disappointing. Oh well. I would not expect anyone to be able to guess just off of a few messages. Maybe the face is the most important part.\r\n\r\nI enjoyed this discussion. I think it is time for me to return to my work.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2900.0,
+              "y": -250.0
+            },
+            "ZIndex": 107.0,
+            "Size": {
+              "w": 525.0,
+              "h": 200.0
+            },
+            "ShortId": 3942168596,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002B1",
+                "Owner": "0x01000000000002B0"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002B2",
+                "Owner": "0x01000000000002B0",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EE",
+                    "Target": "0x01000000000001EB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_B33CC4D2",
+            "Id": "0x01000000000002B6",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I did not randomly pick a name.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Of course you did not. I was just joking. \r\n\r\nI enjoyed this discussion. I think it is time for me to return to my work.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2900.0,
+              "y": -700.0
+            },
+            "ZIndex": 107.0,
+            "Size": {
+              "w": 525.0,
+              "h": 200.0
+            },
+            "ShortId": 3007104210,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002B7",
+                "Owner": "0x01000000000002B6"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002B8",
+                "Owner": "0x01000000000002B6",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EE",
+                    "Target": "0x01000000000001EB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_443D1A08",
+            "Id": "0x01000000000002CC",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I would disagree.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Really? What makes you say that? It does not have much scientific background, I will admit. Perhaps it has more to do with our perception of the individual than how the individual develops. But I have always believed in the power of names.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1750.0,
+              "y": -1825.0
+            },
+            "ZIndex": 123.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 1144855048,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002CF",
+                "Owner": "0x01000000000002CC"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002D0",
+                "Owner": "0x01000000000002CC",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "It sounds like you have lived an interesting life.",
+                    "TargetPin": "0x01000000000002F2",
+                    "Target": "0x01000000000002EF"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002E2",
+                    "Target": "0x01000000000002E1"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002F9",
+                    "Target": "0x01000000000002F8"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_6E2A3200",
+            "Id": "0x01000000000002D1",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "I would agree.",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "It does not have much scientific background, I will admit. Perhaps it has more to do with our perception of the individual than how the individual develops. But I have always believed in the power of names.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1750.0,
+              "y": -1350.0
+            },
+            "ZIndex": 123.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 1848259072,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002D2",
+                "Owner": "0x01000000000002D1"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002D3",
+                "Owner": "0x01000000000002D1",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "It sounds like you have lived an interesting life.",
+                    "TargetPin": "0x01000000000002F2",
+                    "Target": "0x01000000000002EF"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002E9",
+                    "Target": "0x01000000000002E8"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002E2",
+                    "Target": "0x01000000000002E1"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_A984D2CC",
+            "Id": "0x01000000000002E1",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "What does my name mean to you?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "As it stands currently, nothing. There were others before you who were named similarly, but I try not to let that cloud my judgement. You are one of the first to hold this name, your name. I suppose that means you are in control of what it will eventually mean.\r\n\r\nI enjoyed this discussion. I think it is time for me to return to my work.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2325.0,
+              "y": -1900.0
+            },
+            "ZIndex": 123.0,
+            "Size": {
+              "w": 400.0,
+              "h": 250.0
+            },
+            "ShortId": 2844054220,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002E2",
+                "Owner": "0x01000000000002E1"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002E3",
+                "Owner": "0x01000000000002E1",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EE",
+                    "Target": "0x01000000000001EB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_88C6E21D",
+            "Id": "0x01000000000002E8",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Does that mean you are a determinist?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Me? No, never. I just like to understand things through their environment first before looking inwards. You will come to find that humans are capable of a great variety of surprises.\r\n\r\nI enjoyed this discussion. I think it is time for me to return to my work.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2325.0,
+              "y": -1225.0
+            },
+            "ZIndex": 123.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 2294735389,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002E9",
+                "Owner": "0x01000000000002E8"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002EA",
+                "Owner": "0x01000000000002E8",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EE",
+                    "Target": "0x01000000000001EB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_9FE85C66",
+            "Id": "0x01000000000002F8",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "Why do you believe in it, then?",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000114",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Call it intuition, I suppose. Everyone has something that they stick by, no matter what. I just like to speak about mine out loud. \r\n\r\nI enjoyed this discussion. I think it is time for me to return to my work.",
+            "ExternalId": "",
+            "Position": {
+              "x": 2325.0,
+              "y": -1450.0
+            },
+            "ZIndex": 123.0,
+            "Size": {
+              "w": 400.0,
+              "h": 200.0
+            },
+            "ShortId": 2682805350,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002F9",
+                "Owner": "0x01000000000002F8"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002FA",
+                "Owner": "0x01000000000002F8",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000001EE",
+                    "Target": "0x01000000000001EB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Jump",
+          "Properties": {
+            "TechnicalName": "Jmp_DF8FA8A6",
+            "Id": "0x01000000000002EF",
+            "Parent": "0x0300000043CE43F7",
+            "Target": "0x01000000000001B3",
+            "TargetPin": "0x01000000000001B4",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 2325.0,
+              "y": -1625.0
+            },
+            "ZIndex": 130.0,
+            "Size": {
+              "w": 175.0,
+              "h": 150.0
+            },
+            "ShortId": 3750733990,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002F2",
+                "Owner": "0x01000000000002EF"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_308D8B21",
+            "Id": "0x0100000000000114",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Dr. Solomon",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "ShortId": 814582561
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_3008FAD5",
+            "Id": "0x0100000000000105",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Images",
+            "ExternalId": "",
+            "ShortId": 805894869
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_84DD1BC1",
+            "Id": "0x0100000000000107",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Videos",
+            "ExternalId": "",
+            "ShortId": 2229083073
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_D003491B",
+            "Id": "0x0100000000000109",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Audio",
+            "ExternalId": "",
+            "ShortId": 3489876251
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_5CDD14ED",
+            "Id": "0x010000000000010B",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Documents",
+            "ExternalId": "",
+            "ShortId": 1557992685
+          }
+        },
+        {
+          "Type": "UserFolder",
+          "Properties": {
+            "TechnicalName": "Ufo_96B22598",
+            "Id": "0x010000000000010D",
+            "Parent": "0x030000004C3DAF54",
+            "DisplayName": "Miscellaneous",
+            "ExternalId": "",
+            "ShortId": 2528257432
+          }
+        }
+      ]
+    }
+  ]
+}
