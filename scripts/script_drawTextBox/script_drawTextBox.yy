@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Draw Functions",
-    "path": "folders/Scripts/Draw Functions.yy",
+    "name": "Rendering",
+    "path": "folders/Scripts/Rendering.yy",
   },
 }

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Room Generation",
-    "path": "folders/Scripts/Room Generation.yy",
+    "name": "Game Initialization",
+    "path": "folders/Scripts/Game Initialization.yy",
   },
 }

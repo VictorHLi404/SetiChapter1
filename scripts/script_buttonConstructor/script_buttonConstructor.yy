@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Menu Functionality",
-    "path": "folders/Scripts/Object Constructs/Menu Functionality.yy",
+    "name": "Menu Objects",
+    "path": "folders/Scripts/Object Constructs/Menu Objects.yy",
   },
 }

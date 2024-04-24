@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "JSON Handling",
-    "path": "folders/Scripts/JSON Handling.yy",
+    "path": "folders/Scripts/Data Handling/JSON Handling.yy",
   },
 }

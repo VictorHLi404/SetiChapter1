@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Data Handling Objects",
-    "path": "folders/Scripts/Object Constructs/Data Handling Objects.yy",
+    "name": "Data Handling",
+    "path": "folders/Scripts/Data Handling.yy",
   },
 }

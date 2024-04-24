@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "script_conversationNodeConstructor",
+  "name": "script_npcConstructor",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

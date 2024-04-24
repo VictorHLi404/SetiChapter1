@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 
-conversationHandler = new createConversationHandler(["DS_intro.json"]);
+conversationHandler = new createConversationHandler(["WC_intro.json", "WilliamCheung.json"], "WilliamCheung.json");
 conversationHandler.loadConversation(conversationHandler.fileList[0]);
 conversationHandler.initializeConversation();
-show_debug_message("INITIALIZATION COMPLETE")
+show_message("CONVERSATION HANDLER INITIALIZATION COMPLETE")
 
 
 

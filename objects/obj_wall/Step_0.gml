@@ -20,8 +20,6 @@ if (wallData.isFollowingMouse() == true) { // 32 IS GRID SIZE
 	if (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space)) {
 		if (!place_meeting(x, y, all)) {
 			wallData.setFollowingMouse(false);
-			show_debug_message("PLACING WALL DOWN")
-			show_debug_message(wallData.getType());
 			global.placingInProgress = false;
 		}
 	}

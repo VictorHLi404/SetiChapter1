@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function createDataHandler(_fileList) constructor { // PLEASE GO OVER THIS HSIT AND NOTATE IT PROPERLY
-	fileList = _fileList
+	fileList = _fileList;
 	fileData = {};
 	fileNames = [0];
 	

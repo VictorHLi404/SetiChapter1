@@ -1,0 +1,14 @@
+{
+    "Name": "William Cheung",
+    "Stats": {
+        "defaultAgreeability": 10,
+        "currentAgreeability": 10,
+        "defaultTrust": 10,
+        "currentTrust": 10,
+        "defaultFear": 10,
+        "currentFear": 10
+    },
+    "Flags": {
+        "knowsNameIsSol": false
+    }
+}

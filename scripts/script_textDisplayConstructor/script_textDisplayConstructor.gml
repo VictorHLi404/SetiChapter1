@@ -17,6 +17,8 @@ function createTextDisplay(_inputX, _inputY, _width, _height, _text, _dataHandle
 	color = getTemplate("color");
 	font = asset_get_index(getTemplate("font"));
 	
-	
+	static updateText = function(newText) {
+		text = newText;
+	}
 	
 }

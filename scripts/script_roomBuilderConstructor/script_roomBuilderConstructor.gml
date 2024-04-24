@@ -12,15 +12,12 @@ function createRoomBuilder(_fileNames) constructor {
 		for (var i = 0; i < array_length(structNames); i++) {
 			var instanceData = dataStruct[$ structNames[i]];
 			
-			show_debug_message(instanceData);
-			
 			if (instanceData[0] == "WALL") {
 				instance_create_layer(instanceData[1], instanceData[2], "Instances", obj_wall, {
 					image_angle : instanceData[3]
 				});
 			}
 			else if (instanceData[0] == "PM_WALL") {
-				show_debug_message("BUILDING PLAYER MADE WALL");
 				instance_create_layer(instanceData[1], instanceData[2], "Instances", obj_wall, {
 					image_angle : instanceData[3],
 					sprite_index : spr_playerCreatedWall
