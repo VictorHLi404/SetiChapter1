@@ -7,8 +7,6 @@ takes struct as a parameter, converts it to a json string, and then writes it to
 
 returns nothing
 
-
-
 */
 function JSONSave(targetFile, JSONStruct) {
 	var JSONString = json_stringify(JSONStruct, true);

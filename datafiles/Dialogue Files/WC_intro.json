@@ -2030,6 +2030,28 @@
                     "Label": "",
                     "TargetPin": "0x0100000000000264",
                     "Target": "0x0100000000000262"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002D0",
+                    "Target": "0x01000000000002CF"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002D7",
+                    "Target": "0x01000000000002D6"
                   }
                 ]
               }
@@ -2086,6 +2108,28 @@
                     "Label": "",
                     "TargetPin": "0x0100000000000264",
                     "Target": "0x0100000000000262"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002D0",
+                    "Target": "0x01000000000002CF"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002D7",
+                    "Target": "0x01000000000002D6"
                   }
                 ]
               }
@@ -2142,6 +2186,28 @@
                     "Label": "",
                     "TargetPin": "0x0100000000000264",
                     "Target": "0x0100000000000262"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002D7",
+                    "Target": "0x01000000000002D6"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000002D0",
+                    "Target": "0x01000000000002CF"
                   }
                 ]
               }
@@ -2154,7 +2220,7 @@
             "TechnicalName": "DFr_2E3A53BB",
             "Id": "0x0100000000000278",
             "Parent": "0x0300000043CE43F7",
-            "MenuText": "END",
+            "MenuText": "PASSED AGREEABILITY >= 10",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -2166,8 +2232,8 @@
             "Text": "Hopefully nothing goes wrong and I'll be on my way home sooner than later. Goodbye, ANN-47.",
             "ExternalId": "",
             "Position": {
-              "x": 5408.5943933498893,
-              "y": 689.4881228547074
+              "x": 5483.5943933498893,
+              "y": 639.4881228547074
             },
             "ZIndex": 110.0,
             "Size": {
@@ -2197,7 +2263,7 @@
             "TechnicalName": "DFr_1489F569",
             "Id": "0x0100000000000280",
             "Parent": "0x0300000043CE43F7",
-            "MenuText": "END",
+            "MenuText": "FAILED AGREEABILITY >= 10",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -2209,8 +2275,8 @@
             "Text": "Goodbye.",
             "ExternalId": "",
             "Position": {
-              "x": 5408.5943933498893,
-              "y": 914.4881228547074
+              "x": 5483.5943933498893,
+              "y": 864.4881228547074
             },
             "ZIndex": 110.0,
             "Size": {
@@ -2240,7 +2306,7 @@
             "TechnicalName": "DFr_72D55C57",
             "Id": "0x01000000000002B8",
             "Parent": "0x0300000043CE43F7",
-            "MenuText": "END\r\n",
+            "MenuText": "PASSED AGREEABILITY >= 12\r\n",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -2252,8 +2318,8 @@
             "Text": "I look forward to speaking with you again when I have the time. Goodbye, ANN-47.",
             "ExternalId": "",
             "Position": {
-              "x": 5025.0,
-              "y": 575.0
+              "x": 5100.0,
+              "y": 525.0
             },
             "ZIndex": 110.0,
             "Size": {
@@ -2278,6 +2344,92 @@
           }
         },
         {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_FDDB2483",
+            "Id": "0x01000000000002CF",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "END",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Hopefully nothing goes wrong and I'll be on my way home sooner than later. Goodbye, ANN-47.",
+            "ExternalId": "",
+            "Position": {
+              "x": 5025.0,
+              "y": 1025.0
+            },
+            "ZIndex": 110.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 4258997379,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002D0",
+                "Owner": "0x01000000000002CF"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002D1",
+                "Owner": "0x01000000000002CF"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_807A1AC3",
+            "Id": "0x01000000000002D6",
+            "Parent": "0x0300000043CE43F7",
+            "MenuText": "END",
+            "StageDirections": "",
+            "Speaker": "0x010000000000010F",
+            "SplitHeight": 64.0,
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Goodbye.",
+            "ExternalId": "",
+            "Position": {
+              "x": 5025.0,
+              "y": 1250.0
+            },
+            "ZIndex": 110.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2155485891,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002D7",
+                "Owner": "0x01000000000002D6"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000002D8",
+                "Owner": "0x01000000000002D6"
+              }
+            ]
+          }
+        },
+        {
           "Type": "Condition",
           "Properties": {
             "TechnicalName": "Cnd_AF9F883B",
@@ -2287,8 +2439,8 @@
             "Text": "",
             "ExternalId": "",
             "Position": {
-              "x": 4750.0,
-              "y": 800.0
+              "x": 4825.0,
+              "y": 750.0
             },
             "ZIndex": 104.0,
             "Size": {
@@ -2359,8 +2511,8 @@
             "Text": "",
             "ExternalId": "",
             "Position": {
-              "x": 5100.0,
-              "y": 850.0
+              "x": 5175.0,
+              "y": 800.0
             },
             "ZIndex": 105.0,
             "Size": {

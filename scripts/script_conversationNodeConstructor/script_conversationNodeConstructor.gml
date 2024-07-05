@@ -1,5 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 function createConversationNode(_nodeID, _childList, _type) constructor { 
 	
 	// universal attributes of nodes; id, parent, child
@@ -29,7 +30,7 @@ function createDialogueNode (_nodeID, _childList, _type, _currentMessage, _curre
 		return currentMessage;
 	}
 	
-	getResponse = function() { // check if node is a valid ndoe before returning data
+	getResponse = function() { // check if node is a valid node before returning data
 		if (nodeID == noone) {
 			return noone;
 		}
@@ -39,7 +40,13 @@ function createDialogueNode (_nodeID, _childList, _type, _currentMessage, _curre
 	}
 	
 	getSecondResponse = function() {
-		return currentSecondResponse;
+		if (nodeID == noone) {
+			return noone;
+		}
+		else {
+			return currentSecondResponse;
+		}
+		
 	}
 	
 	static getCurrentResponseEffect = function() {
@@ -49,5 +56,33 @@ function createDialogueNode (_nodeID, _childList, _type, _currentMessage, _curre
 		else {
 			return currentResponseEffect;
 		}
+	}
+}
+
+function createConditionalNode(_nodeID, _childList, _type, _conditionalStatement) : createConversationNode(_nodeID, _childList, _type) constructor { // adaptive node that when reached in the dialogue, should automatically redirect to something new
+	conditionalStatement = _conditionalStatement;
+	trueOption = _childList[0];
+	falseOption = _childList[1];
+	
+	getConditionalStatement = function() { // returns string
+		return conditionalStatement;
+	}
+	
+	getTrueOption = function() { // returns nodeID
+		return trueOption;
+	}
+	
+	getFalseOption = function() { // return nodeID
+		return falseOption;
+	}
+	
+	// MAKE THE ASSUMPTION THAT THE "TRUE" OPTION OR OPTION THAT PASSES THE CONDITIONAL STATEMENT IS INDEX 0, AND FALESE IN INDEX 1
+}
+
+function createJumpNode(_nodeID, _childList, _type, _targetID) : createConversationNode(_nodeID, _childList, _type) constructor {
+	targetID = _targetID;
+	
+	getTargetID = function() {
+		return targetID;
 	}
 }

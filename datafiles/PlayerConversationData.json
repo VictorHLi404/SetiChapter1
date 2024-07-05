@@ -1,0 +1,11 @@
+{
+    "Name" : "Player",
+    "Stats": {
+        "currentAgreeability" : 5,
+        "currentTrust" : 5,
+        "currentFear" : 5
+    },
+    "Flags": {
+        "hasBeenNamedSol": true
+    }
+}

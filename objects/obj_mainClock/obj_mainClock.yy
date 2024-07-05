@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_blank",
-    "path": "sprites/spr_blank/spr_blank.yy",
+    "name": "spr_smileyGuy",
+    "path": "sprites/spr_smileyGuy/spr_smileyGuy.yy",
   },
   "spriteMaskId": null,
   "visible": true,

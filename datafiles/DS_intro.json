@@ -1,5 +1,18 @@
 {
-  "GlobalVariables": [],
+  "GlobalVariables": [
+    {
+      "Namespace": "playerState",
+      "Description": "",
+      "Variables": [
+        {
+          "Variable": "hasBeenNamedSol",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "whether name has been given to the player or not"
+        }
+      ]
+    }
+  ],
   "Packages": [
     {
       "Name": "All objects",
@@ -2060,7 +2073,7 @@
             ],
             "OutputPins": [
               {
-                "Text": "",
+                "Text": "playerState.hasBeenNamedSol = true;\n",
                 "Id": "0x010000000000026A",
                 "Owner": "0x0100000000000268",
                 "Connections": [
@@ -2116,7 +2129,7 @@
             ],
             "OutputPins": [
               {
-                "Text": "",
+                "Text": "playerState.hasBeenNamedSol = true;\n",
                 "Id": "0x0100000000000271",
                 "Owner": "0x010000000000026F",
                 "Connections": [
@@ -2172,7 +2185,7 @@
             ],
             "OutputPins": [
               {
-                "Text": "",
+                "Text": "playerState.hasBeenNamedSol = true;\n",
                 "Id": "0x0100000000000279",
                 "Owner": "0x0100000000000277",
                 "Connections": [

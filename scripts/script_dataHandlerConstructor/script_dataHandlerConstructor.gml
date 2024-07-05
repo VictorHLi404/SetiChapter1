@@ -25,7 +25,6 @@ function createDataHandler(_fileList) constructor { // PLEASE GO OVER THIS HSIT 
 	}
 	
 	static getStructValue = function(valueID, _currentStruct) { // "private" method used to recursively search for a value within a json file given a name and a decomplied JSON
-		
 		var currentStruct = _currentStruct;
 		var structLength = struct_names_count(currentStruct);
 		var structNames = struct_get_names(currentStruct);
@@ -44,12 +43,37 @@ function createDataHandler(_fileList) constructor { // PLEASE GO OVER THIS HSIT 
 		return noone;
 	}
 	
+	static getStructRecursive = function(structName, _currentStruct) { // 'private' method used to recursively search for entire struct within json file given name and decompiled json
+		var currentStruct = _currentStruct;
+		var structLength = struct_names_count(currentStruct);
+		var structNames = struct_get_names(currentStruct);
+		
+		for (var i = 0; i < structLength; i++) {
+			if (typeof(currentStruct[$ structNames[i]]) == "struct") {
+				if (structNames[i] == structName) {
+					return currentStruct[$ structNames[i]];
+				}
+				else {
+					var internalStruct = getStructRecursive(structName, currentStruct[$ structNames[i]]); // make sure that it loops through all options
+					if (internalStruct != noone) {
+						return internalStruct;
+					}
+				}
+			}
+		}
+		return noone;
+	}	
+	
 	static getFile = function(fileName) { // wrapper function to get the JSON struct from a json string name
 		return fileData[$ fileName];
 	}
 	
 	static getValue =  function(valueID, fileName) { // "public" method used to get the desired value, but name of the struct must be given
 		return getStructValue(valueID, getFile(fileName));
+	}
+	
+	static getStruct = function(structName, fileName) {
+		return getStructRecursive(structName, getFile(fileName));
 	}
 		
 	static updateStructValue = function(newValue, valueID, _currentStruct) { // "private" method used to recursively search for the name of the value to replace and then replaces it within struct
