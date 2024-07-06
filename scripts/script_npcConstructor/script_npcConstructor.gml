@@ -115,5 +115,6 @@ function createNPC(_dataHandler, _fileName) constructor { // IMPLEMENT WRITING B
 		recompiledFile[$ "Stats"][$ "currentTrust"] = currentTrust;
 		recompiledFile[$ "Stats"][$ "currentFear"] = currentFear;
 		recompiledFile[$ "Flags"] = currentBooleanFlags;
+		return recompiledFile;
 	}
 }

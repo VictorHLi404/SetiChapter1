@@ -4,42 +4,42 @@ function createprojectileSpawner(_type, _x, _y, _imageAngle, _active, _projectil
 	
 	projectileCount = _projectileCount;
 
-static pointToMouse = function() { // returns angle for projectile spanwer to point IF in focus
-	if (active) {
-		return point_direction(xPosition, yPosition, mouse_x, mouse_y);
+	static pointToMouse = function() { // returns angle for projectile spanwer to point IF in focus
+		if (active) {
+			return point_direction(xPosition, yPosition, mouse_x, mouse_y);
+		}
+		else {
+			return noone;
+		}
 	}
-	else {
-		return noone;
+
+	static enterFocus = function() { 
+		active = true;
 	}
-}
 
-static enterFocus = function() { 
-	active = true;
-}
-
-static exitFocus = function() {
-	active = false;
-}
-
-static isInFocus = function() {
-	return active;
-}
-
-static setProjectileCount = function (newCount) {
-	projectileCount = newCount;
-}
-
-static fireProjectile = function() {
-	if (projectileCount > 0) {
-		projectileCount -= 1;
-		return true;
+	static exitFocus = function() {
+		active = false;
 	}
-	else {
-		return false;
-	}
-}
 
-static toString = function() {
-	return [type, xPosition, yPosition, imageAngle, active, projectileCount];
+	static isInFocus = function() {
+		return active;
 	}
+
+	static setProjectileCount = function (newCount) {
+		projectileCount = newCount;
+	}
+
+	static fireProjectile = function() {
+		if (projectileCount > 0) {
+			projectileCount -= 1;
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	static toString = function() {
+		return [type, xPosition, yPosition, imageAngle, active, projectileCount];
+		}
 }

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-text = "CONVERSATION";
+text = "SCANNER";
 buttonID = self;
 dataHandler = obj_centralHubDataHandler.dataHandler;
 template = "centralHubScreenButtonTemplate.json";

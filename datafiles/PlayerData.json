@@ -6,6 +6,6 @@
         "currentFear" : 5
     },
     "Flags": {
-        "hasBeenNamedSol": true
+        "hasBeenNamedSol": false
     }
 }

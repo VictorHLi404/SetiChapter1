@@ -11,7 +11,6 @@ function createConversationHandler(_fileList, _npcFileName, _playerFileName) : c
 	playerFileName = _playerFileName;
 	addFiles(fileList); // super call from data handler
 	
-	
 	currentNPC = new createNPC(self, npcFileName); // refers to the object that contains all of the stats + known information of the npc currently in conversation, can check and update values
 	playerData = new createNPC(self, playerFileName); // player data is handled the same as npc, so just do it and its fine
 	nodeDataStruct = {}; // ACTUALLY IMPORTANT, constains the name / id of a node and its actual node data struct
@@ -174,6 +173,7 @@ function createConversationHandler(_fileList, _npcFileName, _playerFileName) : c
 	}
 	
 	static saveConversationChanges = function() {
+		show_message("SAVING NPC CHANGES");
 		readStateChange(currentNode.getCurrentResponseEffect()); // get last effect of the last 
 		fileData[$ currentNPC.getFileName()] = currentNPC.recompileIntoJSON();
 		fileData[$ playerData.getFileName()] = playerData.recompileIntoJSON();
@@ -191,7 +191,8 @@ function createConversationHandler(_fileList, _npcFileName, _playerFileName) : c
 	static loadEndNode = function(endNode) { // add extra functionality later to make it possible for loading / saving
 		show_message(currentNode.getMessage());
 		advanceGraph(endNode);
-		//saveConversationChanges();
+
+		saveConversationChanges();
 		return;
 	}
 	

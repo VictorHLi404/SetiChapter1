@@ -12,21 +12,16 @@ function JSONRead(targetFile){
 	
 	if file_exists(targetFile) {
 		show_debug_message(targetFile + " file does exist");
-		
 		var file = file_text_open_read(targetFile);
-		
+		show_debug_message(file);
 		var JSONdata = "";
 		while(file_text_eof(file) == false) {
 			JSONdata  += file_text_readln(file)
 		}
-
-		file_text_close(file)
-		
-		var parsedData = json_parse(JSONdata)
-		return parsedData;
-		
+		file_text_close(file);
+		var parsedData = json_parse(JSONdata);
+		return parsedData;	
 	}
-	
 	else {
 		show_debug_message(targetFile + " does not exist");
 		return;

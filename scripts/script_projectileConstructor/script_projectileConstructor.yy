@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "script_projectileConstrucotr",
+  "name": "script_projectileConstructor",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

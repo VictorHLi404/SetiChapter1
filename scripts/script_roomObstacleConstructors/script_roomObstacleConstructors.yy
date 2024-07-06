@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "script_roomObjectConstructor",
+  "name": "script_roomObstacleConstructors",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
