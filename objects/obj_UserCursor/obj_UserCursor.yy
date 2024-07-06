@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Data Handling",
-    "path": "folders/Objects/Parent Object Templates/Data Handling.yy",
+    "name": "Input Handling",
+    "path": "folders/Objects/Parent Object Templates/Input Handling.yy",
   },
   "parentObjectId": null,
   "persistent": false,

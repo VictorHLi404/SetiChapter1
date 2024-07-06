@@ -35,6 +35,18 @@ function createRoomObject(_type, _x, _y, _imageAngle, _active) constructor { // 
 		yPosition = _y;
 	}
 	
+	static getX = function() {
+		return xPosition;
+	}
+	
+	static getY = function() {
+		return yPosition;
+	}
+	
+	static getImageAngle = function() {
+		return imageAngle;
+	}
+	
 	static updateImageAngle = function (newAngle) {
 		imageAngle = newAngle;
 	}

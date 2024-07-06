@@ -13,11 +13,11 @@ function createKnob(_type, _x, _y, _imageAngle, _active, _defaultInternalValue, 
 			return point_direction(xPosition, yPosition, mouse_x, mouse_y);
 		}
 		else {
-			return noone;
+			return global.INT_MIN;
 		}
 	}
 	static moveKnob = function(currentAngle) {
-		var newValue = floor((defaultAngle-currentAngle)/10);
+		var newValue = floor((defaultAngle-currentAngle)/angleTolerance);
 		updateInternalValue(newValue);
 		updateImageAngle(currentAngle);
 	}
@@ -30,10 +30,7 @@ function createKnob(_type, _x, _y, _imageAngle, _active, _defaultInternalValue, 
 			return currentAngle;
 		}
 	}
-	
-	static getValue = function() {
-		return internalValue;
-	}
+
 	static getDefaultAngle = function() {
 		return defaultAngle;
 	}	

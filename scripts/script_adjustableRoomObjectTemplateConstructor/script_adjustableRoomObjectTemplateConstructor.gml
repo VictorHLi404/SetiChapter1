@@ -6,7 +6,7 @@ function createAdjustableRoomObject(_type, _x, _y, _imageAngle, _active, _defaul
 	maxValue = _maxValue; // max range on either negative or positive side, assume to be +/-
 	
 	static updateInternalValue = function(newValue) {
-		if (-9 <= newValue && newValue <= maxValue) {
+		if (maxValue*-1 <= newValue && newValue <= maxValue) {
 			internalValue = newValue;
 			show_debug_message(internalValue);
 		}
@@ -22,6 +22,10 @@ function createAdjustableRoomObject(_type, _x, _y, _imageAngle, _active, _defaul
 
 	static isInFocus = function() {
 		return active;
+	}
+	
+	static getValue = function() {
+		return internalValue;
 	}
 
 }

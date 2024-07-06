@@ -3,7 +3,7 @@
 function createDataHandler(_fileList) constructor { // PLEASE GO OVER THIS HSIT AND NOTATE IT PROPERLY
 	fileList = _fileList;
 	fileData = {};
-	fileNames = [0];
+	fileNames = [""];
 	
 	static addFiles = function(fileList) {	// function to store the raw JSON data inside of struct fileData
 		for (var i = 0; i < array_length(fileList); i++) {
