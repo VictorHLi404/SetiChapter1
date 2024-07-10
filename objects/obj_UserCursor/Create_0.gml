@@ -3,9 +3,12 @@
 
 mouseX = x;
 mouseY = y;
+isHidden = false;
 depth = -1000; // mouse should always be most visible object
 
-
+function setIsHidden(boolean) {
+	isHidden = boolean;
+}
 
 
 
