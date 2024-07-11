@@ -15,6 +15,7 @@
     {"name":"inst_D207709","path":"rooms/room_bootConversationScreen/room_bootConversationScreen.yy",},
     {"name":"inst_2D613E1A","path":"rooms/room_bootConversationScreen/room_bootConversationScreen.yy",},
     {"name":"inst_28698E7C","path":"rooms/room_bootConversationScreen/room_bootConversationScreen.yy",},
+    {"name":"inst_5A231CA5","path":"rooms/room_bootConversationScreen/room_bootConversationScreen.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -28,6 +29,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_FD5227D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bootScreenRightChoice","path":"objects/obj_bootScreenRightChoice/obj_bootScreenRightChoice.yy",},"properties":[],"rotation":0.0,"scaleX":15.859375,"scaleY":1.7656251,"x":420.0378,"y":743.9451,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D207709","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bootScreenLeftChoice","path":"objects/obj_bootScreenLeftChoice/obj_bootScreenLeftChoice.yy",},"properties":[],"rotation":0.0,"scaleX":15.931419,"scaleY":1.59375,"x":416.0,"y":973.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_28698E7C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bootScreenMessageDisplay","path":"objects/obj_bootScreenMessageDisplay/obj_bootScreenMessageDisplay.yy",},"properties":[],"rotation":0.0,"scaleX":15.5,"scaleY":2.5,"x":416.0,"y":224.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A231CA5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_debug","path":"objects/obj_debug/obj_debug.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":256.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"spr_conversationScreen","path":"sprites/spr_conversationScreen/spr_conversationScreen.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

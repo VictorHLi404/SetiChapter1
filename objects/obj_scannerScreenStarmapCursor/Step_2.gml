@@ -4,15 +4,23 @@
 if (position_meeting(mouse_x, mouse_y, obj_starmapOverlay)) {
 	if (!isPlaced) {
 		obj_scannerScreenCursor.setIsHidden(true);
-		show_debug_message(obj_scannerScreenCursor.isHidden);
-		object_set_sprite(obj_scannerScreenCursor, spr_noCollision);
 		if (abs(x-mouse_x) >= movementTolerance) {
-			x = mouse_x;
+			if (mouse_x > 0 + edgeDistance && mouse_x < widthBox - edgeDistance) {
+					x = mouse_x;
+			}
 		}
 		if (abs(y-mouse_y) >= movementTolerance) {
-			y = mouse_y;
+			if (mouse_y > 0 + edgeDistance && mouse_y < heightBox - edgeDistance) {
+					y = mouse_y;
+			}
 		}
 	}
+	else {
+		obj_scannerScreenCursor.setIsHidden(false);
+	}
+}
+else {
+	obj_scannerScreenCursor.setIsHidden(false);
 }
 
 

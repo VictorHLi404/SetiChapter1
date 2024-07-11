@@ -1,13 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_playerAnswerSoundPlayer",
-  "eventList": [],
+  "name": "obj_debug",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Sound Objects",
-    "path": "folders/Objects/Scanner Screen/Sound Objects.yy",
+    "name": "Scanner Screen",
+    "path": "folders/Objects/Scanner Screen.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -25,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_debug",
+    "path": "sprites/spr_debug/spr_debug.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

@@ -1,27 +1,33 @@
-AudioIDinMV = mv_load(@"testchords.ogg"); 
-AudioID = audio_play_sound(testchords,0,1);
+AudioIDinMV = global.INT_MAX;
+AudioID = global.INT_MAX;
 bottomRange = 900; // borders of how far the soundbar should go
 topRange = 775;
 leftRange = 100;
 rightRange = 600;
 maxHeight = (bottomRange-topRange)/2; // max height of the soundbars
-centerLine = bottomRange-maxHeight;
+centerLine = bottomRange-maxHeight; // center of the display
 
 numberOfBars = 24;
 barWidth = 20; // width of bar and space between bars
 spacer = 5;
 
-fftSize = 44100;
+fftSize = 16000; // change to lag out the game o rnot
 maxFrequencyAmplitude = 800; // controls the waveiness / sensitivity of the bar
 
-function normalizeHeight(length) {
-	var normalizedLength = (power(length,1/3)/power(maxFrequencyAmplitude,1/3))*maxHeight;
-	if (normalizedLength > maxHeight) {
-		return maxHeight;
-	}
-	return normalizedLength;
+isCurrentlyPlaying = false; // keeps track of whether audio is going or not
+isCurrentlyDrawn = false; // keeps track of whether visualizer is running or not
+
+function setIsCurrentlyPlaying(state) {
+	isCurrentlyPlaying = state;
 }
 
-function getFrequency(barNumber) { // APPROXIMATE CUBIC FUNCTION (x^3)/12 TO MAKE IT FIT THE CUBIC A BIT BETTER
-	return floor(power(barNumber+7, 3)/12);
+function playSound() {
+	AudioIDinMV = mv_load(@"testchords.ogg"); 
+	AudioID = audio_play_sound(testchords,0, 0, 1);
+	isCurrentlyPlaying = true;
+	isCurrentlyDrawn = true;
+	alarm[0] = getSoundPlaytimeLength(AudioID); // for the loop
+	alarm[1] = getSoundFrameLength(AudioID); // for drawing the bars
 }
+
+playSound();
