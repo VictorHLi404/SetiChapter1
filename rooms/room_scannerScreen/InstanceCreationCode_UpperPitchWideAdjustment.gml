@@ -1,0 +1,1 @@
+knob.setType("UpperPitchWideAdjustment");

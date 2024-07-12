@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 function normalizeHeight(length, maxHeight) {
-	var maxFrequencyAmplitude = 800;
-	var normalizedLength = (power(length,1/2)/power(maxFrequencyAmplitude,1/3))*maxHeight;
+	var maxFrequencyAmplitude = 100;
+	var normalizedLength = (power(length,1/2)/power(maxFrequencyAmplitude,1/2))*maxHeight;
 	if (normalizedLength > maxHeight) {
 		return maxHeight;
 	}
@@ -11,7 +11,7 @@ function normalizeHeight(length, maxHeight) {
 }
 
 function getFrequency(barNumber) { // APPROXIMATE CUBIC FUNCTION (x^3)/12 TO MAKE IT FIT THE CUBIC A BIT BETTER
-	return floor(power(barNumber+7, 3)/12);
+	return floor(power(barNumber+10, 3)/25);
 }
 
 function getSoundFrameLength(audioID) {
@@ -19,8 +19,13 @@ function getSoundFrameLength(audioID) {
 }
 
 function getSoundPlaytimeLength(audioID) {
-	var timeDelay = 3;
+	var timeDelay = 1;
 	return getSoundFrameLength(audioID) + timeDelay*game_get_speed(gamespeed_fps);
+}
+
+function addTimeDelay(trackLength) {
+	var timeDelay = 1;
+	return trackLength + timeDelay*game_get_speed(gamespeed_fps);
 }
 
 function visualizeAudio(numberOfBars, barLengths, leftRange, centerLine, barWidth, spacer) {
@@ -37,4 +42,13 @@ function drawBlankAudioVisualizer(numberOfBars, leftRange, centerLine, barWidth,
 		draw_rectangle(startPoint, centerLine, startPoint+barWidth-spacer, centerLine-1, 0);
 		draw_rectangle(startPoint, centerLine, startPoint+barWidth-spacer, centerLine+1, 0);
 	}
+}
+
+function getBarLength(frequencyArray, index, gain, pitch) {
+	var maxFrequency = 16000;
+	var adjustedFrequency = (1/pitch)*getFrequency(index);
+	if (adjustedFrequency > maxFrequency) {
+		adjustedFrequency = maxFrequency-1;
+	}
+	return frequencyArray[adjustedFrequency]*(gain+0.2);
 }

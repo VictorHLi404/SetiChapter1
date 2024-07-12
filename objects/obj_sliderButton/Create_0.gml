@@ -10,6 +10,7 @@ else {
 }
 x = tempSliderBar.getX(); // zero the bar to start in the middle
 y = tempSliderBar.getY();
+
 sliderButton = new createSliderButton("SliderButton", x, y, image_angle, false, 0, 10, 10, tempSliderBar, isHorizontal);
 
 

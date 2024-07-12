@@ -27,5 +27,13 @@ function createAdjustableRoomObject(_type, _x, _y, _imageAngle, _active, _defaul
 	static getValue = function() {
 		return internalValue;
 	}
+	
+	static getValueRelativeToMax = function() {
+		return (maxValue+1)-internalValue;
+	}
+	
+	static setMaxValue = function(newMaxValue) {
+		maxValue = newMaxValue;
+	}
 
 }

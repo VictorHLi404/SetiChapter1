@@ -93,4 +93,20 @@ function createSliderButton(_type, _x, _y, _imageAngle, _active, _defaultInterna
 	static sliderIsHorizontal = function() {
 		return isHorizontal;
 	}
+	
+	static updateDistanceRange = function() {
+		distanceRange = maxValue*movementTolerance;
+		if (isHorizontal) {
+			maxDecreaseDistance = xPosition-distanceRange;
+			maxIncreaseDistance = xPosition+distanceRange;
+		}
+		else {
+			maxDecreaseDistance = yPosition-distanceRange;
+			maxIncreaseDistance = yPosition+distanceRange;
+		}
+	}
+	
+	static setMovementTolerance = function(newTolerance) {
+		movementTolerance = newTolerance;
+	}
 }

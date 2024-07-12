@@ -1,5 +1,7 @@
 AudioIDinMV = global.INT_MAX;
 AudioID = global.INT_MAX;
+trackLength = global.INT_MIN;
+
 bottomRange = 900; // borders of how far the soundbar should go
 topRange = 775;
 leftRange = 100;
@@ -7,8 +9,8 @@ rightRange = 600;
 maxHeight = (bottomRange-topRange)/2; // max height of the soundbars
 centerLine = bottomRange-maxHeight; // center of the display
 
-numberOfBars = 24;
-barWidth = 20; // width of bar and space between bars
+numberOfBars = 36;
+barWidth = 15; // width of bar and space between bars
 spacer = 5;
 
 fftSize = 16000; // change to lag out the game o rnot
@@ -21,13 +23,22 @@ function setIsCurrentlyPlaying(state) {
 	isCurrentlyPlaying = state;
 }
 
-function playSound() {
+function getTrackLength() {
+	return trackLength;
+}
+
+function getAudioID() {
+	return AudioID;
+}
+
+function playAnswerSound() {
 	AudioIDinMV = mv_load(@"testchords.ogg"); 
-	AudioID = audio_play_sound(testchords,0, 0, 1);
+	AudioID = audio_play_sound(testchords,0, 0, 0.5);
 	isCurrentlyPlaying = true;
 	isCurrentlyDrawn = true;
+	trackLength = getSoundFrameLength(AudioID);
 	alarm[0] = getSoundPlaytimeLength(AudioID); // for the loop
 	alarm[1] = getSoundFrameLength(AudioID); // for drawing the bars
 }
 
-playSound();
+playAnswerSound(); // when first loading into room, play off rip

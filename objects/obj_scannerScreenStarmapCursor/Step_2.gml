@@ -7,11 +7,13 @@ if (position_meeting(mouse_x, mouse_y, obj_starmapOverlay)) {
 		if (abs(x-mouse_x) >= movementTolerance) {
 			if (mouse_x > 0 + edgeDistance && mouse_x < widthBox - edgeDistance) {
 					x = mouse_x;
+					starmapCursor.updateXY(x, y);
 			}
 		}
 		if (abs(y-mouse_y) >= movementTolerance) {
 			if (mouse_y > 0 + edgeDistance && mouse_y < heightBox - edgeDistance) {
 					y = mouse_y;
+					starmapCursor.updateXY(x, y);
 			}
 		}
 	}

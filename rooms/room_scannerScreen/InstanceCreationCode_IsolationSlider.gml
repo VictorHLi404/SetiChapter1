@@ -1,0 +1,1 @@
+sliderButton.setType("IsolationSlider");

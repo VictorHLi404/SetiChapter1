@@ -12,7 +12,7 @@ function createRoomObject(_type, _x, _y, _imageAngle, _active) constructor { // 
 		return followingMouse;
 	}
 	
-	static setFollowingMouse = function(state) {
+	static setFollowingMouse = function(state) { // REFACTOR FOR POINTER OBJECT IN ROOM
 		followingMouse = state;
 		if (state == true) {
 			active = false;
@@ -33,6 +33,10 @@ function createRoomObject(_type, _x, _y, _imageAngle, _active) constructor { // 
 	static updateXY = function(_x, _y) {
 		xPosition = _x;
 		yPosition = _y;
+	}
+	
+	static getXY = function() {
+		return [xPosition, yPosition];
 	}
 	
 	static getX = function() {
