@@ -1,5 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 function drawTextBox(textBoxData) {
 	// calculate how many "lines" are required from length of string and given width
 	// find center x and y of textbox

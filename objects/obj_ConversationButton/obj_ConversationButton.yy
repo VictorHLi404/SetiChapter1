@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ConversationButton",
+  "name": "obj_conversationButton",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -13,12 +13,12 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Buttons",
-    "path": "folders/Objects/Parent Object Templates/Buttons.yy",
+    "name": "Response Objects",
+    "path": "folders/Objects/Boot Conversation Screen/Response Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_MenuButton",
-    "path": "objects/obj_MenuButton/obj_MenuButton.yy",
+    "name": "obj_menuButton",
+    "path": "objects/obj_menuButton/obj_menuButton.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -35,7 +35,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_blank",
+    "path": "sprites/spr_blank/spr_blank.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

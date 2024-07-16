@@ -4,7 +4,7 @@
 global.timeKeeper.moveTimeForward();
 countdownOngoing = false;
 global.timeKeeper.startPulse();
-alarm[1] = 2;
+alarm[1] = 2; 
 show_debug_message(global.timeKeeper.currentTime)
 // send pulse for 1 frame
 

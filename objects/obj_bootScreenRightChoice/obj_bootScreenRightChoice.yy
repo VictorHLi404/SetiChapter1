@@ -17,8 +17,8 @@
     "path": "folders/Objects/Boot Conversation Screen/Response Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_ConversationButton",
-    "path": "objects/obj_ConversationButton/obj_ConversationButton.yy",
+    "name": "obj_conversationButton",
+    "path": "objects/obj_conversationButton/obj_conversationButton.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

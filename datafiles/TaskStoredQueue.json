@@ -1,0 +1,22 @@
+{
+    "ScannerProcessing" : {
+        "TaskID": "ScannerProcessing",
+        "TaskName": "Process Signal Data",
+        "TaskDescription": "Compress radio wave data",
+        "TaskLength": 30,
+        "CurrentProgression": 10,
+        "IsOptimizable" : true,
+        "PuzzleType": "Ricochet", 
+        "PuzzleCode": "100"
+    },
+    "ScannerProcessing1" : {
+        "TaskID": "ScannerProcessing1",
+        "TaskName": "Outlier Identification",
+        "TaskDescription": "Remove outlier points and smooth waveband",
+        "TaskLength": 45,
+        "CurrentProgression": 30,
+        "IsOptimizable" : true,
+        "PuzzleType": "Ricochet", 
+        "PuzzleCode": "101"
+    }
+}

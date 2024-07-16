@@ -7,19 +7,24 @@ function createButton(_inputX, _inputY, _width, _height, _text, _dataHandler, _t
 	lineThickness = getTemplate("lineThickness");
 	roomCursor = asset_get_index(getTemplate("roomCursor"));
 	
-	
 	static leaveFocus = function() {
 		global.currentFocus = noone;
 	}
 	
 	static enterFocusCheck = function() {
-		if (position_meeting(mouse_x, mouse_y, buttonID) and (roomCursor.sprite_index == spr_cursor) and global.currentFocus == noone) {
-		global.currentFocus = buttonID;
+		if ((variable_instance_get(instance_position(mouse_x, mouse_y, obj_button), "buttonID") == buttonID) and (roomCursor.sprite_index == spr_cursor) and global.currentFocus == noone) {
+			global.currentFocus = buttonID;
+		}
+	}
+	
+	static enterConversationFocusCheck = function() {
+		if ((variable_instance_get(instance_position(mouse_x, mouse_y, obj_conversationButton), "buttonID") == buttonID) and (roomCursor.sprite_index == spr_cursor) and global.currentFocus == noone) {
+			global.currentFocus = buttonID;
 		}
 	}
 	
 	static buttonPressed = function() {
-		if (global.action and global.currentFocus = buttonID) { 
+		if (global.action and global.currentFocus == buttonID) { 
 			return true;
 		}
 		else { return false; }

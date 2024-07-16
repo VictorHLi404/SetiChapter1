@@ -12,8 +12,8 @@
     "path": "folders/Objects/Central Hub Screen/Button Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_MenuButton",
-    "path": "objects/obj_MenuButton/obj_MenuButton.yy",
+    "name": "obj_menuButton",
+    "path": "objects/obj_menuButton/obj_menuButton.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

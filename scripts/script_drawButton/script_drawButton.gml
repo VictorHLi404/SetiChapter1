@@ -4,10 +4,10 @@ function drawButton(buttonData){
 	
 	with (buttonData) { 
 		
-		setButtonTextData(font)
+		setButtonTextData(font);
 		
-		x1 = XCoord // leftmost
-		y1 = YCoord // topmost
+		x1 = XCoord; // leftmost
+		y1 = YCoord; // topmost
 		x2 = XCoord+width; // rightmost
 		y2 = YCoord+height; // bottommost
 
