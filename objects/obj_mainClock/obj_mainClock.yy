@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Data Handling Objects",
-    "path": "folders/Objects/Central Hub Screen/Data Handling Objects.yy",
+    "name": "Display Objects",
+    "path": "folders/Objects/Central Hub Screen/Display Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

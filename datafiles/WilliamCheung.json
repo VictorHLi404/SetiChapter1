@@ -1,5 +1,15 @@
 {
     "Name": "William Cheung",
+    "Details" : {
+        "Position" : "",
+        "Divison" : "",
+        "EmploymentDate" : "",
+        "SecurityClearance" : "",
+        "DateOfBirth" : "",
+        
+        "Previous Terminal Access Date" : "",
+        "Total Terminal Access Time" : ""
+    },
     "Stats": {
         "defaultAgreeability": 10,
         "currentAgreeability": 10,

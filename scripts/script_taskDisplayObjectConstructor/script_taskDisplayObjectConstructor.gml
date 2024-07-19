@@ -16,6 +16,14 @@ function createTaskDisplayObject(_type, _x, _y, _imageAngle, _active, _taskData)
 		taskData = newTaskData;
 	}
 	
+	static getIsCurrentlyProgressing = function() {
+		return taskData.getIsCurrentlyProgressing();
+	}
+	
+	static getTaskID = function() {
+		return taskData.getTaskID();	
+	}
+	
 	static getTaskName = function() {
 		return taskData.getTaskName();
 	}
@@ -26,5 +34,13 @@ function createTaskDisplayObject(_type, _x, _y, _imageAngle, _active, _taskData)
 	
 	static getCompletion = function() { // float of ratio between completed length and remaining
 		return taskData.getCurrentProgression()/taskData.getTaskLength();
+	}
+	
+	static getIsOptimizable = function() {
+		return taskData.getIsOptimizable();
+	}
+	
+	static getRemainingTime = function() {
+		return taskData.getRemainingTime();
 	}
 }

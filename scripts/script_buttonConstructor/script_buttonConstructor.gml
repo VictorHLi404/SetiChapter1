@@ -12,8 +12,10 @@ function createButton(_inputX, _inputY, _width, _height, _text, _dataHandler, _t
 	}
 	
 	static enterFocusCheck = function() {
-		if ((variable_instance_get(instance_position(mouse_x, mouse_y, obj_button), "buttonID") == buttonID) and (roomCursor.sprite_index == spr_cursor) and global.currentFocus == noone) {
-			global.currentFocus = buttonID;
+		if ((variable_instance_get(instance_position(mouse_x, mouse_y, obj_button), "buttonID") == buttonID)) {
+			if ( global.currentFocus == noone) {
+					global.currentFocus = buttonID;
+			}
 		}
 	}
 	
@@ -38,6 +40,25 @@ function createButton(_inputX, _inputY, _width, _height, _text, _dataHandler, _t
 		return dataHandler.getValue(valueID, fileName);
 	}
 	
+	static setToNoCollision = function() {
+		sprite_index = spr_noCollision;
+	}
 	
+	static setToCollision = function() {
+		sprite_index = spr_blank;
+	}
+	
+}
+
+function createStateButton (_inputX, _inputY, _width, _height, _text, _dataHandler, _templateFile, _buttonID, _initialState) : createButton(_inputX, _inputY, _width, _height, _text, _dataHandler, _templateFile, _buttonID) constructor { // true or false button
+	internalState = _initialState;
+	
+	static setInternalState = function(state) {
+		internalState = state;
+	}
+	
+	static getInternalState = function(state) {
+		return internalState;
+	}
 }
 
