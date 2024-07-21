@@ -51,6 +51,7 @@ function createButton(_inputX, _inputY, _width, _height, _text, _dataHandler, _t
 }
 
 function createStateButton (_inputX, _inputY, _width, _height, _text, _dataHandler, _templateFile, _buttonID, _initialState) : createButton(_inputX, _inputY, _width, _height, _text, _dataHandler, _templateFile, _buttonID) constructor { // true or false button
+	
 	internalState = _initialState;
 	
 	static setInternalState = function(state) {

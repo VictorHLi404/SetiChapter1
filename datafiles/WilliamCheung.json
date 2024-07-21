@@ -1,14 +1,14 @@
 {
     "Name": "William Cheung",
+    "FileName": "WilliamCheung.json",
     "Details" : {
-        "Position" : "",
-        "Divison" : "",
-        "EmploymentDate" : "",
-        "SecurityClearance" : "",
-        "DateOfBirth" : "",
-        
-        "Previous Terminal Access Date" : "",
-        "Total Terminal Access Time" : ""
+        "Position" : "Guest Researcher",
+        "Division" : "Epsilon",
+        "SecurityClearance" : "RED",
+        "EmploymentDate" : "N/A",
+        "DateOfBirth" : "04/22/1962",
+        "PersonalTerminalID" : "0677",
+        "PreviousConversations" : ["intro.txt", "first.txt", "second.txt"]
     },
     "Stats": {
         "defaultAgreeability": 10,

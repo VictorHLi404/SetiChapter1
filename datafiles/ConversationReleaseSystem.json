@@ -1,0 +1,38 @@
+{
+    "William Cheung": {
+        "000" : {
+            "ConversationID" : "000", 
+            "ConversationName" : "Introduction",
+            "ConversationFileName" : "WC_intro.json",
+            "MinimumTimeElapsed" : 0,
+            "TimeOfDay" : 12,
+            "HasBeenCompleted" : false,
+            "NPCFlags" :{
+
+            },
+            "PlayerFlags" : {
+
+            },
+            "TaskFlags" : {
+
+            },
+            "WorldFlags" : {
+
+            },
+            "CompletionFlags" : {
+                "NPCFlags" :{
+
+                },
+                "PlayerFlags" : {
+    
+                },
+                "WorldFlags" : {
+    
+                }
+            },
+            "CompletionTasks" : {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "Name": "Daniel Miya",
+    "FileName" : "DanielMiya.json",
+    "Details" : {
+        "Position" : "Site-55 Director",
+        "Division" : "Theta",
+        "SecurityClearance" : "BLACK",
+        "EmploymentDate" : "01/01/1969",
+        "DateOfBirth" : "11/06/1949",
+        "PersonalTerminalID" : "0001",
+        "PreviousConversations" : ["intro.txt", "first.txt"]
+    },
+    "Stats": {
+        "defaultAgreeability": 10,
+        "currentAgreeability": 10,
+        "defaultTrust": 10,
+        "currentTrust": 10,
+        "defaultFear": 10,
+        "currentFear": 10
+    },
+    "Flags": {
+        "refersToPlayerAsSol": false
+    }
+}

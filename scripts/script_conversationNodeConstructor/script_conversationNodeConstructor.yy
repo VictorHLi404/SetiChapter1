@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Data Constructs",
-    "path": "folders/Scripts/Data Handling/Conversation Handling/Data Constructs.yy",
+    "name": "Conversation System",
+    "path": "folders/Scripts/Data Handling/Conversation Handling/Data Constructs/Conversation System.yy",
   },
 }

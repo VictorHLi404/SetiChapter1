@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "General Functions",
-    "path": "folders/Scripts/Data Handling/General Functions.yy",
+    "path": "folders/Scripts/General Functions.yy",
   },
 }
