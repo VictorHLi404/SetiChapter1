@@ -19,6 +19,8 @@
         "currentFear": 10
     },
     "Flags": {
-        "knowsNameIsSol": false
+        "knowsNameIsSol": false,
+        "isCurrentlyOnSite" : true,
+        "hasNotYetInteractedWith" : true
     }
 }

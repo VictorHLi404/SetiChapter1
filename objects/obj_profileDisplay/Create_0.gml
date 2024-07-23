@@ -18,6 +18,7 @@ openConversationHistoryButton = noone;
 openConversationButton = noone;
 
 runningProfileFileName = "";
+hasCurrentConversation = false;
 
 dataIsLoaded = false;
 alarm[0] = 3; 

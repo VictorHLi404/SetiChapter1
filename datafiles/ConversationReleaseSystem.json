@@ -1,38 +1,39 @@
 {
-    "William Cheung": {
-        "000" : {
-            "ConversationID" : "000", 
-            "ConversationName" : "Introduction",
-            "ConversationFileName" : "WC_intro.json",
-            "MinimumTimeElapsed" : 0,
-            "TimeOfDay" : 12,
-            "HasBeenCompleted" : false,
-            "NPCFlags" :{
+    "0000" : {
+        "ConversationID" : "0000", 
+        "ConversationName" : "Introduction",
+        "ConversationFileName" : "WC_intro.json",
+        "NPCFileName" : "WilliamCheung.json",
+        "MinimumTimeElapsed" : 4,
+        "MaximumTimeElapsed" : 96,
+        "RemainingEligibleTime" : 4,
+        "TimeOfDay" : 12,
+        "NPCFlags" : {
+            "currentAgreeability" : 10
+        },
+        "PlayerFlags" : {
+            "currentAgreeability" : 4
+        },
+        "TaskFlags" : {
+            "ScannerProcessing1" : false,
+            "ScannerProcessing2" : false
+        },
+        "WorldFlags" : {
+
+        },
+        "CompletionFlags" : {
+            "NPCFlags" : {
 
             },
             "PlayerFlags" : {
 
             },
-            "TaskFlags" : {
-
-            },
             "WorldFlags" : {
 
-            },
-            "CompletionFlags" : {
-                "NPCFlags" :{
-
-                },
-                "PlayerFlags" : {
-    
-                },
-                "WorldFlags" : {
-    
-                }
-            },
-            "CompletionTasks" : {
-
             }
+        },
+        "CompletionTasks" : {
+
         }
     }
 }

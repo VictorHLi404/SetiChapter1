@@ -5,9 +5,9 @@ function createConversationProfileHandler(_fileList) : createDataHandler(_fileLi
 	profileStackData = fileData[$ fileNames[0]][$ "ProfileStack"]; 
 	addFiles(array_concat([fileNames[0]], profileStackData)); // need 2 reinsert the original file ot make sure it doesnt get overwitten
 	blankProfile = new createNPCProfile("BlankProfile","","","","","","","","");
-	//conversationReleaser = new createConversationReleaser(["ConversationReleaseSystem.json"]);
+	conversationReleaser = new createConversationReleaser(["ConversationReleaseSystem.json", "ConversationCompletionMap.json"]);
 	profileStack = new createStack();
-	
+	conversationStandbyQueue = conversationReleaser.getConversationStandbyQueue();
 	profileIconViewCount = 4; // # of profiles put on display at a time
 	
 	static decompileJSON = function(JSONStruct) { // decompile a profile json into array
@@ -45,6 +45,62 @@ function createConversationProfileHandler(_fileList) : createDataHandler(_fileLi
 		}
 		return tempArray;
 	}
+	
+	static loadNewConversations = function(currentTime) {
+		conversationReleaser.loadConversationsIntoQueue(currentTime);
+		return;
+	}
+	
+	static updateConversationStandbyQueue = function() {
+		conversationStandbyQueue = conversationReleaser.getConversationStandbyQueue();
+		return;
+	}
+	
+	static progressTime = function() { // iterate through conversations and tick down eligible time; if no longer eligible, kick out of the queue
+		for (var i = 0; i < conversationStandbyQueue.getLength(); i++) {
+			var conversationReference = conversationStandbyQueue.getItem(i);
+			conversationReference.progressEligibleTime();
+		}
+		return;
+	}
+	
+	static evaluateTimeEligbility = function() {
+		for (var i = 0; i < conversationStandbyQueue.getLength(); i++) {
+			var conversationReference = conversationStandbyQueue.getItem(i);
+			if (!conversationReference.isCurrentlyEligible()) { // if time runs out
+				conversationStandbyQueue.removeIndex(i);
+				show_message(conversationReference.getConversationID() + " HAS EXPIRED");
+				for (var j = 0; j < profileStack.getLength(); j++) {
+					var profileReference = profileStack.getItem(j);
+					if (conversationReference.getNPCFileName() == profileReference.getFileName()) {
+						profileReference.unloadCurrentConversation();
+					}
+				}	
+			}
+		}
+		return;
+	}
+	
+	static loadConversationsIntoProfile = function() { // O(n)^2 : if laggy, redo this one
+		for (var i = 0; i < conversationStandbyQueue.getLength(); i++) {
+			var conversationReference = conversationStandbyQueue.getItem(i);
+			for (var j = 0; j < profileStack.getLength(); j++) {
+				var profileReference = profileStack.getItem(j);
+				if (conversationReference.getNPCFileName() == profileReference.getFileName()) { // if the person doesnt already exist
+					if (profileReference.getHasCurrentConversation()) {
+						if (profileReference.getCurrentConversationFileName() != conversationReference.getConversationFileName()) {
+							conversationReference.delayEligibleTime();
+						}
+					}
+					else {
+						profileReference.loadCurrentConversation(conversationReference.getConversationFileName());
+						show_message(profileReference);
+					}
+				}
+			}
+		}
+	}
+
 	
 	static getBlankProfile = function() {
 		return blankProfile;

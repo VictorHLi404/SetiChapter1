@@ -65,9 +65,22 @@ function createNPCProfile(_name, _fileName, _position, _division, _securityClear
 	
 	static setHasCurrentConversation = function(state) {
 		hasCurrentConversation = state;
+		return;
 	}
 	
 	static getHasCurrentConversation = function() {
 		return hasCurrentConversation;
+	}
+	
+	static loadCurrentConversation = function(newConversationFileName) {
+		hasCurrentConversation = true;
+		currentConversationFileName = newConversationFileName;
+		return;
+	}
+	
+	static unloadCurrentConversation = function() {
+		hasCurrentConversation = false;
+		currentConversationFileName = "";
+		return;
 	}
 }

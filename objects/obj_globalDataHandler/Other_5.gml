@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-dataHandler = new createDataHandler(["centralHubScreenButtonTemplate.json"]);
 
 
 
@@ -13,4 +12,20 @@ dataHandler = new createDataHandler(["centralHubScreenButtonTemplate.json"]);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Inherit the parent event
+//event_inherited();
 

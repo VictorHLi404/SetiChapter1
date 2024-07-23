@@ -3,7 +3,7 @@
 
 global.conversationProfileHandler = new createConversationProfileHandler(["ProfileStack.json"]);
 global.conversationProfileHandler.initializeStack();
-
+global.conversationProfileHandler.loadNewConversations(global.timeKeeper.getCurrentTime());
 isActive = false; // whether its counting ticks to update new things
 isDisplayActive = false; // whether its sending display updates to the task displays
 

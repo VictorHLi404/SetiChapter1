@@ -4,11 +4,12 @@
 mainProfileDisplay.checkIsBlank();
 
 if (dataIsLoaded) {
-	if (mainProfileDisplay.getFileName() != runningProfileFileName) { // if change in update
+	if (mainProfileDisplay.getFileName() != runningProfileFileName) { // if change in profile
 		instance_destroy(openConversationHistoryButton);
 		instance_destroy(openConversationButton);
 		openConversationHistoryButton = noone;
 		openConversationButton = noone;
+		hasCurrentConversation = false;
 
 		if (!mainProfileDisplay.getIsBlank()) {
 			profileNameDisplayField.updateText(mainProfileDisplay.getName());
@@ -20,10 +21,22 @@ if (dataIsLoaded) {
 			profilePersonalTerminalIDDisplayField.updateText(mainProfileDisplay.getPersonalTerminalID());
 			createConversationHistoryButtonInstance();
 			if (mainProfileDisplay.getHasCurrentConversation()) {
+				hasCurrentConversation = true;
 				createConversationLoaderButtonInstance();
 			}
 		}
 		runningProfileFileName = mainProfileDisplay.getFileName();
+	}
+	if (hasCurrentConversation != mainProfileDisplay.getHasCurrentConversation()) { // if change in conversastion
+			if (mainProfileDisplay.getHasCurrentConversation()) { // if button is to be made
+				hasCurrentConversation = true;
+				createConversationLoaderButtonInstance();
+			}
+			else { // if button is to be destroyed
+				instance_destroy(openConversationButton);
+				openConversationButton = noone;
+				hasCurrentConversation = false;
+			}
 	}
 }
 

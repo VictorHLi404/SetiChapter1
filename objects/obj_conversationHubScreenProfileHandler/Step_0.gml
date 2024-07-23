@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 
+
+
 if (isDisplayActive) {
 	obj_SwapProfileList.updateTotalNumberOfPages(global.conversationProfileHandler.getProfileStackLength());
 	var startIndex = obj_SwapProfileList.getStartIndex();
