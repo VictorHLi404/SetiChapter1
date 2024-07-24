@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Conversion Functions",
-    "path": "folders/Scripts/Data Handling/Conversation Handling/Conversion Functions.yy",
+    "path": "folders/Scripts/Conversation Screen/Conversation Handling/Conversion Functions.yy",
   },
 }

@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Data Handling",
-    "path": "folders/Objects/Boot Conversation Screen/Data Handling.yy",
+    "path": "folders/Objects/Conversation Hub Screen/Boot Conversation Screen/Data Handling.yy",
   },
   "parentObjectId": {
     "name": "obj_UserCursor",

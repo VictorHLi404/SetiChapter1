@@ -47,19 +47,23 @@ function createConversationHistoryButtonInstance() {
 function createConversationLoaderButtonInstance() { // ONLY CREATED IF CONVERSATION IS CURRENTLY LOADED
 	var conversationLoaderButtonID = "ConversationLoader" + uniqueProfileID;
 	var conversationLoaderButton = new createConversationLoaderButton(x+500, y+890, 410, 150, "ANSWER", displayDataHandler, displayTemplateFile, conversationLoaderButtonID, mainProfileDisplay.getCurrentConversationFileName());
-	var conversationLoadData = mainProfileDisplay.getCurrentConversationFileName();
+	var conversationFileName = mainProfileDisplay.getCurrentConversationFileName();
+	var conversationNPCFileName = mainProfileDisplay.getFileName();
 	openConversationButton = instance_create_layer(x+500, y+890, "Instances", obj_button);
 	
 	with (openConversationButton) {
 		button = conversationLoaderButton;
 		buttonID = conversationLoaderButtonID;
-		currentConversationFileName = conversationLoadData;
+		currentConversationFileName = conversationFileName;
+		currentConversationNPCFileName = conversationNPCFileName;
 		depth = -10000;
 		image_xscale = 6.4;
 		image_yscale = 2.34;
 		
 		uniqueButtonEvent = function() {
 			show_message(currentConversationFileName);
+			global.conversationProfileHandler.updateConversationToLoad(currentConversationFileName, currentConversationNPCFileName);
+			room_goto(room_bootConversationScreen);
 		}
 	}
 	return;

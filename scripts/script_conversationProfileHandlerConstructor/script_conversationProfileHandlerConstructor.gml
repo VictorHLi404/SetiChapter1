@@ -2,13 +2,18 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function createConversationProfileHandler(_fileList) : createDataHandler(_fileList) constructor {
 	// only pass in one argument, conversationStack.json, pull resulting json from there
+	profileIconViewCount = 4; // # of profiles put on display at a time
 	profileStackData = fileData[$ fileNames[0]][$ "ProfileStack"]; 
 	addFiles(array_concat([fileNames[0]], profileStackData)); // need 2 reinsert the original file ot make sure it doesnt get overwitten
 	blankProfile = new createNPCProfile("BlankProfile","","","","","","","","");
+	
 	conversationReleaser = new createConversationReleaser(["ConversationReleaseSystem.json", "ConversationCompletionMap.json"]);
 	profileStack = new createStack();
+	
 	conversationStandbyQueue = conversationReleaser.getConversationStandbyQueue();
-	profileIconViewCount = 4; // # of profiles put on display at a time
+	
+	currentConversationToLoad = "";
+	currentNPCToLoad = "";
 	
 	static decompileJSON = function(JSONStruct) { // decompile a profile json into array
 		var dataArray = [];
@@ -112,5 +117,18 @@ function createConversationProfileHandler(_fileList) : createDataHandler(_fileLi
 	
 	static getProfileStackLength = function() {
 		return profileStack.getLength();	
+	}
+	
+	static updateConversationToLoad = function(conversationFileName, conversationNPCFileName) {
+		currentConversationToLoad = conversationFileName;
+		currentNPCToLoad = conversationNPCFileName;
+	}
+	
+	static getCurrentConversationToLoad = function() {
+		return currentConversationToLoad;	
+	}
+	
+	static getCurrentNPCToLoad = function() {
+		return currentNPCToLoad;
 	}
 }

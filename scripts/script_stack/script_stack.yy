@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "General Functions",
-    "path": "folders/Scripts/General Functions.yy",
+    "name": "Math and Data Structures",
+    "path": "folders/Scripts/General Functions/Math and Data Structures.yy",
   },
 }

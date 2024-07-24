@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Task Handling",
-    "path": "folders/Scripts/Data Handling/Task Handling.yy",
+    "path": "folders/Scripts/Task Management Screen/Task Handling.yy",
   },
 }

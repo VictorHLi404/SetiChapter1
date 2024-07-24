@@ -1,0 +1,13 @@
+{
+    "MainProcessingNode" : {
+        "IsActive" : true,
+        "gridWidth" : 5,
+        "gridHeight" : 4, 
+        "InternalGrid" : [
+            ["BlankCell", "BlankCell", "BlankCell", "BlankCell", "BlankCell"],
+            ["BlankCell", "BlankCell", "BlankCell", "BlankCell", "BlankCell"],
+            ["BlankCell", "BlankCell", "BlankCell", "BlankCell", "BlankCell"],
+            ["BlankCell", "BlankCell", "BlankCell", "BlankCell", "BlankCell"]
+        ]
+    }
+}

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Conversation System",
-    "path": "folders/Scripts/Data Handling/Conversation Handling/Data Constructs/Conversation System.yy",
+    "path": "folders/Scripts/Conversation Screen/Conversation Handling/Data Constructs/Conversation System.yy",
   },
 }

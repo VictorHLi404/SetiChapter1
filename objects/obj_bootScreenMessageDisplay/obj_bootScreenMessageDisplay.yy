@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Message Objects",
-    "path": "folders/Objects/Boot Conversation Screen/Message Objects.yy",
+    "path": "folders/Objects/Conversation Hub Screen/Boot Conversation Screen/Message Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

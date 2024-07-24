@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Templates",
-    "path": "folders/Scripts/Object Constructs/Templates.yy",
+    "path": "folders/Scripts/Miscellaneous/Templates.yy",
   },
 }

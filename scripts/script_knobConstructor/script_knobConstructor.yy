@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Scanner Screen Objects",
-    "path": "folders/Scripts/Object Constructs/Scanner Screen Objects.yy",
+    "path": "folders/Scripts/Scanner Screen/Scanner Screen Objects.yy",
   },
 }

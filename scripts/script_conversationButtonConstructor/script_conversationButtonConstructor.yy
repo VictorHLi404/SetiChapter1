@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Conversation Menu Objects",
-    "path": "folders/Scripts/Object Constructs/Conversation Menu Objects.yy",
+    "path": "folders/Scripts/Conversation Screen/Conversation Menu Objects.yy",
   },
 }

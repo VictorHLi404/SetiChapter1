@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Conversation Hub Screen Objects",
-    "path": "folders/Scripts/Object Constructs/Conversation Hub Screen Objects.yy",
+    "path": "folders/Scripts/Conversation Screen/Conversation Hub Screen Objects.yy",
   },
 }

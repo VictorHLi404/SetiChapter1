@@ -14,7 +14,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Response Objects",
-    "path": "folders/Objects/Boot Conversation Screen/Response Objects.yy",
+    "path": "folders/Objects/Conversation Hub Screen/Boot Conversation Screen/Response Objects.yy",
   },
   "parentObjectId": {
     "name": "obj_conversationButton",

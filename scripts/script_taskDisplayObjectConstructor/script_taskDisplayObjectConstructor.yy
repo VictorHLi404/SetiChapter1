@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Task Manager Screen Objects",
-    "path": "folders/Scripts/Object Constructs/Task Manager Screen Objects.yy",
+    "path": "folders/Scripts/Task Management Screen/Task Manager Screen Objects.yy",
   },
 }

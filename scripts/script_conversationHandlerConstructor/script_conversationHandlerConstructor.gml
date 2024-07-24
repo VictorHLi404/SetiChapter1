@@ -62,7 +62,7 @@ function createConversationHandler(_fileList, _npcFileName, _playerFileName) : c
 	}
 	
 	static loadConversation = function(_fileName) { // load a given file into a graph stored inside the object
-		
+		// change to initialize to only function present
 		var fileName = _fileName;
 		var rawData = getFile(fileName);
 		rawData = rawData[$ "Packages"][0][$ "Models"]; // break down into main core

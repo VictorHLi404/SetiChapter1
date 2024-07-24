@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-conversationHandler = new createConversationHandler(["WC_intro.json", "WilliamCheung.json", "DS_intro.json", "PlayerData.json", "DM_intro.json", "introStatus.json", "DanielMiy.json"], "WilliamCheung.json", "PlayerData.json");
+conversationHandler = new createConversationHandler(["PlayerData.json", global.conversationProfileHandler.getCurrentNPCToLoad(),  global.conversationProfileHandler.getCurrentConversationToLoad()], global.conversationProfileHandler.getCurrentNPCToLoad(), "PlayerData.json");
 conversationHandler.loadConversation(conversationHandler.fileList[2]);
 conversationHandler.initializeConversation();
 show_message("CONVERSATION HANDLER INITIALIZATION COMPLETE")

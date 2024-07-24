@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "General Functions",
-    "path": "folders/Scripts/General Functions.yy",
+    "name": "String Manipulation",
+    "path": "folders/Scripts/General Functions/String Manipulation.yy",
   },
 }

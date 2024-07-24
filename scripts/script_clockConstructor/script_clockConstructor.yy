@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "General Use Objects",
-    "path": "folders/Scripts/Object Constructs/General Use Objects.yy",
+    "name": "Global + Parent Objects",
+    "path": "folders/Scripts/Miscellaneous/Global + Parent Objects.yy",
   },
 }

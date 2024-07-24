@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Conversation Profiles",
-    "path": "folders/Scripts/Data Handling/Conversation Handling/Data Constructs/Conversation Profiles.yy",
+    "path": "folders/Scripts/Conversation Screen/Conversation Handling/Data Constructs/Conversation Profiles.yy",
   },
 }
