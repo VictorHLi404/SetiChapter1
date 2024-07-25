@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "script_cellGridConstructor",
+  "name": "script_networkNodeConstructor",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

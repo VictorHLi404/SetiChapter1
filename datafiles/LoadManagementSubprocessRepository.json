@@ -1,0 +1,58 @@
+{
+    "BlankCell" : {
+        "SubprocessID" : "",
+        "SubprocessName" :  "",
+        "SubprocessDescription" : "",
+        "SubprocessType" : "",
+        "SubprocessEffect" : 0,
+        "Meta": ""
+    },
+    "001" : {
+        "SubprocessID" : "001",
+        "SubprocessName" :  "Terminal Access API",
+        "SubprocessDescription" : "CORE FUNCTION",
+        "SubprocessType" : "CoreFunction",
+        "SubprocessEffect" : 0,
+        "Meta": "READ ONLY"
+    },
+    "100" : {
+        "SubprocessID" : "100",
+        "SubprocessName" :  "User Interaction Data",
+        "SubprocessDescription" : "DATA",
+        "SubprocessType" : "Data",
+        "SubprocessEffect" : 0,
+        "Meta": "READ ONLY"
+    },
+    "201" : {
+        "SubprocessID" : "200",
+        "SubprocessName" :  "Signal Variance Normalization",
+        "SubprocessDescription" : "SIGNAL DETECTION",
+        "SubprocessType" : "SignalVariance",
+        "SubprocessEffect" : 1.02,
+        "Meta": "MULTIPLICATIVE"
+    },
+    "202" : {
+        "SubprocessID" : "300",
+        "SubprocessName" :  "Regex Signal Interpolation",
+        "SubprocessDescription" : "SIGNAL DETECTION",
+        "SubprocessType" : "SignalInterpolation",
+        "SubprocessEffect" : 1.02,
+        "Meta": "MULTIPLICATIVE"
+    },
+    "301" : {
+        "SubprocessID" : "301",
+        "SubprocessName" :  "Transformation Matrix",
+        "SubprocessDescription" : "OPTIMIZATION",
+        "SubprocessType" : "SingleTaskCompletionSpeed",
+        "SubprocessEffect" : 1.02,
+        "Meta": "MULTIPLICATIVE"
+    },
+    "401" : {
+        "SubprocessID" : "401",
+        "SubprocessName" :  "Alpha-Beta Pruning Algorithm",
+        "SubprocessDescription" : "OPTIMIZATION",
+        "SubprocessType" : "OptimizationBulletCount",
+        "SubprocessEffect" : 5,
+        "Meta": "ADDITIVE"
+    }
+}

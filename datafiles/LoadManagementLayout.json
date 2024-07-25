@@ -1,13 +1,58 @@
 {
-    "MainProcessingNode" : {
+    "M1" : {
+        "NetworkNodeID" : "M1",
         "IsActive" : true,
-        "gridWidth" : 5,
-        "gridHeight" : 4, 
+        "GridWidth" : 5,
+        "GridHeight" : 4, 
+        "PrerequisiteNodes" : [],
         "InternalGrid" : [
+            ["BlankCell", "BlankCell", "301", "BlankCell", "201"],
+            ["BlankCell", "BlankCell", "401", "BlankCell", "BlankCell"],
             ["BlankCell", "BlankCell", "BlankCell", "BlankCell", "BlankCell"],
-            ["BlankCell", "BlankCell", "BlankCell", "BlankCell", "BlankCell"],
-            ["BlankCell", "BlankCell", "BlankCell", "BlankCell", "BlankCell"],
-            ["BlankCell", "BlankCell", "BlankCell", "BlankCell", "BlankCell"]
+            ["BlankCell", "BlankCell", "BlankCell", "BlankCell", "201"]
+        ]
+    },
+    "T1" : {
+        "NetworkNodeID" : "T1",
+        "IsActive" : true,
+        "GridWidth" : 3,
+        "GridHeight" : 3, 
+        "PrerequisiteNodes" : [],
+        "InternalGrid" : [
+            ["401", "BlankCell", "BlankCell"],
+            ["BlankCell", "BlankCell", "BlankCell"],
+            ["BlankCell", "BlankCell", "BlankCell"]
+        ]
+    },
+    "B3" : {
+        "NetworkNodeID" : "B3",
+        "IsActive" : false,
+        "GridWidth" : 1,
+        "GridHeight" : 1, 
+        "PrerequisiteNodes" : ["M1"],
+        "InternalGrid" : [
+            ["401"]
+        ]
+    },
+    "B5" : {
+        "NetworkNodeID" : "B5",
+        "IsActive" : false,
+        "GridWidth" : 1,
+        "GridHeight" : 1, 
+        "PrerequisiteNodes" : ["M1"],
+        "InternalGrid" : [
+            ["401"]
+        ]
+    },
+    "C1" : {
+        "NetworkNodeID" : "C1",
+        "IsActive" : false,
+        "GridWidth" : 2,
+        "GridHeight" : 2, 
+        "PrerequisiteNodes" : ["B5"],
+        "InternalGrid" : [
+            ["BlankCell", "BlankCell"],
+            ["BlankCell", "BlankCell"]
         ]
     }
 }

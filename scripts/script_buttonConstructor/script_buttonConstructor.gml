@@ -13,7 +13,7 @@ function createButton(_inputX, _inputY, _width, _height, _text, _dataHandler, _t
 	
 	static enterFocusCheck = function() {
 		if ((variable_instance_get(instance_position(mouse_x, mouse_y, obj_button), "buttonID") == buttonID)) {
-			if ( global.currentFocus == noone) {
+			if (global.currentFocus == noone) {
 					global.currentFocus = buttonID;
 			}
 		}

@@ -22,6 +22,14 @@ function createRoomObject(_type, _x, _y, _imageAngle, _active) constructor { // 
 		}
 	}
 	
+	static setIsActive = function(state) {
+		active = state;
+	}
+	
+	static getIsActive = function() {
+		return active;
+	}
+	
 	static setType = function(_type) {
 		type = _type; 
 	}

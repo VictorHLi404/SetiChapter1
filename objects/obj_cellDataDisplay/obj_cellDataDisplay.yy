@@ -1,10 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_cellGrid",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "obj_cellDataDisplay",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -28,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_blankTile",
-    "path": "sprites/spr_blankTile/spr_blankTile.yy",
+    "name": "spr_cellDataDisplay",
+    "path": "sprites/spr_cellDataDisplay/spr_cellDataDisplay.yy",
   },
   "spriteMaskId": null,
   "visible": true,
