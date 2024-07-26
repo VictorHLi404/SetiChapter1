@@ -8,9 +8,11 @@ for (var i = 0; i < networkNode.getGridHeight(); i++) {
 		var gridCell = networkNode.getGridCell(i, j);
 		if (!gridCell.isBlank()) {
 			var positionalData = networkNode.getGridCoordinates(j, i);
+			gridCell.updateNodeType(networkNode.getNodeName(), string(i), string (j));
 			var newCell = instance_create_layer(positionalData[0], positionalData[1], "Instances", obj_processingCell);
 			with (newCell) {
 				cellData = gridCell;
+				updateCellSprite();
 			}
 		}
 	}

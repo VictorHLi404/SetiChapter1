@@ -1,12 +1,31 @@
 {
     "BlankCell" : {
-        "SubprocessID" : "",
+        "SubprocessID" : "BlankCell",
         "SubprocessName" :  "",
         "SubprocessDescription" : "",
         "SubprocessType" : "",
         "SubprocessEffect" : 0,
         "Meta": ""
     },
+
+    "1001" : {
+        "SubprocessID" : "1001",
+        "SubprocessName" :  "???????",
+        "SubprocessDescription" : "RUNAWAY PROCESS",
+        "SubprocessType" : "Corrupted",
+        "SubprocessEffect" : 0,
+        "Meta": ""
+    },
+
+    "2001" : {
+        "SubprocessID" : "2001",
+        "SubprocessName" :  "???????",
+        "SubprocessDescription" : "IN REPAIR",
+        "SubprocessType" : "InProgress",
+        "SubprocessEffect" : 0,
+        "Meta": ""
+    },
+
     "001" : {
         "SubprocessID" : "001",
         "SubprocessName" :  "Terminal Access API",

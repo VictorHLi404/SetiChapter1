@@ -1,1 +1,1 @@
-sprite_index = spr_dataCube;
+sprite_index = spr_dataCell;

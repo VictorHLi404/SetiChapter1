@@ -6,10 +6,10 @@
         "GridHeight" : 4, 
         "PrerequisiteNodes" : [],
         "InternalGrid" : [
-            ["BlankCell", "BlankCell", "301", "BlankCell", "201"],
-            ["BlankCell", "BlankCell", "401", "BlankCell", "BlankCell"],
-            ["BlankCell", "BlankCell", "BlankCell", "BlankCell", "BlankCell"],
-            ["BlankCell", "BlankCell", "BlankCell", "BlankCell", "201"]
+            ["100", "BlankCell", "301", "BlankCell", "201"],
+            ["1001", "100", "401", "BlankCell", "BlankCell"],
+            ["BlankCell", "BlankCell", "100", "BlankCell", "BlankCell"],
+            ["BlankCell", "BlankCell", "BlankCell", "100", "201"]
         ]
     },
     "T1" : {
@@ -41,7 +41,7 @@
         "GridHeight" : 1, 
         "PrerequisiteNodes" : ["M1"],
         "InternalGrid" : [
-            ["401"]
+            ["BlankCell"]
         ]
     },
     "C1" : {

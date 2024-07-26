@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+currentRoom = room_titleScreen;
+
+roomPathStack = new createStack();
 
 function staggerDefaultInput() {
 	if (global.placingInProgress == true) {
@@ -9,7 +12,6 @@ function staggerDefaultInput() {
 	else {
 		alarm[0] = 5;
 	}
-	show_message("DONE");
 }
 
 

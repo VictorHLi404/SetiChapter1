@@ -20,7 +20,6 @@ function setIsActive(state) {
 function evaluateIsActive() {
 	if (!isActive()) {
 		if (global.loadManagerHandler.isNodeActivationValid(networkNode) == true) {
-			show_message("CHANGE SPRITE");
 			sprite_index = spr_blankTile;
 			setIsActive(true);
 		}

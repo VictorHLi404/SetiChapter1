@@ -12,8 +12,8 @@
     {"name":"inst_7D0C2F52","path":"rooms/room_taskManagerScreen/room_taskManagerScreen.yy",},
     {"name":"TaskDisplay1","path":"rooms/room_taskManagerScreen/room_taskManagerScreen.yy",},
     {"name":"TaskDisplay2","path":"rooms/room_taskManagerScreen/room_taskManagerScreen.yy",},
-    {"name":"TaskDisplay4","path":"rooms/room_taskManagerScreen/room_taskManagerScreen.yy",},
     {"name":"TaskDisplay3","path":"rooms/room_taskManagerScreen/room_taskManagerScreen.yy",},
+    {"name":"TaskDisplay4","path":"rooms/room_taskManagerScreen/room_taskManagerScreen.yy",},
   ],
   "isDnd": false,
   "layers": [

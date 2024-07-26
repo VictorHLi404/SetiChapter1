@@ -99,6 +99,7 @@ function createTaskHandler(_fileList) : createDataHandler(_fileList) constructor
 			var task = taskQueue.getItem(i);
 			if (task.evaluateTask() == "TASK COMPLETE") {
 				updateValue(true, task.getTaskID(), "TaskCompletionMap.json");
+				show_message(taskCompletionMap);
 				taskQueue.removeIndex(i);
 			}
 			else if (task.evaluateTask() == "TASK TIMED OUT") {
@@ -107,5 +108,21 @@ function createTaskHandler(_fileList) : createDataHandler(_fileList) constructor
 			}
 		}
 		return;
+	}
+	
+	// integration with loadmanagerhandler for fixing corrupted tasks
+	
+	static convertCellIDToTaskID = function(cellID) { // string to string, takes in cellID number and turns into taskID
+		var startPoint = string_last_pos("/", cellID) + 1;
+		var taskID = string("CorruptedNodeRepair" + string_copy(cellID, startPoint, 4));
+		return taskID;
+	}
+	
+	static loadCorruptedNodeTask = function(cellID) {
+		appendToQueueFromJSONFile(convertCellIDToTaskID(cellID));
+	}
+	
+	static isCorruptedNodeComplete = function(cellID) {
+		return taskCompletionMap[$ convertCellIDToTaskID(cellID)];
 	}
 }

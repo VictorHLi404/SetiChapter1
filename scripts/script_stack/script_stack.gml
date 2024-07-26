@@ -22,7 +22,12 @@ function createStack() constructor { // array based modified stack
 			newArray[i-1] = internalArray[i];
 		}
 		internalArray = newArray;
+		tail--;
 		return;
+	}
+	
+	static peek = function() {
+		return internalArray[0];
 	}
 	
 	static removeIndex = function(index) {

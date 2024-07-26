@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if (mouse_check_button_pressed(mb_left)) {
+/*if (mouse_check_button_pressed(mb_left)) {
 	if (cellData.isFollowingMouse() && global.placingInProgress == false) { // picking up from cell
 		show_message("PICK UP");
 		pickupX = x;
@@ -34,7 +34,7 @@ if (mouse_check_button_pressed(mb_left)) {
 		}
 		obj_globalInputHandler.staggerDefaultInput();
 	}
-}
+}*/
 
 
 

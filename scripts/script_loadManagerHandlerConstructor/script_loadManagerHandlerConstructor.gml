@@ -4,8 +4,11 @@ function createLoadManagerHandler(_fileList) : createDataHandler(_fileList) cons
 	networkLayoutData = fileData[$ fileNames[0]]; // struct, contains the existing layout of the management
 	subprocessRepository = fileData[$ fileNames[1]]; // struct, contaisn all subprocess data to refer to when creating new object 
 	networkLayoutReference = {}; // easy way to access nodes to loop over / retrieve for data
-	blankCell = new createProcessingCell("BlankCell", -1000, -1000, 0, false, "BlankProcess");
+	
+	blankCell = new createProcessingCell("BlankCell", -1000, -1000, 0, false, new createSubprocess("","","","",0));
+	
 	masterBonusTracker = new createBonusCounter();
+	
 	static decompileNodeJSON = function(JSONStruct) { // for decompiling node json
 		var dataArray = [];
 		dataArray[0] = JSONStruct[$ "NetworkNodeID"];
@@ -58,23 +61,27 @@ function createLoadManagerHandler(_fileList) : createDataHandler(_fileList) cons
 		return networkLayoutReference[$ nodeID];
 	}
 	
+	static getBlankCell = function() {
+		return blankCell;
+	}
+	
 	static calculateBonuses = function() { // loop through all bonus object sin each grid, add to master list
 		var nodeNames = struct_get_names(networkLayoutReference);
 		var networkLength = struct_names_count(networkLayoutReference);
 		for (var i = 0; i < networkLength; i++) {
 			var currentNode = networkLayoutReference[$ nodeNames[i]];
 			if (currentNode.getNodeName() == "T1") {
-				show_message("RAM NODE")
+				//show_message("RAM NODE")
 				continue;
 			}
 			if (!currentNode.getIsActive()) {
-				show_message(currentNode.getNodeName() + " DISABLED");
+				//show_message(currentNode.getNodeName() + " DISABLED");
 				continue;
 			}
 			var currentNodeBonuses = currentNode.getNodeBonuses();
 			masterBonusTracker.combineBonusCounter(currentNodeBonuses);
 		}
-		show_message(masterBonusTracker);
+		//show_message(masterBonusTracker);
 	}
 	
 	static isNodeActivationValid = function(networkNode) { // loop through node list, check if aall are active, return boolean
@@ -84,8 +91,56 @@ function createLoadManagerHandler(_fileList) : createDataHandler(_fileList) cons
 			if (!prerequisiteNode.getIsActive()) {
 				return false;
 			}
+			if (prerequisiteNode.containsCorruptedCell()) {
+				//show_message(prerequisiteNode.getNodeName() + "  CONTAINS CORRUPT CELL");
+				return false;
+			}
 		}
 		show_message("SET " + networkNode.getNodeName() + " TO ACTIVE");
 		return true;
 	}
+	
+	static deleteFromNetwork = function(cellID) { // loop through node list, find specific location, delete
+		var nodeNames = struct_get_names(networkLayoutReference);
+		var length = struct_names_count(networkLayoutReference);
+		for (var i = 0; i < length; i++) {
+			var networkNode = networkLayoutReference[$ nodeNames[i]];
+			if (networkNode.containsCell(cellID)) {
+				networkNode.deleteFromGrid(cellID);
+			}
+		}
+	}
+	
+	static beginFixingNode = function(cellID) {
+		var nodeNames = struct_get_names(networkLayoutReference);
+		var length = struct_names_count(networkLayoutReference);
+		for (var i = 0; i < length; i++) {
+			var networkNode = networkLayoutReference[$ nodeNames[i]];
+			if (networkNode.containsCell(cellID)) {
+				networkNode.repairCellInGrid(cellID);
+				global.taskHandler.loadCorruptedNodeTask(cellID);
+			}
+		}		
+	}
+	
+	static evaluateInProgressNodes = function() {
+		var nodeNames = struct_get_names(networkLayoutReference);
+		var length = struct_names_count(networkLayoutReference);
+		for (var i = 0; i < length; i++) {
+			var networkNode = networkLayoutReference[$ nodeNames[i]];
+			if (networkNode.containsCorruptedCell()) {
+				var corruptedArray = networkNode.getCorruptedCells();
+				show_debug_message(corruptedArray);
+				for (var j = 0; j < array_length(corruptedArray); j++) {
+					var cellID = corruptedArray[i].getType();
+					if (global.taskHandler.isCorruptedNodeComplete(cellID)) {
+						networkNode.deleteFromGrid(cellID);
+					}
+				}
+				
+			}
+		}
+	}
+	
+
 }

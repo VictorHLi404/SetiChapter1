@@ -48,5 +48,16 @@
         "IsOptimizable" : false,
         "PuzzleType": "", 
         "PuzzleCode": ""
+    },
+    "CorruptedNodeRepair1001" : {
+        "TaskID": "CorruptedNodeRepair1001",
+        "TaskName": "Proceessor Defragmentation",
+        "TaskDescription": "Idk Random Bullshit",
+        "TaskCompletionWindow" : 50,
+        "TaskLength": 3,
+        "CurrentProgression": 0,
+        "IsOptimizable" : false,
+        "PuzzleType": "", 
+        "PuzzleCode": ""
     }
 }

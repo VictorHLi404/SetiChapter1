@@ -22,7 +22,7 @@ completionBarLength = 400;
 
 runningTaskID = "";
 
-function createTaskButtonInstance() {
+function createTaskButtonInstance() { // need to update so that the text keeps u p with swapping 
 	var enableTaskButtonID = "EnableButton"+uniqueTaskID;
 	var enableTaskButton = new createStateButton(x+1000, y+100, 200, 50, "DISABLED", displayDataHandler, displayTemplateFile, enableTaskButtonID, taskDisplay.getIsCurrentlyProgressing());
 	taskButtonInstance = instance_create_layer(x+1000, y+100, "Instances", obj_button);
@@ -36,6 +36,7 @@ function createTaskButtonInstance() {
 		
 		uniqueButtonEvent = function() {
 			var index = real(string_copy(buttonID, string_length(buttonID), 1))-1; // get index from the name of the display task
+			show_debug_message("TASK DISPLAY INDEX" + string(index));
 			button.setInternalState(!button.getInternalState()); // flip the state
 			global.taskHandler.setTaskProgression(index, button.getInternalState()); // update the main index
 			

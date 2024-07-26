@@ -7,7 +7,7 @@ function createNetworkNode(_type, _x, _y, _imageAngle, _active, _nodeName, _grid
 	gridHeight = _gridHeight;
 	cellSize = 40; // standard, hunt down to change later if buggy
 	prerequisiteNodes = _prerequisiteNodes; // list of previous nodes that need to be "active" for the current node to work
-	blankCell = new createProcessingCell("BlankCell", xPosition, yPosition, imageAngle, false, "BlankProcess");
+	blankCell = global.loadManagerHandler.getBlankCell();
 	
 	internalGrid = [gridWidth][gridHeight]; // 2 d array to store the resulting variables
 	currentBonuses = new createBonusCounter();
@@ -55,6 +55,8 @@ function createNetworkNode(_type, _x, _y, _imageAngle, _active, _nodeName, _grid
 	static placeInGrid = function(_x, _y, cellData) { // take in position of element hovering over it, snap in
 		var gridX = floor((_x - xPosition)/cellSize);
 		var gridY = floor((_y - yPosition)/cellSize);
+		cellData.updateNodeType(getNodeName(), string(gridX), string(gridY));
+		show_message(cellData.getType());
 		internalGrid[gridX][gridY] = cellData;
 		return;
 	}
@@ -65,17 +67,23 @@ function createNetworkNode(_type, _x, _y, _imageAngle, _active, _nodeName, _grid
 		return [xCoord, yCoord];
 	}
 	
-	static emptyCellInGrid = function(_x, _y) { // take n position of element existing inside of it, delete from array
+	static emptyCellInGrid = function(_x, _y) { // take position of element existing inside of it, delete from array
 		var gridX = floor((_x - xPosition)/cellSize);
 		var gridY = floor((_y - yPosition)/cellSize);
 		internalGrid[gridX][gridY] = blankCell;
+		return;
 	}
 	
-	static getNodeBonuses = function() {
+	static emptyCellInGridIndex = function(horizontalIndex, verticalIndex) {
+		internalGrid[horizontalIndex][verticalIndex] = blankCell;
+		return;
+	}
+	
+	static getNodeBonuses = function() { // loop through all valid nodes, sum up their effects
 		currentBonuses = new createBonusCounter();
 		for (var i = 0; i < gridWidth; i++) {
 			for (var j = 0; j < gridHeight; j++) {
-				if (!internalGrid[i][j].isBlank()) {
+				if (!internalGrid[i][j].isBlank() && internalGrid[i][j].isFunctionalCell()) {
 					var subprocessBonuses = internalGrid[i][j].getSubprocessBonuses(); // [type, effect];
 					currentBonuses.updateBonuses(subprocessBonuses);
 				}
@@ -83,4 +91,74 @@ function createNetworkNode(_type, _x, _y, _imageAngle, _active, _nodeName, _grid
 		}
 		return currentBonuses;
 	}
+	
+	static containsCorruptedCell = function() { // loop through to detect if any corrupted/inprogress nodes, use to detemrine whether to activate next ones
+		for (var i = 0; i < gridWidth; i++) {
+			for (var j = 0; j < gridHeight; j++) {
+				if (!internalGrid[i][j].isValidCell()) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	
+	static getCorruptedCells = function() { // loop through and collect all corrupted/inprogress nodes, then get IDs
+		var corruptedArray = [];
+		for (var i = 0; i < gridWidth; i++) {
+			for (var j = 0; j < gridHeight; j++) {
+				if (!internalGrid[i][j].isValidCell()) {
+					array_push(corruptedArray, internalGrid[i][j]);
+				}
+			}
+		}
+		return corruptedArray;
+	}
+	
+	static containsCell = function(cellID) { // loop through and match cell ID 
+		for (var i = 0; i < gridWidth; i++) {
+			for (var j = 0; j < gridHeight; j++) {
+				if (internalGrid[i][j].getType() == cellID) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	
+	static deleteFromGrid = function(cellID) { // loop through grid, find cellID, delte data and kill the instance
+		for (var i = 0; i < gridWidth; i++) {
+			for (var j = 0; j < gridHeight; j++) {
+				if (internalGrid[i][j].getType() == cellID) {
+					show_message(string(i) + " " + string(j));
+					emptyCellInGridIndex(i, j);
+					var cellInstance = instance_position(xPosition + i*cellSize + cellSize/2, yPosition + j*cellSize + cellSize/2, obj_processingCell);
+					if (cellInstance != noone) {
+						instance_destroy(cellInstance);
+					}
+					else {
+						show_message("MISSED");
+					}
+				}
+			}
+		}
+	}
+	
+	static searchGrid = function(cellID) { // loop through grid, return [horizontalIndex, verticalIndex] of position
+		for (var i = 0; i < gridWidth; i++) {
+			for (var j = 0; j < gridHeight; j++) {
+				if (internalGrid[i][j].getType() == cellID) {
+					return [i, j];
+				}
+			}
+		}
+		return [-1, -1] // return crash values if not present
+	}
+	
+	static repairCellInGrid = function(cellID) {
+		var cellIndex = searchGrid(cellID);
+		var cellData = internalGrid[cellIndex[0]][cellIndex[1]];
+		cellData.setCorruptedToInProgress();
+	}
+	
 }
