@@ -1,6 +1,19 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
+function audioFilenameToSource (fileName) {
+	var fileReference = {
+		"_1.ogg" : _1,
+		"_2.ogg" : _2,
+		"_3.ogg" : _3,
+		"_4.ogg" : _4,
+		"_5.ogg" : _5,
+		"_6.ogg" : _6,
+		"testnoise.ogg" : testnoise
+	}
+	return fileReference[$ fileName];
+}
+
 function normalizeHeight(length, maxHeight) {
 	var maxFrequencyAmplitude = 100;
 	var normalizedLength = (power(length,1/2)/power(maxFrequencyAmplitude,1/2))*maxHeight;

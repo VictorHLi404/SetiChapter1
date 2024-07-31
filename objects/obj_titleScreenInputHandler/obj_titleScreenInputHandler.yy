@@ -37,5 +37,5 @@
     "path": "sprites/spr_smileyGuy/spr_smileyGuy.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

@@ -41,5 +41,5 @@
     "path": "sprites/spr_taskHandler/spr_taskHandler.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

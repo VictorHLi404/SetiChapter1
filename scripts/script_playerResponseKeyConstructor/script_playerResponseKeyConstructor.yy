@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scanner Screen Objects",
-    "path": "folders/Scripts/Scanner Screen/Scanner Screen Objects.yy",
+    "name": "Data Handling",
+    "path": "folders/Scripts/Scanner Screen/Data Handling.yy",
   },
 }

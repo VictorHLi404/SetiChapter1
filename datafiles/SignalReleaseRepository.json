@@ -1,0 +1,66 @@
+{
+    "0000" : {
+        "SignalID" : "0000",
+        "Name" : "139 Tau Irregularity",
+        "MinimumTimeElapsed" : 5,
+        "HasBeenReleased" : false,
+        "AudioData" : {
+            "AnswerAudioFile" : "_1.ogg",
+            "UpperAudioFile" : "_1.ogg",
+            "LowerAudioFile" : "_2.ogg",
+            "NoiseFile" : "testnoise.ogg"
+        },
+        "SolutionData" : {
+            "Location" : [291, 360],
+            "MinimumDistance" : 300,
+            "UpperPitchAnswer" : 6,
+            "LowerPitchAnswer" : 7,
+            "UpperGainAnswer" : 2,
+            "LowerGainAnswer" : -3
+        },
+        "UponCompletionTasks" : []
+    },
+    "0001" : {
+        "SignalID" : "0001",
+        "Name" : "M1 Pulsar",
+        "MinimumTimeElapsed" : 5,
+        "HasBeenReleased" : false,
+        "AudioData" : {
+            "AnswerAudioFile" : "_3.ogg",
+            "UpperAudioFile" : "_3.ogg",
+            "LowerAudioFile" : "_4.ogg",
+            "NoiseFile" : "testnoise.ogg"
+        },
+        "SolutionData" : {
+            "Location" : [720, 360],
+            "MinimumDistance" : 300,
+            "UpperPitchAnswer" : 2,
+            "LowerPitchAnswer" : 8,
+            "UpperGainAnswer" : 2,
+            "LowerGainAnswer" : -3
+        },
+        "UponCompletionTasks" : []
+    },
+    "0002" : {
+        "SignalID" : "0002",
+        "Name" : "Tau Ceti Irregularity",
+        "MinimumTimeElapsed" : 5,
+        "HasBeenReleased" : false,
+        "AudioData" : {
+            "AnswerAudioFile" : "_3.ogg",
+            "UpperAudioFile" : "_5.ogg",
+            "LowerAudioFile" : "_6.ogg",
+            "NoiseFile" : "testnoise.ogg"
+        },
+        "SolutionData" : {
+            "Location" : [540, 360],
+            "MinimumDistance" : 300,
+            "UpperPitchAnswer" : 4,
+            "LowerPitchAnswer" : 3,
+            "UpperGainAnswer" : 2,
+            "LowerGainAnswer" : -3
+        },
+        "UponCompletionTasks" : []
+    }
+
+}

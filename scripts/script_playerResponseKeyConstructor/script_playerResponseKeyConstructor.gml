@@ -10,6 +10,17 @@ function createPlayerResponseKey(_answerX, _answerY, _upperPitchAnswer, _lowerPi
 	upperGainAnswer = _upperGainAnswer;
 	lowerGainAnswer = _lowerGainAnswer;
 	
+	static updateAnswerKey = function(answerData) { // taken from SignalData object getSolutionData
+		answerX = answerData[0][0];
+		answerY = answerData[0][1];
+		minimumDistance = answerData[1];
+		upperPitchAnswer = answerData[2];
+		lowerPitchAnswer = answerData[3];
+		upperGainAnswer = answerData[4];
+		lowerGainAnswer = answerData[5];
+		
+	}
+	
 	static isolationDistanceToFloat = function(distance) {
 		var isolationFloat = sqrt(distance/minimumDistance);
 		if (isolationFloat > 1) {

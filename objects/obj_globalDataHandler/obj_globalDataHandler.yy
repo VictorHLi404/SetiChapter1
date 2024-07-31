@@ -38,5 +38,5 @@
     "path": "sprites/spr_globalDataHandler/spr_globalDataHandler.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

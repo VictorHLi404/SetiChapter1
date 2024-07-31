@@ -34,5 +34,5 @@
     "path": "sprites/spr_loadManager/spr_loadManager.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

@@ -54,6 +54,11 @@ function checkAnswer() {
 	}
 }
 
+function updateAnswerKey(answerData) {
+	show_message(answerData);
+	playerResponseKey.updateAnswerKey(answerData);
+}
+
 
 
 

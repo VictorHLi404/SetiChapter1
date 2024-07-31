@@ -130,9 +130,9 @@ function createLoadManagerHandler(_fileList) : createDataHandler(_fileList) cons
 			var networkNode = networkLayoutReference[$ nodeNames[i]];
 			if (networkNode.containsCorruptedCell()) {
 				var corruptedArray = networkNode.getCorruptedCells();
-				show_debug_message(corruptedArray);
+				//show_debug_message(corruptedArray);
 				for (var j = 0; j < array_length(corruptedArray); j++) {
-					var cellID = corruptedArray[i].getType();
+					var cellID = corruptedArray[j].getType();
 					if (global.taskHandler.isCorruptedNodeComplete(cellID)) {
 						networkNode.deleteFromGrid(cellID);
 					}

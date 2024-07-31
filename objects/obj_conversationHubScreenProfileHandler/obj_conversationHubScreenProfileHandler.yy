@@ -42,5 +42,5 @@
     "path": "sprites/spr_conversationProfileHandler/spr_conversationProfileHandler.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

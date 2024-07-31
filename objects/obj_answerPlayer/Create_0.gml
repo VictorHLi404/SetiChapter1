@@ -1,6 +1,8 @@
 AudioIDinMV = global.INT_MAX;
 AudioID = global.INT_MAX;
 trackLength = global.INT_MIN;
+audioData = []; // array to be updated with the relavent data whenever a signal is switched
+// [answeraudio, upper, lower, noise]
 
 bottomRange = 900; // borders of how far the soundbar should go
 topRange = 775;
@@ -31,9 +33,24 @@ function getAudioID() {
 	return AudioID;
 }
 
+function stopPlayingSound() {
+	isCurrentlyDrawn = false;
+	audio_stop_sound(audioFilenameToSource(audioData[0]));
+	return;
+}
+
+function updateAudioData(newAudioData) {
+	if (array_length(audioData) > 0) {
+		stopPlayingSound();
+	}
+	audioData = newAudioData;
+	playAnswerSound();
+}
+
+
 function playAnswerSound() {
-	AudioIDinMV = mv_load(@"testchords.ogg"); 
-	AudioID = audio_play_sound(testchords,0, 0, 0.5);
+	AudioIDinMV = mv_load(audioData[0]); 
+	AudioID = audio_play_sound(audioFilenameToSource(audioData[0]), 0, 0, 0.5);
 	isCurrentlyPlaying = true;
 	isCurrentlyDrawn = true;
 	trackLength = getSoundFrameLength(AudioID);
@@ -41,4 +58,4 @@ function playAnswerSound() {
 	alarm[1] = getSoundFrameLength(AudioID); // for drawing the bars
 }
 
-playAnswerSound(); // when first loading into room, play off rip
+//playAnswerSound(); // when first loading into room, play off rip
