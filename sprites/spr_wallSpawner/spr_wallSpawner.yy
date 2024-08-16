@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_wallSpawner",
-  "bbox_bottom": 63,
+  "bbox_bottom": 68,
   "bbox_left": 0,
-  "bbox_right": 63,
+  "bbox_right": 68,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"67592415-7b90-4308-b3ad-ea25a29c22f1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4372fe76-192e-41ef-ba29-b7a80fbf72f2",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 69,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"93e75072-28f5-4914-8581-dab31e914745","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"279644b8-07ff-4658-9f98-e41c6955af97","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Battle Screen",
-    "path": "folders/Sprites/Battle Screen.yy",
+    "name": "Spawner Sprites",
+    "path": "folders/Sprites/Battle Screen/Object Sprites/Spawner Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"67592415-7b90-4308-b3ad-ea25a29c22f1","path":"sprites/spr_wallSpawner/spr_wallSpawner.yy",},},},"Disabled":false,"id":"d8cf5d14-8489-4cb5-a235-904e6a0cbe77","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4372fe76-192e-41ef-ba29-b7a80fbf72f2","path":"sprites/spr_wallSpawner/spr_wallSpawner.yy",},},},"Disabled":false,"id":"c4403bb0-03e1-43a2-8bb2-63c1831c3ac9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 69,
 }

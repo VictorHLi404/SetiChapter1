@@ -18,7 +18,7 @@ function createRoomScanner(_objectList) constructor {
 			//show_debug_message("SAVING ENDZONE OBJECT");
 			dataList[$ nameInstance] = instance.endZone.toString();
 		}
-		else if (instance.object_index == obj_projectileSpawner) {
+		else if (instance.object_index == obj_playerShooter) {
 			//show_debug_message("SAVING PROJECTILE SPAWNER");
 			dataList[$ nameInstance] = instance.projectileSpawner.toString();
 		}

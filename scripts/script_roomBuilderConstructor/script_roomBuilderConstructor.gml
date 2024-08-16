@@ -31,7 +31,7 @@ function createRoomBuilder(_fileNames) constructor {
 				instance_create_layer(instanceData[1], instanceData[2], "ZoneLayer", obj_deadZone);
 			}
 			else if (instanceData[0] == "PROJECTILE SPAWNER") {
-				var inst = instance_create_layer(instanceData[1], instanceData[2], "Instances", obj_projectileSpawner);
+				var inst = instance_create_layer(instanceData[1], instanceData[2], "Instances", obj_playerShooter);
 				with (inst) {
 					projectileSpawner.setProjectileCount(floor(instanceData[5]));
 				}

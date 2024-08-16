@@ -9,20 +9,37 @@ signalSelector = new createSignalSelector(global.signalHandler.getActiveSignalLi
 forwardButtonInstance = noone;
 backwardButtonInstance = noone;
 
+function getCurrentSignal() {
+	return signalSelector.getCurrentSignal();
+}
+
+function getCurrentSignalName() {
+	return signalSelector.getCurrentSignalName();
+}
+
+function getCurrentSignalID() {
+	return signalSelector.getCurrentSignalID();
+}
+
+
 function nextSignal() {
-	signalSelector.forwardPosition();
-	currentSignalDisplayField.updateText(signalSelector.getCurrentSignalName());
-	obj_playerResponseKey.updateAnswerKey(signalSelector.getCurrentSignalAnswerData());
-	obj_playerResponsePlayer.updateAudioData(signalSelector.getCurrentSignalAudioData());
-	obj_answerPlayer.updateAudioData(signalSelector.getCurrentSignalAudioData());
+	if (!signalSelector.isEmpty()) {
+		signalSelector.forwardPosition();
+		currentSignalDisplayField.updateText(signalSelector.getCurrentSignalName());
+		obj_playerResponseKey.updateAnswerKey(signalSelector.getCurrentSignalAnswerData());
+		obj_playerResponsePlayer.updateAudioData(signalSelector.getCurrentSignalAudioData());
+		obj_answerPlayer.updateAudioData(signalSelector.getCurrentSignalAudioData());
+	}
 }
 
 function previousSignal() {
-	signalSelector.backwardPosition();
-	currentSignalDisplayField.updateText(signalSelector.getCurrentSignalName());
-	obj_playerResponseKey.updateAnswerKey(signalSelector.getCurrentSignalAnswerData());
-	obj_playerResponsePlayer.updateAudioData(signalSelector.getCurrentSignalAudioData());
-	obj_answerPlayer.updateAudioData(signalSelector.getCurrentSignalAudioData());
+	if (!signalSelector.isEmpty()) {
+		signalSelector.backwardPosition();
+		currentSignalDisplayField.updateText(signalSelector.getCurrentSignalName());
+		obj_playerResponseKey.updateAnswerKey(signalSelector.getCurrentSignalAnswerData());
+		obj_playerResponsePlayer.updateAudioData(signalSelector.getCurrentSignalAudioData());
+		obj_answerPlayer.updateAudioData(signalSelector.getCurrentSignalAudioData());
+	}
 }
 
 function createForwardButton() {

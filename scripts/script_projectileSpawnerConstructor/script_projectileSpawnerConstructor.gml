@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function createprojectileSpawner(_type, _x, _y, _imageAngle, _active, _projectileCount) :  createRoomObject(_type, _x, _y, _imageAngle, _active) constructor {
+function createPlayerShooter(_type, _x, _y, _imageAngle, _active, _isLevelEditor, _projectileCount) : createPuzzleObject(_type, _x, _y, _imageAngle, _active, _isLevelEditor) constructor { 
 	
 	projectileCount = _projectileCount;
 

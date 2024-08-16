@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_endZone",
-    "path": "sprites/spr_endZone/spr_endZone.yy",
+    "name": "spr_endzone",
+    "path": "sprites/spr_endzone/spr_endzone.yy",
   },
   "spriteMaskId": null,
   "visible": true,

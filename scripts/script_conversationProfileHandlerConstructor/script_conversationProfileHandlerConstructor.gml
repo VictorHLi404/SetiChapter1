@@ -74,7 +74,7 @@ function createConversationProfileHandler(_fileList) : createDataHandler(_fileLi
 			var conversationReference = conversationStandbyQueue.getItem(i);
 			if (!conversationReference.isCurrentlyEligible()) { // if time runs out
 				conversationStandbyQueue.removeIndex(i);
-				show_message(conversationReference.getConversationID() + " HAS EXPIRED");
+				//show_message(conversationReference.getConversationID() + " HAS EXPIRED");
 				for (var j = 0; j < profileStack.getLength(); j++) {
 					var profileReference = profileStack.getItem(j);
 					if (conversationReference.getNPCFileName() == profileReference.getFileName()) {
@@ -99,7 +99,7 @@ function createConversationProfileHandler(_fileList) : createDataHandler(_fileLi
 					}
 					else {
 						profileReference.loadCurrentConversation(conversationReference.getConversationFileName());
-						show_message(profileReference);
+						//show_message(profileReference);
 					}
 				}
 			}

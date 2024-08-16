@@ -3,6 +3,7 @@
 
 
 if (place_meeting(x, y, obj_wall)) { // WALL MUST BE ROTATED ACCORDINGLY
+	show_message("REFACTOR STUPID");
 	if (projectileData.checkWallCollision() == true) {
 		var instance = instance_place(x, y, obj_wall);
 		var newAngle = abs(angle_difference(image_angle, instance.image_angle)) + instance.image_angle;

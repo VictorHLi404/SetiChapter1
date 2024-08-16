@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_smileyGuy",
-    "path": "sprites/spr_smileyGuy/spr_smileyGuy.yy",
+    "name": "spr_audioDisplayer",
+    "path": "sprites/spr_audioDisplayer/spr_audioDisplayer.yy",
   },
   "spriteMaskId": null,
   "visible": true,

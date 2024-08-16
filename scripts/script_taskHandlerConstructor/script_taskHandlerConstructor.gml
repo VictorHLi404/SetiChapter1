@@ -37,12 +37,25 @@ function createTaskHandler(_fileList) : createDataHandler(_fileList) constructor
 		return;
 	}
 	
+	static createTaskObjectFromID = function(taskID) {
+		var storedTaskData = decompileJSON(taskRepository[$ taskID]);
+		var storedTask = new createTaskObject(storedTaskData[0], storedTaskData[1], storedTaskData[2], storedTaskData[3],
+												storedTaskData[4], storedTaskData[5], storedTaskData[6], storedTaskData[7], storedTaskData[8]);
+		return storedTask;
+	}
+	
 	static appendToQueueFromJSONFile = function(taskID) { // look into the task repository and add from there
 		var storedTaskData = decompileJSON(taskRepository[$ taskID]);
 		var storedTask = new createTaskObject(storedTaskData[0], storedTaskData[1], storedTaskData[2], storedTaskData[3],
 												storedTaskData[4], storedTaskData[5], storedTaskData[6], storedTaskData[7], storedTaskData[8]);
 		storedTask.setIsCurrentlyProgressing(false);
 		taskQueue.append(storedTask);
+		return;
+	}
+	
+	static appendTaskObjectToQueue = function(taskObject) { // for custom operations, append taskobject to the queue
+		taskObject.setIsCurrentlyProgressing(false);
+		taskQueue.append(taskObject);
 		return;
 	}
 	
@@ -124,5 +137,18 @@ function createTaskHandler(_fileList) : createDataHandler(_fileList) constructor
 	
 	static isCorruptedNodeComplete = function(cellID) {
 		return taskCompletionMap[$ convertCellIDToTaskID(cellID)];
+	} 
+	
+	/// integration with signalHandler for processing signals
+	
+	static loadSignalTasks = function(taskIDList, taskLengthMultiplier) {
+		show_message("LOAD SIGNAL TASKS");
+		for (var i = 0; i < array_length(taskIDList); i++) { // PERMANENTLY modifies
+			var signalTask = createTaskObjectFromID(taskIDList[i]);
+			show_message(signalTask.getTaskLength());
+			signalTask.modifyTaskLength(taskLengthMultiplier);
+			show_message(signalTask.getTaskLength());
+			appendTaskObjectToQueue(signalTask);
+		}
 	}
 }

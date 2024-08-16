@@ -183,7 +183,7 @@ function createConversationReleaser(_fileList) : createDataHandler(_fileList) co
 				show_message("WORLD CHECK FAILED");
 				continue;
 			}
-			show_message(conversationNames[i] + " VALID TO BE LOADED");
+			//show_message(conversationNames[i] + " VALID TO BE LOADED");
 			// all checks have been passed
 			conversationStandbyQueue.append(temporaryConversationObject);
 			conversationCompletionMap[$ conversationNames[i]] = true;

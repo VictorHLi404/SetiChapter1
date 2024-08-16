@@ -21,7 +21,7 @@ function createPlayerResponseKey(_answerX, _answerY, _upperPitchAnswer, _lowerPi
 		
 	}
 	
-	static isolationDistanceToFloat = function(distance) {
+	static isolationDistanceToFloat = function(distance) { // easing functiont o return how much to isolate sound from location
 		var isolationFloat = sqrt(distance/minimumDistance);
 		if (isolationFloat > 1) {
 			return 1;
@@ -39,6 +39,10 @@ function createPlayerResponseKey(_answerX, _answerY, _upperPitchAnswer, _lowerPi
 		else {
 			return 0.5+floatDistance;
 		}
+	}
+	
+	static getDistanceFromPoint = function(cursorX, cursorY) {
+		return floor(getPythagoreanDistance(answerX, answerY, cursorX, cursorY));
 	}
 	
 	static calculateIsolation = function(cursorX, cursorY, isolationFactor) { // takes in position of starmap cursor, returns array containing numbers between 1-100 that represent gain values for respective objects
@@ -100,5 +104,9 @@ function createPlayerResponseKey(_answerX, _answerY, _upperPitchAnswer, _lowerPi
 	
 	static gainIntervalToFloat = function(interval) {
 		return (1/100)*(-1*power((interval-1),2));
+	}
+	
+	static getAnswerKey = function() { // return 
+		return []
 	}
 }

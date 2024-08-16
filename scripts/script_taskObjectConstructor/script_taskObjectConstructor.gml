@@ -47,6 +47,10 @@ function createTaskObject(_taskID, _taskName, _taskDescription, _taskLength, _cu
 		}
 	}
 	
+	static modifyTaskLength = function(taskLengthMultiplier) {
+		taskLength = floor(taskLengthMultiplier*taskLength);
+	}	
+	
 	static getTaskID = function() {
 		return taskID;
 	}

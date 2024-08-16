@@ -1,0 +1,1 @@
+updateSpawnerType("DEADZONE");

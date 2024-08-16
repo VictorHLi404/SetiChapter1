@@ -2,8 +2,8 @@
     "0000" : {
         "SignalID" : "0000",
         "Name" : "139 Tau Irregularity",
-        "MinimumTimeElapsed" : 5,
-        "HasBeenReleased" : false,
+        "MinimumTimeElapsed" : 2,
+        "HasBeenReleased" : true,
         "AudioData" : {
             "AnswerAudioFile" : "_1.ogg",
             "UpperAudioFile" : "_1.ogg",
@@ -11,14 +11,14 @@
             "NoiseFile" : "testnoise.ogg"
         },
         "SolutionData" : {
-            "Location" : [291, 360],
-            "MinimumDistance" : 300,
+            "Location" : [5525, 1380],
+            "MinimumDistance" : 600,
             "UpperPitchAnswer" : 6,
             "LowerPitchAnswer" : 7,
             "UpperGainAnswer" : 2,
             "LowerGainAnswer" : -3
         },
-        "UponCompletionTasks" : []
+        "UponCompletionTasks" : ["ScannerProcessing", "ScannerProcessing1", "ScannerProcessing2"]
     },
     "0001" : {
         "SignalID" : "0001",
@@ -47,7 +47,7 @@
         "MinimumTimeElapsed" : 5,
         "HasBeenReleased" : false,
         "AudioData" : {
-            "AnswerAudioFile" : "_3.ogg",
+            "AnswerAudioFile" : "_5.ogg",
             "UpperAudioFile" : "_5.ogg",
             "LowerAudioFile" : "_6.ogg",
             "NoiseFile" : "testnoise.ogg"

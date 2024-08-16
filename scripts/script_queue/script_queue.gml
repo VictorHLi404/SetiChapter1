@@ -55,4 +55,13 @@ function createQueue() constructor { // array backed modified queue
 	static getItem = function(index) {
 		return internalArray[index];
 	}
+	
+	static isEmpty = function() {
+		if (getLength() <= 0) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }

@@ -3,7 +3,7 @@
 
 dataHandler = obj_globalDataHandler.dataHandler;
 countdownOngoing = false; // variable to check if a tick is currently counting down
-lengthOfHour = 1; // length of hour in real time seconds CHANGE TO MODIFY THE ENTIRE THING
+lengthOfHour = 5; // length of hour in real time seconds CHANGE TO MODIFY THE ENTIRE THING
 initialized = false;
 global.timeKeeper = new createTimeKeeper(dataHandler);
 global.timeKeeper.loadCurrentTime();

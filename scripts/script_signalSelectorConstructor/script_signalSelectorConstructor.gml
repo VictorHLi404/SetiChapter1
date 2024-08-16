@@ -15,6 +15,15 @@ function createSignalSelector(_activeList) constructor {
 	static getCurrentSignalName = function() { // return string of name
 		return activeList.getItem(currentPosition).getName();
 	}
+	
+	static getCurrentSignal = function() {
+		return activeList.getItem(currentPosition);
+	}
+	
+	static getCurrentSignalID = function() {
+		return activeList.getItem(currentPosition).getSignalID();
+	}
+	
 	static getCurrentSignalAnswerData = function() { // return signalData object
 		return activeList.getItem(currentPosition).getSolutionData();
 	}
@@ -33,5 +42,8 @@ function createSignalSelector(_activeList) constructor {
 		if (currentPosition < 0) {
 			currentPosition = activeList.getLength()-1;
 		}
+	}
+	static isEmpty = function() {
+		return activeList.isEmpty();
 	}
 }

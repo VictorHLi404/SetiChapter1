@@ -3,10 +3,6 @@
 
 
 stopPlayingSound();
-/*isCurrentlyDrawn = false;
-audio_stop_sound(testchordslowerhalf);
-audio_stop_sound(testchordsupperhalf);
-audio_stop_sound(testnoise);*/
 
 
 

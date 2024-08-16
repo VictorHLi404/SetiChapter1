@@ -18,7 +18,8 @@ for (var i = 0; i < networkNode.getGridHeight(); i++) {
 	}
 }
 if (!isActive()) {
-	sprite_index = spr_endZone;
+	// CODE OUT AT THE END
+	sprite_index = spr_endzone;
 }
 
 

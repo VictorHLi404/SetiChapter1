@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Battle Screen Objects",
-    "path": "folders/Scripts/Battle Screen/Battle Screen Objects.yy",
+    "name": "Puzzle Objects",
+    "path": "folders/Scripts/Battle Screen/Physical Objects/Puzzle Objects.yy",
   },
 }
