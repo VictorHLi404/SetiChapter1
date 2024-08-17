@@ -7,8 +7,6 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_377D35C8","path":"rooms/room_levelEditorScreen/room_levelEditorScreen.yy",},
-    {"name":"inst_446D04BC","path":"rooms/room_levelEditorScreen/room_levelEditorScreen.yy",},
     {"name":"inst_DAEC97","path":"rooms/room_levelEditorScreen/room_levelEditorScreen.yy",},
     {"name":"inst_2B2150B","path":"rooms/room_levelEditorScreen/room_levelEditorScreen.yy",},
     {"name":"inst_DD33B6","path":"rooms/room_levelEditorScreen/room_levelEditorScreen.yy",},
@@ -16,12 +14,12 @@
     {"name":"inst_432AA3C8","path":"rooms/room_levelEditorScreen/room_levelEditorScreen.yy",},
     {"name":"inst_65BFE5AA","path":"rooms/room_levelEditorScreen/room_levelEditorScreen.yy",},
     {"name":"inst_7B432DAF","path":"rooms/room_levelEditorScreen/room_levelEditorScreen.yy",},
+    {"name":"inst_12B3D79","path":"rooms/room_levelEditorScreen/room_levelEditorScreen.yy",},
+    {"name":"inst_3696B911","path":"rooms/room_levelEditorScreen/room_levelEditorScreen.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":30,"gridY":30,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_377D35C8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_playerShooter","path":"objects/obj_playerShooter/obj_playerShooter.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":192.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_446D04BC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_playerShooter","path":"objects/obj_playerShooter/obj_playerShooter.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":598.0,"y":839.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_DAEC97","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_puzzleGrid","path":"objects/obj_puzzleGrid/obj_puzzleGrid.yy",},"properties":[],"rotation":0.0,"scaleX":1380.0,"scaleY":900.0,"x":30.0,"y":172.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2B2150B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_battleScreenCursor","path":"objects/obj_battleScreenCursor/obj_battleScreenCursor.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3.0,"y":7.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_DD33B6","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_puzzleObjectSpawner","path":"objects/obj_puzzleObjectSpawner/obj_puzzleObjectSpawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":999.0,"y":19.0,},
@@ -29,12 +27,14 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_432AA3C8","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_puzzleObjectSpawner","path":"objects/obj_puzzleObjectSpawner/obj_puzzleObjectSpawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1139.0,"y":19.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_65BFE5AA","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_puzzleObjectSpawner","path":"objects/obj_puzzleObjectSpawner/obj_puzzleObjectSpawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1209.0,"y":19.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7B432DAF","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_puzzleObjectSpawner","path":"objects/obj_puzzleObjectSpawner/obj_puzzleObjectSpawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1279.0,"y":19.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_12B3D79","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_roomScanner","path":"objects/obj_roomScanner/obj_roomScanner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":884.0,"y":24.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3696B911","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_roomBuilder","path":"objects/obj_roomBuilder/obj_roomBuilder.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":884.0,"y":96.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"bck_levelEditor","path":"sprites/bck_levelEditor/bck_levelEditor.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Development Rooms",
+    "path": "folders/Rooms/Development Rooms.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

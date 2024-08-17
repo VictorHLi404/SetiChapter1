@@ -7,3 +7,16 @@ function getPythagoreanDistance(x1, y1, x2, y2) {
 function generateRandomFloat(lowerBound, upperBound) {
 	return random_range(lowerBound, upperBound);
 }
+
+function mirrorAngleAlongYAxis(angle) {
+	if (angle <= 180) {
+		return 180-angle;
+	}
+	else {
+		return 540-angle;
+	}
+}
+
+function mirrorAngleAlongXAxis(angle) {
+
+}

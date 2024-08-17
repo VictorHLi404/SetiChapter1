@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Puzzle Object Sprites",
-    "path": "folders/Sprites/Battle Screen/Object Sprites/Puzzle Object Sprites.yy",
+    "name": "Generated",
+    "path": "folders/Sprites/Battle Screen/Object Sprites/Puzzle Object Sprites/Generated.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,40 +1,52 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function createRoomScanner(_objectList) constructor {
-	//
-	objectList = _objectList;
-	dataList = {};	
+function createPuzzleRoomScanner(_fileList) : createDataHandler(_fileList) constructor {
+	dataList = {};
 	
-	static saveCurrentRoom = function() {
-	for (var i = 0; i < array_length(objectList); i++) {
-		var instance = objectList[i];
-		var nameInstance = object_get_name(instance.object_index) + " " + string(i);
-		//show_debug_message(object_get_name(instance.object_index));
-		if (instance.object_index == obj_wall) {
-			//show_debug_message("SAVING WALL OBJECT");
-			dataList[$ nameInstance] = instance.wallData.toString();
-		}
-		else if (instance.object_index == obj_endZone) {
-			//show_debug_message("SAVING ENDZONE OBJECT");
-			dataList[$ nameInstance] = instance.endZone.toString();
-		}
-		else if (instance.object_index == obj_playerShooter) {
-			//show_debug_message("SAVING PROJECTILE SPAWNER");
-			dataList[$ nameInstance] = instance.projectileSpawner.toString();
-		}
-		else if (instance.object_index = obj_deadZone) {
-			//show_debug_message("SAVING DEADZONE OBJECT") 
-			dataList[$ nameInstance] = instance.deadZone.toString();
-		}
+	objectToNameMap = {
+		obj_wall : "WALL",
+		obj_deadZone : "DEADZONE",
+		obj_endZone : "ENDZONE",
+		obj_playerShooter : "PLAYERSHOOTER",
+		noone : "BLANK"
 	}
-}
-
+	
+	static saveCurrentRoom = function(objectGrid, gridWidth, gridHeight) {
+		var nameGrid = [gridWidth][gridHeight];
+		for (var i = 0; i < gridWidth; i++) {
+			for (var j = 0; j < gridHeight; j++) {
+				if (objectGrid[i][j] == noone) {
+					nameGrid[i][j] = "BLANK";
+					continue;
+				}
+				// if it gets too fat try to implement map again, but shit dont work
+				var objectID = objectGrid[i][j].object_index;
+				if (objectID == obj_wall) {
+					nameGrid[i][j] = "WALL";
+				}
+				else if (objectID == obj_deadZone) {
+					nameGrid[i][j] = "DEADZONE";
+				}
+				else if (objectID == obj_endZone) {
+					nameGrid[i][j] = "ENDZONE";
+				}
+				else if (objectID == obj_playerShooter) {
+					nameGrid[i][j] = "PLAYERSHOOTER";
+				}
+			}
+		}	
+		dataList[$ "RoomData"] = nameGrid;
+	}
+	
+	static saveLevelEditorFile = function() {
+		saveFiles();
+	}
 	
 	static saveToJSON = function (fileName) {
 		JSONSave(fileName, dataList);
 	}
 	
-	static updateObjectList = function(_objectList) {
-		objectList = _objectList;
+	static updateObjectGrid = function(newGrid) {
+		objectGrid = newGrid;
 	}
 }

@@ -14,6 +14,10 @@ function updateSpawnerType(newType) {
 	return;
 }
 
+function updateIsLevelEditor(boolean) {
+	puzzleObjectSpawner.updateIsLevelEditor(boolean);
+}
+
 loadSpawnerSprite();
 
 

@@ -5,12 +5,13 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Puzzle Objects",
-    "path": "folders/Objects/Battle Screen/Puzzle Objects.yy",
+    "name": "Shooting",
+    "path": "folders/Objects/Battle Screen/Puzzle Objects/Shooting.yy",
   },
   "parentObjectId": null,
   "persistent": false,

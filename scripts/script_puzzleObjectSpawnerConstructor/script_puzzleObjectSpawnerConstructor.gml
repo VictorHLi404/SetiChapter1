@@ -12,7 +12,9 @@ function createPuzzleObjectSpawner(_type, _isLevelEditor, _objectCurrentCount) c
 		"DEADZONE" : spr_deadzoneSpawner,
 		"ENDZONE" : spr_endzoneSpawner,
 		"ERASER" : spr_eraserIcon,
-		"PLAYERSHOOTER": spr_playerShooterSpawner
+		"PLAYERSHOOTER": spr_playerShooterSpawner,
+		
+		"PLAYERMADE_WALL" : spr_playerWallSpawner
 	};
 	
 	objectMap = {
@@ -20,7 +22,9 @@ function createPuzzleObjectSpawner(_type, _isLevelEditor, _objectCurrentCount) c
 		"DEADZONE" : obj_deadZone,
 		"ENDZONE" : obj_endZone,
 		"ERASER" : obj_eraser,
-		"PLAYERSHOOTER": obj_playerShooter
+		"PLAYERSHOOTER": obj_playerShooter,
+		
+		"PLAYERMADE_WALL" : obj_playerWall
 	};
 	
 	static updateType = function(newType) {
@@ -53,5 +57,10 @@ function createPuzzleObjectSpawner(_type, _isLevelEditor, _objectCurrentCount) c
 	
 	static getIsLevelEditor = function() {
 		return isLevelEditor;
+	}
+	
+	static updateIsLevelEditor = function(boolean) {
+		isLevelEditor = boolean;
+		return;
 	}
 }

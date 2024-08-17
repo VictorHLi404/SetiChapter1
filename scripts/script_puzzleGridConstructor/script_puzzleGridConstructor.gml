@@ -27,6 +27,21 @@ function createPuzzleGrid(_type, _x, _y, _imageAngle, _active, _width, _height, 
 		}
 	}
 	
+	static cleanPlayerInstances = function() { // go through entire grid and remove any playermade objects
+		for (var i = 0; i < gridWidth; i++) {
+			for (var j = 0; j < gridHeight; j++) {
+				if (internalGrid[i][j] == noone) {
+					continue;
+				}
+				var objectType = variable_instance_get(internalGrid[i][j], "objectData").getType();
+				if (string_contains("PLAYERMADE_", objectType)) {
+					instance_destroy(internalGrid[i][j]);
+					internalGrid[i][j] = noone;
+				}
+			}
+		}
+	}
+	
 	
 	static snapToPosition = function(_x, _y) { // take in position of element hovering over it, snap to the grid, called if there is an overlap
 		var newXPosition = floor((_x - xPosition)/cellSize)*cellSize + xPosition + cellSize/2;
@@ -39,12 +54,24 @@ function createPuzzleGrid(_type, _x, _y, _imageAngle, _active, _width, _height, 
 		return;
 	}
 	
-	static isGridCellEmpty = function(_x, _y) {
-		var gridX = floor((_x - xPosition)/cellSize);
-		var gridY = floor((_y - yPosition)/cellSize);
+	static areGridCoordinatesWithinBounds = function(gridX, gridY) {
 		if (gridX < 0 || gridX >= gridWidth || gridY < 0 || gridY >= gridHeight) {
 			return false;
 		}
+		else {
+			return true;
+		}
+	}
+	
+	static isGridCellEmpty = function(_x, _y) {
+		var gridX = floor((_x - xPosition)/cellSize);
+		var gridY = floor((_y - yPosition)/cellSize);
+		if (!areGridCoordinatesWithinBounds(gridX, gridY)) {
+			return false;
+		}
+		/*if (gridX < 0 || gridX >= gridWidth || gridY < 0 || gridY >= gridHeight) {
+			return false;
+		}*/
 		if (internalGrid[gridX][gridY] == noone) {
 			return true;
 		}
@@ -73,6 +100,9 @@ function createPuzzleGrid(_type, _x, _y, _imageAngle, _active, _width, _height, 
 		var gridX = floor((_x - xPosition)/cellSize);
 		var gridY = floor((_y - yPosition)/cellSize);
 		show_debug_message([gridX, gridY]);
+		if (!areGridCoordinatesWithinBounds(gridX, gridY)) {
+			return;
+		}
 		instance_destroy(internalGrid[gridX][gridY]);
 		internalGrid[gridX][gridY] = noone;
 		return;
@@ -95,7 +125,16 @@ function createPuzzleGrid(_type, _x, _y, _imageAngle, _active, _width, _height, 
 		return internalGrid[verticalIndex][horizontalIndex];
 	}
 	
+	static getInternalGrid = function() {
+		return internalGrid;
+	}
+	
 	static getIsLevelEditor = function() {
 		return isLevelEditor;
+	}
+	
+	static updateIsLevelEditor = function(boolean) {
+		isLevelEditor = boolean;
+		return;
 	}
 }

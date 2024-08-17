@@ -1,0 +1,2 @@
+updateIsLevelEditor(true);
+evaluateRoomType();

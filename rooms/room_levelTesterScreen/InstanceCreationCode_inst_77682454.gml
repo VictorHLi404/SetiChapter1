@@ -1,0 +1,1 @@
+updateSpawnerType("PLAYERMADE_WALL");

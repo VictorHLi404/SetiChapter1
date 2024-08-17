@@ -60,6 +60,14 @@ function createRoomWall(_type, _x, _y, _imageAngle, _active, _isLevelEditor) : c
 	}
 }
 
+function createPlayerRoomWall(_type, _x, _y, _imageAngle, _active, _isLevelEditor) : createPuzzleObject(_type, _x, _y, _imageAngle, _active, _isLevelEditor) constructor { 
+
+	static toString = function() {
+		return [type, xPosition, yPosition, imageAngle, active];
+	}
+}
+
+
 function createEndZone(_type, _x, _y, _imageAngle, _active, _isLevelEditor) : createPuzzleObject(_type, _x, _y, _imageAngle, _active, _isLevelEditor) constructor { 
 	
 	static toString = function() {

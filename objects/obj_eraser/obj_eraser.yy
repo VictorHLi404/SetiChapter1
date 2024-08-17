@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Object Spawners",
-    "path": "folders/Objects/Battle Screen/Object Spawners.yy",
+    "name": "Misc",
+    "path": "folders/Objects/Battle Screen/Puzzle Objects/Misc.yy",
   },
   "parentObjectId": null,
   "persistent": false,
