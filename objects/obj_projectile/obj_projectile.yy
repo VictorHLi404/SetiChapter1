@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Shooting",
-    "path": "folders/Objects/Battle Screen/Puzzle Objects/Shooting.yy",
+    "name": "group1",
+    "path": "folders/Objects/Battle Screen/Puzzle Objects/group1.yy",
   },
   "parentObjectId": null,
   "persistent": false,

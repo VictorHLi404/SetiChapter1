@@ -17,6 +17,37 @@ function mirrorAngleAlongYAxis(angle) {
 	}
 }
 
+function calculateBounceAngle(currentAngle, xPosition, yPosition, collisionInstanceX, collisionInstanceY) {
+	var xDirection = collisionInstanceX - xPosition;
+	var yDirection = collisionInstanceY - yPosition;
+	var newAngle = 0;
+	if (abs(yDirection) > abs(xDirection)) { // if the bullet is coming from either on top or below
+		if ((yDirection < 0 && currentAngle < 180 && currentAngle > 0)) {
+			newAngle = mirrorAngleAlongYAxis((currentAngle+180)%360);
+			show_debug_message("BELOW HIT");
+		}
+		else if (yDirection > 0 && currentAngle <= 360 && currentAngle >= 180) {
+			newAngle = mirrorAngleAlongYAxis((currentAngle+180)%360);
+			show_debug_message("TOP HIT");
+		}
+		// +180 to flip side, then mirror across y axis
+	}
+	else if (abs(xDirection) > abs(yDirection)) { // if bullet is coming from left or right
+			newAngle = (mirrorAngleAlongYAxis(currentAngle));
+			show_debug_message("SIDE HIT");
+	}
+	else {
+		show_debug_message("CORNER CASE");
+	}
+	if (random_range(1, 2) > 1.5) {
+		newAngle = (newAngle+5)%360;
+	}
+	else {
+		newAngle = (newAngle-5)%360;
+	}
+	return newAngle;
+}
+
 function mirrorAngleAlongXAxis(angle) {
 
 }

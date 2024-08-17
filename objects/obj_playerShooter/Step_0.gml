@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/// @description Insert description here
+// You can write your code in this editor
+
 if (objectData.getIsLevelEditor()) {
 	moveAndPlace(objectData);
 	levelEditorEvaluateStopFollowing(objectData);
@@ -29,3 +32,26 @@ if (objectData.isInFocus()) {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
