@@ -12,6 +12,8 @@ if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, se
 			objectData.setFollowingMouse(true);
 			objectData.updateIsLevelEditor(levelEditorBool);
 		}
+		puzzleObjectSpawner.spawnObject();
+		remainingObjectDisplayField.updateText(puzzleObjectSpawner.getObjectCurrentCount());
 	}
 }
 

@@ -47,5 +47,3 @@ function createTestButtonInstance() {
 	}
 }
 
-createSaveButtonInstance();
-createTestButtonInstance();

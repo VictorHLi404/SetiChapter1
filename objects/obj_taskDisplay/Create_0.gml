@@ -66,6 +66,7 @@ function createOptimizeButtonInstance() {
 		uniqueButtonEvent = function() {
 			var index = real(string_copy(buttonID, string_length(buttonID), 1))-1 // same as above
 			global.taskHandler.loadPuzzle(index);
+			room_goto(room_battleScreen);
 		}
 	}
 }

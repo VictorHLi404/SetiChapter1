@@ -10,7 +10,6 @@ if (collisionInstance != noone) {
 	/// assume that its a wall collision from here
 	if (projectileData.checkWallCollision() == true && !collisionBuffer) { // enough bounces to bounce	
 		var newAngle = distortAngle(calculateBounceAngle(image_angle, x, y, collisionInstance.x, collisionInstance.y));
-		show_debug_message([image_angle, newAngle]);
 		image_angle = newAngle; 
 		direction = newAngle;
 		startCollisionBuffer();

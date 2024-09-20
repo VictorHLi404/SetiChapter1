@@ -13,14 +13,20 @@ function createRoomBuilder(_fileList) : createDataHandler(_fileList) constructor
 		"BLANK": noone
 	};
 	
-	static getRoomData = function(sourceFile) {
+	static getRoomDataFromFile = function(sourceFile) {
 		var dataStruct = getFile(sourceFile);
 		var nameGrid = dataStruct[$ "RoomData"];
+		return nameGrid;
+	}
+	
+	static getRoomDataFromPuzzleCode = function(puzzleCode) {
+		var dataStruct = getFile("PuzzleRepository.json");
+		var nameGrid = dataStruct[$ puzzleCode][$ "PuzzleData"][$ "RoomData"];
 		return nameGrid;
 	}
 	
 	static getPuzzleObjectFromName = function(objectName) {
 		return objectMap[$ objectName];
 	}
-	
+
 }

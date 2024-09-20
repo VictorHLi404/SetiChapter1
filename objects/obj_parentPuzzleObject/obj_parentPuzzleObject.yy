@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_projectile",
+  "name": "obj_parentPuzzleObject",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Player Interactable",
-    "path": "folders/Objects/Battle Screen/Puzzle Objects/Player Interactable.yy",
+    "name": "Puzzle Objects",
+    "path": "folders/Objects/Battle Screen/Puzzle Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_projectile",
-    "path": "sprites/spr_projectile/spr_projectile.yy",
+    "name": "spr_blank1x1",
+    "path": "sprites/spr_blank1x1/spr_blank1x1.yy",
   },
   "spriteMaskId": null,
   "visible": true,

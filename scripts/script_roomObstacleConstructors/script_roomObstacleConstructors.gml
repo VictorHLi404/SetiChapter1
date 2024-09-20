@@ -13,19 +13,22 @@ function moveAndPlace(objectData) { // placed in step, take in an instance of a 
 			x = mouse_x;
 			y = mouse_y;
 		}
-		if (objectData.getIsLevelEditor() == true) { // REFACTOR PLEASE
-			if (mouse_check_button(mb_left)) {
-				if (gridInstance != noone) {
-					var positionData = variable_instance_get(gridInstance, "puzzleGrid").snapToPosition(mouse_x, mouse_y);
-					x = positionData[0];
-					y = positionData[1];
-					var gridData = variable_instance_get(gridInstance, "puzzleGrid");
-					if (gridData.isGridCellEmpty(positionData[0], positionData[1])) {
-						var newGeneratedObject = instance_create_layer(positionData[0], positionData[1], "Instances", self.object_index);
-						gridData.placeInGrid(positionData[0], positionData[1], newGeneratedObject);		
+		if (mouse_check_button(mb_left)) {
+			if (gridInstance != noone) {
+				var positionData = variable_instance_get(gridInstance, "puzzleGrid").snapToPosition(mouse_x, mouse_y);
+				x = positionData[0];
+				y = positionData[1];
+				var gridData = variable_instance_get(gridInstance, "puzzleGrid");
+				if (gridData.isGridCellEmpty(positionData[0], positionData[1])) {
+					var newGeneratedObject = instance_create_layer(positionData[0], positionData[1], "Instances", self.object_index);
+					gridData.placeInGrid(positionData[0], positionData[1], newGeneratedObject);	
+					if (objectData.getIsLevelEditor() != true) { // bruh
+						global.placingInProgress = false;
+						instance_destroy(self);
 					}
 				}
 			}
+
 		}
 	}
 }
@@ -42,13 +45,21 @@ function levelEditorEvaluateStopFollowing(objectData) {
 
 function createPuzzleObject(_type, _x, _y, _imageAngle, _active, _isLevelEditor) : createRoomObject(_type, _x, _y, _imageAngle, _active) constructor { 
 	isLevelEditor = _isLevelEditor;
-	
+	canBePlaced = false;
 	static getIsLevelEditor = function() {
 		return isLevelEditor;
 	}
 	
-	static updateIsLevelEditor = function(bool) {
-		isLevelEditor = bool;
+	static updateIsLevelEditor = function(boolean) {
+		isLevelEditor = boolean;
+	}
+	
+	static getCanBePlaced = function() {
+		return canBePlaced;
+	}
+	
+	static updateCanBePlaced = function(boolean) {
+		canBePlaced = boolean;
 	}
 }
 

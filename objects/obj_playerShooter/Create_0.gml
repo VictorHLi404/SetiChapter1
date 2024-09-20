@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-objectData = new createPlayerShooter("PROJECTILE SPAWNER", x, y, image_angle, true, false, 5);
+objectData = new createPlayerShooter("PROJECTILE SPAWNER", x, y, image_angle, true, false);
 objectArray = [obj_wall, obj_playerWall, obj_deadZone];
 projectileSpeed = 5;
 
@@ -29,6 +29,16 @@ function seekWall(currentAngle, xPosition, yPosition) {
 		}
 	}
 	return [xPosition, yPosition, collisionObject];
+}
+
+function fireProjectile() {
+	var projectile = instance_create_layer(x, y, "Instances", obj_projectile);
+	var trajectory = image_angle;
+	with (projectile) {
+		image_angle = trajectory;
+		speed = 5;
+		direction = trajectory;
+	}
 }
 
 

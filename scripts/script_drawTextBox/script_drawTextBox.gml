@@ -20,7 +20,20 @@ function drawTextBox(textBoxData) {
 			draw_rectangle(x1,y1,x2,y2, false);
 		}
 	}
-	
-	
-	
+}
+
+function drawAlternateTextBox(textBoxData) { // inverted, blue instead of white
+	with (textBoxData) {
+		
+		x1 = XCoord // leftmost
+		y1 = YCoord // topmost
+		x2 = XCoord+width; // rightmost
+		y2 = YCoord+height; // bottommost
+		if (text != noone) {
+			draw_text_color(x1+width/2, y1+height/2, text, c_blue, c_blue, c_blue, c_blue, 1);
+		}
+		else {
+			draw_rectangle(x1,y1,x2,y2, false);
+		}
+	}
 }

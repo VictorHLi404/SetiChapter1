@@ -10,10 +10,9 @@ if (objectData.getIsLevelEditor()) {
 }
 
 
-if (global.placingInProgress == false) {
+if (global.placingInProgress == false && !objectData.isInFocus()) {
 	objectData.enterFocus();
 }
-
 else {
 	objectData.exitFocus();
 }
@@ -21,14 +20,11 @@ else {
 if (objectData.isInFocus()) {
 	image_angle = objectData.pointToMouse();
 	if (keyboard_check_pressed(vk_space)) {
-		if (objectData.fireProjectile() != false) {
-			var projectile = instance_create_layer(x, y, "Instances", obj_projectile);
-			var trajectory = image_angle;
-			with (projectile) {
-				image_angle = trajectory;
-				speed = 5;
-				direction = trajectory;
-			}
+		if (objectData.getIsLevelEditor()) { // if in testing, then just fire no matter what
+			fireProjectile();
+		}
+		else if (objectData.canProjectileBeFired() != false) { // if in real game and bullets left to shoot, fire
+			fireProjectile();
 		}
 	}
 }

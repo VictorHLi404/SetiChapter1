@@ -3,22 +3,22 @@
         "TaskID": "ScannerProcessing",
         "TaskName": "Process Signal Data",
         "TaskDescription": "Compress radio wave data",
-        "TaskCompletionWindow" : 144,
-        "TaskLength": 13,
-        "CurrentProgression": 10,
+        "TaskLength": 5,
+        "TaskCompletionWindow" : 20,
+        "CurrentProgression": 0,
         "IsOptimizable" : true,
         "PuzzleType": "Ricochet", 
-        "PuzzleCode": "100"
+        "PuzzleCode": "0001"
     },
     "ScannerProcessing1" : {
         "TaskID": "ScannerProcessing1",
         "TaskName": "Outlier Identification",
         "TaskDescription": "Remove outlier points and smooth waveband",
-        "TaskCompletionWindow" : 5,
-        "TaskLength": 45,
-        "CurrentProgression": 30,
+        "TaskLength": 10,
+        "TaskCompletionWindow" : 40,
+        "CurrentProgression": 0,
         "IsOptimizable" : true,
         "PuzzleType": "Ricochet", 
-        "PuzzleCode": "101"
+        "PuzzleCode": "0002"
     }
 }

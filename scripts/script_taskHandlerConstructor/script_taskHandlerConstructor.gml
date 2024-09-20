@@ -93,12 +93,7 @@ function createTaskHandler(_fileList) : createDataHandler(_fileList) constructor
 		return;
 	}
 	
-	static loadPuzzle = function(index) {
-		var puzzleCode = taskQueue.getItem(index).getPuzzleCode();
-		var puzzleType = taskQueue.getItem(index).getPuzzleType();
-		show_message("GO TO PUZZLE ROOM WITH " + puzzleType + " AND CODE " + puzzleCode);
-		return;
-	}
+
 	
 	static progressTasks = function() { // advance all tasks by 1 tick
 		for (var i = 0; i < taskQueue.getLength(); i++) {
@@ -150,5 +145,13 @@ function createTaskHandler(_fileList) : createDataHandler(_fileList) constructor
 			show_message(signalTask.getTaskLength());
 			appendTaskObjectToQueue(signalTask);
 		}
+	}
+	
+	// integration with puzzleHandler for loading puzzle	
+	static loadPuzzle = function(index) {
+		var puzzleCode = taskQueue.getItem(index).getPuzzleCode();
+		var puzzleType = taskQueue.getItem(index).getPuzzleType();
+		global.puzzleHandler.updateCurrentPuzzleCode(puzzleCode);
+		return;
 	}
 }

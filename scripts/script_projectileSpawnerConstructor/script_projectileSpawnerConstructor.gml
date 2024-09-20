@@ -1,8 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function createPlayerShooter(_type, _x, _y, _imageAngle, _active, _isLevelEditor, _projectileCount) : createPuzzleObject(_type, _x, _y, _imageAngle, _active, _isLevelEditor) constructor { 
-	
-	projectileCount = _projectileCount;
+function createPlayerShooter(_type, _x, _y, _imageAngle, _active, _isLevelEditor) : createPuzzleObject(_type, _x, _y, _imageAngle, _active, _isLevelEditor) constructor { 
 
 	static pointToMouse = function() { // returns angle for projectile spanwer to point IF in focus
 		if (active) {
@@ -25,13 +23,9 @@ function createPlayerShooter(_type, _x, _y, _imageAngle, _active, _isLevelEditor
 		return active;
 	}
 
-	static setProjectileCount = function (newCount) {
-		projectileCount = newCount;
-	}
-
-	static fireProjectile = function() {
-		if (projectileCount > 0) {
-			projectileCount -= 1;
+	static canProjectileBeFired = function() {
+		if (global.puzzleHandler.isAttemptValid()) {
+			global.puzzleHandler.recordPuzzleAttempt();
 			return true;
 		}
 		else {

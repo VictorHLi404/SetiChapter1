@@ -45,10 +45,10 @@ function calculateBounceAngle(currentAngle, xPosition, yPosition, collisionInsta
 
 function distortAngle(currentAngle) {
 	if (random_range(1, 2) > 1.5) {
-		currentAngle = (currentAngle+5)%360;
+		currentAngle = (currentAngle+0.2)%360;
 	}
 	else {
-		currentAngle = (currentAngle-5)%360;
+		currentAngle = (currentAngle-0.2)%360;
 	}
 	return currentAngle;
 }

@@ -7,5 +7,9 @@
     },
     "Flags": {
         "hasBeenNamedSol": false
+    },
+    "BattleStats" : {
+        "defaultMaximumAttempts" : 5,
+        "currentAttempts" : 5
     }
 }

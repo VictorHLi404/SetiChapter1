@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "group1",
-    "path": "folders/Objects/Battle Screen/Puzzle Objects/group1.yy",
+    "name": "Player Interactable",
+    "path": "folders/Objects/Battle Screen/Puzzle Objects/Player Interactable.yy",
   },
   "parentObjectId": null,
   "persistent": false,

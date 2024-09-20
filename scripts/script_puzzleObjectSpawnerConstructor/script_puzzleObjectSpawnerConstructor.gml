@@ -39,8 +39,17 @@ function createPuzzleObjectSpawner(_type, _isLevelEditor, _objectCurrentCount) c
 		return objectMap[$ type];
 	}
 	
+	static getObjectCurrentCount = function() {
+		if (isLevelEditor) {
+			return -1;
+		}
+		else {
+			return objectCurrentCount;
+		}
+	}
+	
 	static spawnObject = function () {
-		objectCurrentCount--;
+		objectCurrentCount = max(0, objectCurrentCount-1);
 	}
 	
 	static canObjectSpawn = function() {

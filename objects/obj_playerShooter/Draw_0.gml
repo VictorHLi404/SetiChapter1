@@ -7,13 +7,17 @@
 
 draw_self();
 
-var firstBounceXY = seekWall(image_angle, x, y);
-var firstCollisionInstance = firstBounceXY[2];
-var firstCollisionAngle = calculateBounceAngle(image_angle, firstBounceXY[0], firstBounceXY[1], firstCollisionInstance.x, firstCollisionInstance.y);
-var secondBounceXY = seekWall(firstCollisionAngle, firstBounceXY[0], firstBounceXY[1]);
-show_debug_message([image_angle, firstCollisionAngle]);
-draw_line(x+lengthdir_x(13, image_angle), y+lengthdir_y(13, image_angle), firstBounceXY[0], firstBounceXY[1]);
-draw_line(firstBounceXY[0], firstBounceXY[1], secondBounceXY[0], secondBounceXY[1]);
+if(room != room_levelEditorScreen) {
+	var firstBounceXY = seekWall(image_angle, x, y);
+	var firstCollisionInstance = firstBounceXY[2];
+	if (firstCollisionInstance != noone) {
+		var firstCollisionAngle = calculateBounceAngle(image_angle, firstBounceXY[0], firstBounceXY[1], firstCollisionInstance.x, firstCollisionInstance.y);
+		var secondBounceXY = seekWall(firstCollisionAngle, firstBounceXY[0], firstBounceXY[1]);
+		draw_line(x+lengthdir_x(13, image_angle), y+lengthdir_y(13, image_angle), firstBounceXY[0], firstBounceXY[1]);
+		draw_line(firstBounceXY[0], firstBounceXY[1], secondBounceXY[0], secondBounceXY[1]);
+	}
+}
+
 
 
 
